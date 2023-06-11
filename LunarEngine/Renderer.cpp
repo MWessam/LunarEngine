@@ -12,17 +12,32 @@ Renderer::Renderer(Window* window):
 
 }
 
-bool Renderer::Update()
+bool Renderer::update()
 {
-    calculateDeltaTime();
-    if (!glfwWindowShouldClose(_windowContextCached)) 
+    float dt = calculateDeltaTime();
+    return renderWindow(dt);
+}
+bool Renderer::renderWindow(float dt)
+{
+    if (!glfwWindowShouldClose(_windowContextCached))
     {
+        renderObjects(dt);
         _window->update();
         return true;
     }
     return false;
 }
-void Renderer::AddGameObject(GameObject* gameObject)
+void Renderer::renderObjects(float dt)
+{
+    for (GameObject* gameObject : _gameObjects) 
+    {
+        if (gameObject->getEnabledState())
+        {
+            gameObject->updateAll(dt);
+        }
+    }
+}
+void Renderer::addGameObject(GameObject* gameObject)
 {
     _gameObjects.push_back(gameObject);
 }

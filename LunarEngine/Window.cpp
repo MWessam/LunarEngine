@@ -62,6 +62,7 @@ int Window::initializeGlad() const
         std::cout << "Failed to initialize GLAD" << std::endl;
         return -1;
     }
+    return 0;
 }
 
 void Window::framebuffer_size_callback(GLFWwindow* window, int width, int height)

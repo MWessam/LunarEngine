@@ -11,6 +11,8 @@ private:
 	clock_t _lastTime = clock();
 	std::vector<GameObject*> _gameObjects;
 	float calculateDeltaTime();
+	bool renderWindow(float dt);
+	void renderObjects(float dt);
 public:
 	Renderer(Window* window);
 	bool update();
