@@ -47,6 +47,14 @@ void Window::changeViewport(GLint x, GLint y, GLsizei width, GLsizei height) con
     glViewport(x, y, width, height);
 }
 
+void Window::update()
+{
+    glfwSwapBuffers(_window);
+    glfwPollEvents();
+    processInput();
+
+}
+
 int Window::initializeGlad() const
 {
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
@@ -59,4 +67,12 @@ int Window::initializeGlad() const
 void Window::framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
     glViewport(0, 0, width, height);
+}
+
+void Window::processInput()
+{
+    if (glfwGetKey(_window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+    {
+        glfwSetWindowShouldClose(_window, true);
+    }
 }
