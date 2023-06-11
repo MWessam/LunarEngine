@@ -5,6 +5,7 @@ class Renderer
 private:
 	Window* window;
 	GLFWwindow* windowContext;
+
 public:
 	Renderer();
 	void Update();
