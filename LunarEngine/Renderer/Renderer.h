@@ -3,6 +3,7 @@
 #include "GameObject.h"
 #include <ctime>
 #include <vector>
+#include "glm/glm.hpp"
 class Renderer
 {
 private:
@@ -13,6 +14,7 @@ private:
 	float calculateDeltaTime();
 	bool renderWindow(float dt);
 	void renderObjects(float dt);
+	void clear(glm::vec4 color);
 public:
 	Renderer(Window* window);
 	bool update();

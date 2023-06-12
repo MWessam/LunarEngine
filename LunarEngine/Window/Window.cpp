@@ -49,10 +49,16 @@ void Window::changeViewport(GLint x, GLint y, GLsizei width, GLsizei height) con
 
 void Window::update()
 {
+    clear();
     glfwSwapBuffers(_window);
     glfwPollEvents();
     processInput();
 
+}
+
+void Window::setColor(glm::vec4 color)
+{
+    _screenColor = color;
 }
 
 int Window::initializeGlad() const
@@ -76,4 +82,10 @@ void Window::processInput()
     {
         glfwSetWindowShouldClose(_window, true);
     }
+}
+
+void Window::clear()
+{
+    glCall(glClearColor(_screenColor.x, _screenColor.y, _screenColor.z, _screenColor.w));
+    glCall(glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT));
 }

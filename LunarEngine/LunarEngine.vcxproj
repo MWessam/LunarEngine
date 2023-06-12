@@ -133,30 +133,37 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="Components\GameObject.cpp" />
     <ClCompile Include="glad.c" />
+    <ClCompile Include="Components\GraphicsRenderer.cpp" />
+    <ClCompile Include="Components\SpriteRenderer.cpp" />
     <ClCompile Include="Graphics\GLDebug.cpp" />
-    <ClCompile Include="GObjectComponent.cpp" />
-    <ClCompile Include="Enableable.cpp" />
+    <ClCompile Include="Components\GObjectComponent.cpp" />
+    <ClCompile Include="Components\Enableable.cpp" />
     <ClCompile Include="Graphics\IndexBuffer.cpp" />
+    <ClCompile Include="Graphics\ShaderSource\Default.glsl" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Renderer\Renderer.cpp" />
     <ClCompile Include="Graphics\Shader.cpp" />
-    <ClCompile Include="Transform.cpp" />
+    <ClCompile Include="Graphics\Texture.cpp" />
+    <ClCompile Include="Components\Transform.cpp" />
     <ClCompile Include="Graphics\VertexArray.cpp" />
     <ClCompile Include="Graphics\VertexBuffer.cpp" />
     <ClCompile Include="Graphics\VertexBufferLayout.h" />
     <ClCompile Include="Window\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="Components\GameObject.h" />
+    <ClInclude Include="Components\GraphicsRenderer.h" />
+    <ClInclude Include="Components\SpriteRenderer.h" />
     <ClInclude Include="Graphics\GLDebug.h" />
-    <ClInclude Include="GObjectComponent.h" />
-    <ClInclude Include="Enableable.h" />
+    <ClInclude Include="Components\GObjectComponent.h" />
+    <ClInclude Include="Components\Enableable.h" />
     <ClInclude Include="Graphics\IndexBuffer.h" />
     <ClInclude Include="Renderer\Renderer.h" />
     <ClInclude Include="Graphics\Shader.h" />
-    <ClInclude Include="Transform.h" />
+    <ClInclude Include="Graphics\Texture.h" />
+    <ClInclude Include="Components\Transform.h" />
     <ClInclude Include="Graphics\VertexArray.h" />
     <ClInclude Include="Graphics\VertexBuffer.h" />
     <ClInclude Include="Window\Window.h" />

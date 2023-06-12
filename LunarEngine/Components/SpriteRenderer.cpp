@@ -1,2 +1,2 @@
-#include "GraphicsRenderer2D.h"
+#include "SpriteRenderer.h"
 
