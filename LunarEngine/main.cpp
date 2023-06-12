@@ -1,6 +1,6 @@
 #include <iostream>
-#include"Window.h"
-#include"Renderer.h"
+#include"Window/Window.h"
+#include"Renderer/Renderer.h"
 #include "GameObject.h"
 #include "Transform.h"
 
