@@ -135,19 +135,25 @@
   <ItemGroup>
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="glad.c" />
+    <ClCompile Include="GLDebug.cpp" />
     <ClCompile Include="GObjectComponent.cpp" />
     <ClCompile Include="Enableable.cpp" />
+    <ClCompile Include="IndexBuffer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="Transform.cpp" />
+    <ClCompile Include="VertexBuffer.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GLDebug.h" />
     <ClInclude Include="GObjectComponent.h" />
     <ClInclude Include="Enableable.h" />
+    <ClInclude Include="IndexBuffer.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="Transform.h" />
+    <ClInclude Include="VertexBuffer.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
