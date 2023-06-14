@@ -20,3 +20,8 @@ void Transform::move(float x, float y, float z)
 	_position.z += z;
 
 }
+
+void Transform::scale(float factor)
+{
+	_scale = { factor, factor, factor };
+}

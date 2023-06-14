@@ -23,6 +23,8 @@ public:
 	unsigned int getShaderId() const;
 	void bind() const;
 	void unBind() const;
+	void useProgram() const;
+	void unuseProgram() const;
 	void setUniform1i(const std::string& name, int value);
 	void setUniform1f(const std::string& name, float value);
 	void setUniform4f(const std::string& name, float f0, float f1, float f2, float f3);

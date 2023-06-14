@@ -5,7 +5,7 @@ struct VertexBufferElement
 {
     unsigned int Type;
     unsigned int Count;
-    unsigned char Normalized;
+    unsigned char Normalized = GL_TRUE;
 
     static unsigned int GetSizeOfType(unsigned int type)
     {

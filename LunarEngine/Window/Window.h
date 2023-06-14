@@ -18,13 +18,13 @@ private:
 	int initializeGlad() const;
 	static void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 	void processInput();
-	void clear();
 public:
 	Window(unsigned int antiAliasing, unsigned int majorVersion, unsigned int minorVersion, unsigned int width, unsigned int height, GLint glProfile, const std::string title);
 	~Window();
 	GLFWwindow* getWindow() const;
 	void assignAsCurrentContext() const;
 	void changeViewport(GLint x, GLint y, GLsizei width, GLsizei height) const;
+	void clear();
 	void update();
 	void setColor(glm::vec4 color);
 	

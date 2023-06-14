@@ -142,7 +142,6 @@
     <ClCompile Include="Components\GObjectComponent.cpp" />
     <ClCompile Include="Components\Enableable.cpp" />
     <ClCompile Include="Graphics\IndexBuffer.cpp" />
-    <ClCompile Include="Graphics\ShaderSource\Default.glsl" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Renderer\Renderer.cpp" />
     <ClCompile Include="Graphics\Shader.cpp" />

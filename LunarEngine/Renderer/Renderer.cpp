@@ -12,7 +12,7 @@ Renderer::Renderer(Window* window, Camera* camera):
 
 }
 
-bool Renderer::update()
+bool Renderer::clear()
 {
     float dt = calculateDeltaTime();
     return renderWindow(dt);
@@ -21,9 +21,10 @@ bool Renderer::renderWindow(float dt)
 {
     if (!glfwWindowShouldClose(_windowContextCached))
     {
-        _window->update();
+        _window->clear();
         updateObjects(dt);
         renderObjects();
+        _window->update();
         return true;
     }
     return false;

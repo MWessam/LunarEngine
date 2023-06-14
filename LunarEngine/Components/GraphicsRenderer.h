@@ -10,13 +10,12 @@
 const glm::vec4 DEFAULTCOLOR = { 1.0f, 1.0f, 1.0f, 1.0f };
 const float DEFAULTTEXINDEX = 0;
 const int DEFAULTENTITYID = 0;
-const std::string DEFAULTSHADER = "Graphics/ShaderSource/Default.shader";
+const std::string DEFAULTSHADER = "D:/SwE/C#/LunarEngine/LunarEngine/Graphics/ShaderSource/Default.shader";
 
 struct QuadVertex		// Rectangle/square on which we will render our sprite on
 {
-	glm::vec4 Positions[4];
+	Vertex Vertices[4];
 	glm::vec4 Color = DEFAULTCOLOR;
-	glm::vec2 TexCoord[4];
 	VertexBufferLayout Layout;
 	GLuint indices[6] = {
 		0, 1, 2,
@@ -29,11 +28,16 @@ struct QuadVertex		// Rectangle/square on which we will render our sprite on
 	int EntityID = DEFAULTENTITYID;
 	QuadVertex() 
 	{
-		Positions[0] = { -0.5f, -0.5f, -1.0f, 1.0f};
-		Positions[1] = { 0.5f, -0.5f, 0.7f, 1.0f};
-		Positions[2] = { 0.5f,  0.5f, -0.3f, 1.0f};
-		Positions[3] = { -0.5f,  0.5f, 0.0f, 1.0f};
+		Vertices[0].Position = {-1.0f, -1.0f, 0.0f, 1.0f};
+		Vertices[0].TexCoord = { 0.0f, 0.0f };
+		Vertices[1].Position = { 1.0f, -1.0f, 0.0f, 1.0f };
+		Vertices[1].TexCoord = { 1.0f, 0.0f };
+		Vertices[2].Position = { 1.0f,  1.0f, 0.0f, 1.0f };
+		Vertices[2].TexCoord = { 1.0f, 1.0f };
+		Vertices[3].Position = { -1.0f,  1.0f, 0.0f, 1.0f };
+		Vertices[3].TexCoord = { 0.0f, 1.0f };
 		Layout.Push<float>(4);
+		Layout.Push<float>(2);
 	}
 };
 class GraphicsRenderer		// TODO: implement a way to store my vao vbo ibo and shader and have it all encapsulated This will handle all the rendering of this specific game object.
@@ -62,7 +66,6 @@ public:
 	void setShader(const std::string& shaderFile);
 	void instantiate();
 	void setTransform(Transform* transform);
-
-
+	Transform* getTransform();
 };
 

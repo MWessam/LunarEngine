@@ -127,6 +127,17 @@ void Shader::unBind() const
     glCall(glUseProgram(0));
 }
 
+void Shader::useProgram() const
+{
+    glCall(glUseProgram(_shaderID));
+}
+
+void Shader::unuseProgram() const
+{
+    glCall(glUseProgram(0));
+}
+
+
 void Shader::setUniform1i(const std::string& name, int value)
 {
     glCall(glUniform1i(getUniformLocation(name), value));

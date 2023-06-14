@@ -9,8 +9,9 @@ uniform mat4 u_Projection;
 uniform mat4 u_View;
 void main()
 {
-	gl_Position = u_Projection * u_View * u_Model * position;
+	gl_Position = /*u_Projection * u_View */ u_Model * position;
 	v_TexCoord = vec2(texCoord);
+
 }
 
 #shader fragment
@@ -18,6 +19,7 @@ void main()
 in vec4 vCol;
 out vec4 color;
 uniform sampler2D u_Texture;
+uniform vec4 u_Color;
 in vec2 v_TexCoord;
 
 void main() {

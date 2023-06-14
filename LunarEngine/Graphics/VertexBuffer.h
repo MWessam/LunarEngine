@@ -2,6 +2,11 @@
 #include "GLDebug.h"
 #include "VertexBufferLayout.h"
 #include "glm/glm.hpp"
+struct Vertex
+{
+	glm::vec4 Position;
+	glm::vec2 TexCoord;
+};
 class VertexBuffer
 {
 private:
@@ -9,7 +14,7 @@ private:
 	GLsizei _size;	// Number of vertices
 	VertexBufferLayout _layout;
 public:
-	VertexBuffer(const glm::vec4* vertices, GLsizei size, GLenum drawType, VertexBufferLayout layout);
+	VertexBuffer(const Vertex* vertices, GLsizei size, GLenum drawType, VertexBufferLayout layout);
 	VertexBuffer() = default;
 	~VertexBuffer();
 	void bind() const;

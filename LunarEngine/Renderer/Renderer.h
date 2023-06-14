@@ -21,7 +21,7 @@ private:
 	void clear(glm::vec4 color);
 public:
 	Renderer(Window* window, Camera* camera);
-	bool update();
+	bool clear();
 	void addGameObject(GameObject* gameObject);
 	~Renderer();
 };

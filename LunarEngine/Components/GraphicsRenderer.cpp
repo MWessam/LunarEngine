@@ -3,14 +3,12 @@
 void GraphicsRenderer::createQuad(Transform* transform)
 {
 	constexpr GLsizei vertexCount = 4;
-	constexpr glm::vec2 textureCoords[] = { { 0.0f, 0.0f}, { 1.0f, 0.0f}, { 1.0f, 1.0f}, { 0.0f, 1.0f} };
 	for (GLsizei i = 0; i < vertexCount; i++) 
 	{
-		_object.Positions[i] = transform->getTransformMatrix() * _object.Positions[i];
-		_object.TexCoord[i] = textureCoords[i];
+		_object.Vertices[i].Position = _object.Vertices[i].Position * transform->getTransformMatrix();
 	}
 	_object.Color = _color;
-	_object.TexIndex = 1;
+	_object.TexIndex = 0;
 }
 GraphicsRenderer::GraphicsRenderer(const std::string& shaderFile, const std::string& textureFile, glm::vec4 color, GLenum drawType) :
 	_shader( new Shader(shaderFile)), _texture( new Texture(textureFile)), _color(color), _drawType(drawType)
@@ -36,13 +34,20 @@ GraphicsRenderer::~GraphicsRenderer()
 
 void GraphicsRenderer::render(const glm::mat4& projection, const glm::mat4& view)
 {
-	glCall(glUseProgram(_shader->getShaderId()));
-	_shader->setUniformMat4("u_Projection", 1, GL_FALSE, glm::value_ptr(projection));
-	_shader->setUniformMat4("u_View", 1, GL_FALSE, glm::value_ptr(view));
+	_shader->useProgram();
+	//_shader->setUniformMat4("u_Projection", 1, GL_FALSE, glm::value_ptr(projection));
+	//_shader->setUniformMat4("u_View", 1, GL_FALSE, glm::value_ptr(view));
 	_shader->setUniformMat4("u_Model", 1, GL_FALSE, glm::value_ptr(_transform->getTransformMatrix()));
+	_shader->setUniform4f("u_Color", _color.x, _color.y, _color.z, _color.w);
 	_vao->bind();
 	_ibo->bind();
+	_texture->bind();
 	glDrawElements(GL_TRIANGLES, _object.indiciesCount, GL_UNSIGNED_INT, nullptr);
+	_vb->unbind();
+	_ibo->unbind();
+	_vao->unbind();
+	_texture->unbind();
+	_shader->unuseProgram();
 }
 
 void GraphicsRenderer::setColor(const glm::vec4& color)
@@ -66,7 +71,7 @@ void GraphicsRenderer::instantiate()
 {
 	createQuad(_transform);
 	_vao = new VertexArray();
-	_vb = new VertexBuffer(_object.Positions, 4, _drawType, _object.Layout);
+	_vb = new VertexBuffer(_object.Vertices, 6, _drawType, _object.Layout);
 	_ibo = new IndexBuffer(_object.indices, _object.indiciesCount);
 	_vao->addBuffer(*_vb);
 }
@@ -74,6 +79,11 @@ void GraphicsRenderer::instantiate()
 void GraphicsRenderer::setTransform(Transform* transform)
 {
 	_transform = transform;
+}
+
+Transform* GraphicsRenderer::getTransform()
+{
+	return _transform;
 }
 
 

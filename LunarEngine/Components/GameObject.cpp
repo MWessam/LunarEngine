@@ -7,7 +7,7 @@ void GameObject::updateAll(float dt)		// Updates all active components.
 	{
 		if (component->getEnabledState()) 
 		{
-			component->update(dt);
+			component->clear(dt);
 		}
 	}
 }
@@ -49,5 +49,9 @@ inline T* GameObject::getComponent() const		// Return component if it exists
 		}
 	}
 	return nullptr;
+}
+GraphicsRenderer* GameObject::getGraphicsRenderer() 
+{
+	return &_objectRenderer;
 }
 

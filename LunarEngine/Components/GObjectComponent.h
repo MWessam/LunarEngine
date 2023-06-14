@@ -7,7 +7,7 @@ public:
 	GObjectComponent();
 	virtual ~GObjectComponent();
 	int getID();
-	virtual void update(float dt) = 0;
+	virtual void clear(float dt) = 0;
 	virtual void lateUpdate(float dt) = 0;
 	virtual void init();
 	virtual void awake() = 0;

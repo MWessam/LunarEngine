@@ -1,11 +1,11 @@
 #include "VertexBuffer.h"
 
-VertexBuffer::VertexBuffer(const glm::vec4* vertices, GLsizei size, GLenum drawType, VertexBufferLayout layout) :
+VertexBuffer::VertexBuffer(const Vertex* vertices, GLsizei size, GLenum drawType, VertexBufferLayout layout) :
 	_size(size), _layout(layout)
 {
 	glCall(glGenBuffers(1, &_id));
 	bind();
-	glCall(glBufferData(GL_ARRAY_BUFFER, size * sizeof(glm::vec4), vertices, drawType));
+	glCall(glBufferData(GL_ARRAY_BUFFER, size * sizeof(Vertex), vertices, drawType));
 }
 
 VertexBuffer::~VertexBuffer()

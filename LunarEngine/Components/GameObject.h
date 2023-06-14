@@ -21,7 +21,7 @@ public:
 	GameObject();
 	template <typename T>
 	void addComponent();
-	GraphicsRenderer* getGraphicsRenderer() const;
+	GraphicsRenderer* getGraphicsRenderer();
 	Transform* getTransform();
 	template <typename T>
 	T* getComponent() const;
