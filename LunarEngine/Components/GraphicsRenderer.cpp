@@ -38,16 +38,13 @@ void GraphicsRenderer::render(const glm::mat4& projection, const glm::mat4& view
 	//_shader->setUniformMat4("u_Projection", 1, GL_FALSE, glm::value_ptr(projection));
 	//_shader->setUniformMat4("u_View", 1, GL_FALSE, glm::value_ptr(view));
 	_shader->setUniformMat4("u_Model", 1, GL_FALSE, glm::value_ptr(_transform->getTransformMatrix()));
-	_shader->setUniform4f("u_Color", _color.x, _color.y, _color.z, _color.w);
 	_vao->bind();
 	_ibo->bind();
 	_texture->bind();
 	glDrawElements(GL_TRIANGLES, _object.indiciesCount, GL_UNSIGNED_INT, nullptr);
-	_vb->unbind();
 	_ibo->unbind();
 	_vao->unbind();
 	_texture->unbind();
-	_shader->unuseProgram();
 }
 
 void GraphicsRenderer::setColor(const glm::vec4& color)

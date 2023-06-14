@@ -35,6 +35,8 @@ Texture::~Texture()
 
 void Texture::bind(unsigned int slot) const
 {
+	if (this == nullptr)
+		return;
 	glCall(glActiveTexture(GL_TEXTURE0 + slot));
 	glCall(glBindTexture(GL_TEXTURE_2D, _id));
 

@@ -18,7 +18,10 @@ void Transform::move(float x, float y, float z)
 	_position.x += x;
 	_position.y += y;
 	_position.z += z;
-
+}
+void Transform::moveBenchmark() 
+{
+	_position.x += sin(_position.x);
 }
 
 void Transform::scale(float factor)

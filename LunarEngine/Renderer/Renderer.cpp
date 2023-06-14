@@ -1,4 +1,5 @@
 #include "Renderer.h"
+#include <random>
 float Renderer::calculateDeltaTime()
 {
     clock_t currentTime = clock();
@@ -15,6 +16,7 @@ Renderer::Renderer(Window* window, Camera* camera):
 bool Renderer::clear()
 {
     float dt = calculateDeltaTime();
+    std::cout << 1 / dt << std::endl;
     return renderWindow(dt);
 }
 bool Renderer::renderWindow(float dt)
@@ -36,6 +38,7 @@ void Renderer::renderObjects()
         if (gameObject->getEnabledState())
         {
             gameObject->render(_currentCamera->getProjectionMatrix(), _currentCamera->getViewMatrix());
+            // gameObject->getTransform()->scale((rand() / (double)RAND_MAX) * 2 - 1); BENCHMARK ONLY
         }
     }
 }
@@ -50,11 +53,20 @@ void Renderer::updateObjects(float dt)
     }
 }
 
+void Renderer::deleteObjects()
+{
+    for (GameObject* gameObject : _gameObjects)
+    {
+        delete gameObject;
+    }
+}
+
 void Renderer::addGameObject(GameObject* gameObject)
 {
     _gameObjects.push_back(gameObject);
 }
 Renderer::~Renderer() 
 {
+    deleteObjects();
     glfwTerminate();
 }

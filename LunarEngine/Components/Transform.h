@@ -10,6 +10,7 @@ public:
     Transform();
     glm::mat4 getTransformMatrix() const;
     void move(float x, float y, float z);
+    void moveBenchmark();
     void scale(float factor);
 private:
     glm::vec3 _position = { 0.0f, 0.0f, 0.0f };

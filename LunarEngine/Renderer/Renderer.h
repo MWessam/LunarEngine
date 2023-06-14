@@ -19,6 +19,7 @@ private:
 	void renderObjects();
 	void updateObjects(float dt);
 	void clear(glm::vec4 color);
+	void deleteObjects();
 public:
 	Renderer(Window* window, Camera* camera);
 	bool clear();
