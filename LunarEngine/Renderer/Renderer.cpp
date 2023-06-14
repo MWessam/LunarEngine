@@ -10,7 +10,6 @@ float Renderer::calculateDeltaTime()
 Renderer::Renderer(Window* window, Camera* camera):
     _window(window), _windowContextCached(window->getWindow()), _currentCamera(camera)
 {
-
 }
 
 bool Renderer::clear()
@@ -38,7 +37,7 @@ void Renderer::renderObjects()
         if (gameObject->getEnabledState())
         {
             gameObject->render(_currentCamera->getProjectionMatrix(), _currentCamera->getViewMatrix());
-            // gameObject->getTransform()->scale((rand() / (double)RAND_MAX) * 2 - 1); BENCHMARK ONLY
+            gameObject->getTransform()->scale((rand() / (double)RAND_MAX) * 2 - 1); //BENCHMARK ONLY
         }
     }
 }

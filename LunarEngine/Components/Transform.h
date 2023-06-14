@@ -12,6 +12,10 @@ public:
     void move(float x, float y, float z);
     void moveBenchmark();
     void scale(float factor);
+    const glm::vec3 getPosition() const;
+    const glm::vec3 getRotation() const;
+    const glm::vec3 getScale() const;
+
 private:
     glm::vec3 _position = { 0.0f, 0.0f, 0.0f };
     glm::vec3 _rotation = { 0.0f, 0.0f, 0.0f };

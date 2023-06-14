@@ -5,6 +5,7 @@
 #include <ctime>
 #include <vector>
 #include "glm/glm.hpp"
+#include "Camera.h"
 
 class Renderer
 {
@@ -18,7 +19,6 @@ private:
 	bool renderWindow(float dt);
 	void renderObjects();
 	void updateObjects(float dt);
-	void clear(glm::vec4 color);
 	void deleteObjects();
 public:
 	Renderer(Window* window, Camera* camera);

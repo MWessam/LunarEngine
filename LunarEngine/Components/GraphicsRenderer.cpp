@@ -35,8 +35,8 @@ GraphicsRenderer::~GraphicsRenderer()
 void GraphicsRenderer::render(const glm::mat4& projection, const glm::mat4& view)
 {
 	_shader->useProgram();
-	//_shader->setUniformMat4("u_Projection", 1, GL_FALSE, glm::value_ptr(projection));
-	//_shader->setUniformMat4("u_View", 1, GL_FALSE, glm::value_ptr(view));
+	_shader->setUniformMat4("u_Projection", 1, GL_FALSE, glm::value_ptr(projection));
+	_shader->setUniformMat4("u_View", 1, GL_FALSE, glm::value_ptr(view));
 	_shader->setUniformMat4("u_Model", 1, GL_FALSE, glm::value_ptr(_transform->getTransformMatrix()));
 	_vao->bind();
 	_ibo->bind();

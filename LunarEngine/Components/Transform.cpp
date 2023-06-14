@@ -28,3 +28,18 @@ void Transform::scale(float factor)
 {
 	_scale = { factor, factor, factor };
 }
+
+const glm::vec3 Transform::getPosition() const
+{
+	return _position;
+}
+
+const glm::vec3 Transform::getRotation() const
+{
+	return _rotation;
+}
+
+const glm::vec3 Transform::getScale() const
+{
+	return _scale;
+}

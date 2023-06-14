@@ -1,20 +1,31 @@
 #include "Camera.h"
+void Camera::readyProjectionMatrix()
+{
+	glm::vec3 cameraPos = _camTransform.getPosition();
+	_projectionMatrix = glm::ortho(cameraPos.x - (_camWidth / 2.0f), cameraPos.x + (_camWidth / 2.0f),
+		cameraPos.y - (_camHeight / 2.0f), cameraPos.y + (_camHeight / 2.0f), -1.0f, 1.0f);
+}
+void Camera::readyViewMatrix()
+{
+	_view = glm::lookAt(_camTransform.getPosition(), target, cameraUp);
+}
 Camera::Camera(float camWidth, float camHeight):
 	_camWidth(camWidth), _camHeight(camHeight)
 {
-	glm::vec4 position = _camTransform.getTransformMatrix()[3];
-	_projectionMatrix = glm::ortho(position.x, position.x + _camWidth, position.y + _camHeight, position.y, -1.1f, 1.0f);
+	readyProjectionMatrix();
+	readyViewMatrix();
 }
 const Transform& Camera::getCamTransform() const
 {
 	return _camTransform;
 }
-const glm::mat4& Camera::getProjectionMatrix() const
+const glm::mat4& Camera::getProjectionMatrix()
 {
+	readyProjectionMatrix();
 	return _projectionMatrix;
-	// TODO: insert return statement here
 }
-const glm::mat4 Camera::getViewMatrix() const
+const glm::mat4 Camera::getViewMatrix()
 {
+	readyViewMatrix();
 	return _view;
 }

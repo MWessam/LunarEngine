@@ -21,6 +21,9 @@ GameObject::GameObject():
 	_objectRenderer.setTransform(&_transform);
 	_objectRenderer.instantiate();
 }
+
+
+
 Transform* GameObject::getTransform()
 {
 	return &_transform;
