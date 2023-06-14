@@ -26,7 +26,7 @@ public:
 	void setUniform1i(const std::string& name, int value);
 	void setUniform1f(const std::string& name, float value);
 	void setUniform4f(const std::string& name, float f0, float f1, float f2, float f3);
-	void setUniformMat4(const std::string& name, glm::mat4 matrix, int count, bool transpose, const float* valuePtr);
+	void setUniformMat4(const std::string& name, int count, bool transpose, const float* valuePtr);
 private:
 	static ShaderProgramSource parseShader(const std::string& filePath);
 	static unsigned int compileShader(unsigned int type, const std::string& source);

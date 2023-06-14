@@ -6,8 +6,8 @@ float Renderer::calculateDeltaTime()
     _lastTime = currentTime;
     return delta;
 }
-Renderer::Renderer(Window* window):
-    _window(window), _windowContextCached(window->getWindow())
+Renderer::Renderer(Window* window, Camera* camera):
+    _window(window), _windowContextCached(window->getWindow()), _currentCamera(camera)
 {
 
 }
@@ -21,13 +21,24 @@ bool Renderer::renderWindow(float dt)
 {
     if (!glfwWindowShouldClose(_windowContextCached))
     {
-        renderObjects(dt);
         _window->update();
+        updateObjects(dt);
+        renderObjects();
         return true;
     }
     return false;
 }
-void Renderer::renderObjects(float dt)
+void Renderer::renderObjects()
+{
+    for (GameObject* gameObject : _gameObjects)
+    {
+        if (gameObject->getEnabledState())
+        {
+            gameObject->render(_currentCamera->getProjectionMatrix(), _currentCamera->getViewMatrix());
+        }
+    }
+}
+void Renderer::updateObjects(float dt)
 {
     for (GameObject* gameObject : _gameObjects) 
     {
@@ -37,6 +48,7 @@ void Renderer::renderObjects(float dt)
         }
     }
 }
+
 void Renderer::addGameObject(GameObject* gameObject)
 {
     _gameObjects.push_back(gameObject);

@@ -1,19 +1,19 @@
 #include "GObjectComponent.h"
-#include"GameObject.h"
 #include <iostream>
+int GObjectComponent::s_LastID = 0;
 
-GObjectComponent::GObjectComponent(GameObject* owner):
-	_owner(owner)
+GObjectComponent::GObjectComponent()
 {
-}
-
-GameObject* GObjectComponent::getOwner() const
-{
-	return _owner;
+	_entityID = ++s_LastID;
 }
 
 GObjectComponent::~GObjectComponent()
 {
+}
+
+int GObjectComponent::getID()
+{
+	return _entityID;
 }
 
 void GObjectComponent::init()

@@ -1,6 +1,7 @@
 #pragma once
 #include "GLDebug.h"
 #include "VertexBufferLayout.h"
+#include "glm/glm.hpp"
 class VertexBuffer
 {
 private:
@@ -8,7 +9,8 @@ private:
 	GLsizei _size;	// Number of vertices
 	VertexBufferLayout _layout;
 public:
-	VertexBuffer(const GLfloat* vertices, GLsizei size, GLenum drawType, VertexBufferLayout layout);
+	VertexBuffer(const glm::vec4* vertices, GLsizei size, GLenum drawType, VertexBufferLayout layout);
+	VertexBuffer() = default;
 	~VertexBuffer();
 	void bind() const;
 	void unbind() const;

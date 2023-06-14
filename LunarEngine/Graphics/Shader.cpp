@@ -156,7 +156,7 @@ void Shader::setUniform4f(const std::string& name, float f0, float f1, float f2,
     glCall(glUniform4f(getUniformLocation(name), f0, f1, f2, f3));
 }
 
-void Shader::setUniformMat4(const std::string& name, glm::mat4 matrix, int count, bool transpose, const float* valuePtr)
+void Shader::setUniformMat4(const std::string& name, int count, bool transpose, const float* valuePtr)
 {
     glCall(glUniformMatrix4fv(getUniformLocation(name), count, transpose, valuePtr));
 }

@@ -1,7 +1,7 @@
 #include "Transform.h"
 #include <iostream>
 
-Transform::Transform(GameObject* owner) : GObjectComponent(owner)
+Transform::Transform()
 {
 }
 
@@ -13,8 +13,10 @@ glm::mat4 Transform::getTransformMatrix() const
 	return model;
 }
 
-void Transform::awake()
+void Transform::move(float x, float y, float z)
 {
-	GObjectComponent::awake();
-	std::cout << "World" << std::endl;
+	_position.x += x;
+	_position.y += y;
+	_position.z += z;
+
 }

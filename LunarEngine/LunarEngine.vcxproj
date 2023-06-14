@@ -133,6 +133,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Components\GameObject.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="Components\GraphicsRenderer.cpp" />
@@ -153,6 +154,7 @@
     <ClCompile Include="Window\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="Components\GameObject.h" />
     <ClInclude Include="Components\GraphicsRenderer.h" />
     <ClInclude Include="Components\SpriteRenderer.h" />
@@ -167,6 +169,13 @@
     <ClInclude Include="Graphics\VertexArray.h" />
     <ClInclude Include="Graphics\VertexBuffer.h" />
     <ClInclude Include="Window\Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Graphics\ShaderSource\Default.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Graphics\Textures\cat.png" />
+    <Image Include="Graphics\Textures\sample.jpeg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

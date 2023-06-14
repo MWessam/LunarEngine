@@ -69,6 +69,9 @@
     <ClCompile Include="Graphics\ShaderSource\Default.glsl">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Window\Window.h">
@@ -113,5 +116,19 @@
     <ClInclude Include="Components\SpriteRenderer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Graphics\ShaderSource\Default.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Graphics\Textures\sample.jpeg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Graphics\Textures\cat.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
