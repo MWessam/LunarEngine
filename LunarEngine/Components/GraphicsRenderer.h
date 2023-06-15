@@ -53,7 +53,7 @@ private:
 	void computeMVP(const glm::mat4& projection, const glm::mat4& view);
 	GLenum _drawType;
 	bool canRender();
-	void fustumCullingCheck();
+	bool fustumCullingCheck();
 protected:
 	Shader* _shader;
 	Texture* _texture;

@@ -26,7 +26,7 @@ public:
 	~Camera();
 
 	//Getters
-	const Transform& getCamTransform() const;
+	Transform& getCamTransform();
 	const glm::mat4& getProjectionMatrix();
 	const glm::mat4& getViewMatrix();
 
@@ -40,10 +40,10 @@ public:
 
 	void moveCameraForward(float speed);
 
-	// VERTICAL CAMERA ROTATION
+	// VERTICAL CAMERA ROTATION, INPUT MUST BE IN RADIANS!
 	void cameraTilt(float vertical);	
 
-	// HORIZONTAL CAMERA ROTATION
-	void cameraYawn(float horizontal);	
+	// HORIZONTAL CAMERA ROTATION, INPUT MUST BE IN RADIANS!
+	void cameraYawn(float angleHorizontal);
 };
 

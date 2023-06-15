@@ -16,16 +16,34 @@ void GraphicsRenderer::computeMVP(const glm::mat4& projection, const glm::mat4& 
 }
 bool GraphicsRenderer::canRender()
 {
-	fustumCullingCheck();
-	return false;
+	
+	return fustumCullingCheck();
 }
 GraphicsRenderer::GraphicsRenderer(const std::string& shaderFile, const std::string& textureFile, glm::vec4 color, GLenum drawType) :
 	_shader( new Shader(shaderFile)), _texture( new Texture(textureFile)), _color(color), _drawType(drawType)
 {
 }
-void GraphicsRenderer::fustumCullingCheck()
+
+//Check if object is within camera bounds, if not then don't render.
+bool GraphicsRenderer::fustumCullingCheck()
 {
 
+	// Ugly hack but will fix later dont worry
+	for (Vertex vertex : _object.Vertices)
+	{
+		glm::vec4 clipSpacePosition = _mvpMatrix * vertex.Position;
+
+		if (clipSpacePosition.x < -clipSpacePosition.w ||
+			clipSpacePosition.x > clipSpacePosition.w ||
+			clipSpacePosition.y < -clipSpacePosition.w ||
+			clipSpacePosition.y > clipSpacePosition.w ||
+			clipSpacePosition.z < -clipSpacePosition.w ||
+			clipSpacePosition.z > clipSpacePosition.w)
+		{
+			return false;
+		}
+	}
+	return true;
 }
 GraphicsRenderer::GraphicsRenderer(const std::string& textureFile, GLenum drawType):
 	_shader( new Shader(DEFAULTSHADER)), _texture( new Texture(textureFile)), _drawType(drawType)
@@ -54,7 +72,6 @@ void GraphicsRenderer::render(const glm::mat4& projection, const glm::mat4& view
 	}
 	_shader->useProgram();
 	_shader->setUniformMat4("u_MVP", 1, GL_FALSE, glm::value_ptr(_mvpMatrix));
-	//testMVP(projection, view, _transform->getTransformMatrix(), _object.Vertices->Position);
 	_vao->bind();
 	_ibo->bind();
 	_vb->bind();

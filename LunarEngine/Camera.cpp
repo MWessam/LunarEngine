@@ -7,7 +7,7 @@ void Camera::readyProjectionMatrix()
 }
 void Camera::readyViewMatrix()
 {
-	_view = glm::lookAt(_camTransform->getPositionVec(), _camTransform->getForward(), cameraUp);
+	_view = glm::lookAt(_camTransform->getPositionVec(), _camTransform->getForward(), _camTransform->getUp());
 }
 Camera::Camera(float fov):
 	_fov(fov)
@@ -25,8 +25,9 @@ Camera::~Camera()
 {
 	delete _camTransform;
 }
-const Transform& Camera::getCamTransform() const
+Transform& Camera::getCamTransform()
 {
+	readyViewMatrix();
 	return *_camTransform;
 }
 const glm::mat4& Camera::getProjectionMatrix()
@@ -56,8 +57,14 @@ void Camera::moveCameraForward(float speed)
 	readyViewMatrix();
 }
 
-void Camera::cameraYawn(float horizontal)
+// I NEED TO UNDERSTAND QUATERNIONS AND ROTATIONS FIRST CUZ THIS IS SO HARD :(
+void Camera::cameraYawn(float angleHorizontal)		
 {
+	glm::quat rotationQuaternion = glm::angleAxis(angleHorizontal, _camTransform->getUp());
+	_camTransform->rotate(rotationQuaternion);
+	glm::mat4 rotationMatrix = glm::toMat4(_camTransform->getRotationQuaternion());
+	readyViewMatrix();
+	_view = _view * rotationMatrix;
 }
 
 

@@ -28,12 +28,27 @@ int main()
 	}
 	gameObjs[0]->getTransform()->setPosition({ -0.9f, -0.6f , 0.0f });
 	gameObjs[1]->getTransform()->setPosition({ 0.7f, 0.6f , 0.0f });
+	GameObject* Player = gameObjs[0];
+	Transform* PlayerTransform = Player->getTransform();
 	while (mainRenderer.clear())
 	{
-		gameObjs[0]->getTransform()->lerpTowards(gameObjs[1]->getTransform(), mainRenderer.DeltaTime, 1.0f);
 		if (glfwGetKey(mainwindow.getWindow(), GLFW_KEY_W))
-			cam.moveCameraForward(0.1f);
+		{
+			PlayerTransform->setPosition(PlayerTransform->getPositionVec() + glm::vec3(0, 0.01f, 0));
+		}
 		if (glfwGetKey(mainwindow.getWindow(), GLFW_KEY_S))
-			cam.moveCameraForward(-0.1f);
+		{
+			PlayerTransform->setPosition(PlayerTransform->getPositionVec() + glm::vec3(0, -0.01f, 0));
+		}
+		if (glfwGetKey(mainwindow.getWindow(), GLFW_KEY_A))
+		{
+			PlayerTransform->setPosition(PlayerTransform->getPositionVec() + glm::vec3(0.01f, 0, 0));
+		}
+		if (glfwGetKey(mainwindow.getWindow(), GLFW_KEY_D))
+		{
+			PlayerTransform->setPosition(PlayerTransform->getPositionVec() + glm::vec3(-0.01f, 0, 0));
+		}
+		//Apparently i cant follow the player object either...
+		//cam.getCamTransform().setPosition(glm::vec3(PlayerTransform->getPositionVec().x, PlayerTransform->getPositionVec().y, cam.getCamTransform().getPositionVec().z));
 	}
 }

@@ -24,6 +24,16 @@ const glm::vec3& Transform::getForward() const
 	return _forwardVector;
 }
 
+const glm::vec3& Transform::getRight() const
+{
+	return _rightVector;
+}
+
+const glm::vec3& Transform::getUp() const
+{
+	return _upVector;
+}
+
 void Transform::setScale(glm::vec3 scaleVector)
 {
 	_scale = scaleVector;
@@ -79,7 +89,17 @@ void Transform::readyRotationQuaternion()
 
 void Transform::readyForwardVector()
 {
-	_forwardVector = glm::rotate(_rotationQuaternion, ORIGINFORWARDVECTOR);
+	_forwardVector = glm::normalize(glm::rotate(_rotationQuaternion, ORIGINFORWARDVECTOR));
+}
+
+void Transform::readyUpVector()
+{
+	_upVector = glm::normalize(glm::rotate(_rotationQuaternion, ORIGINUPVECTOR));
+}
+
+void Transform::readyRightVector()
+{
+	_rightVector = glm::normalize(glm::rotate(_rotationQuaternion, ORIGINRIGHTVECTOR));
 }
 
 const glm::vec3& Transform::getPositionVec() const
@@ -102,6 +122,11 @@ void Transform::lerpTowards(glm::vec3 targetPosition, float timeStep, float lerp
 	float lerpFactor = glm::clamp(timeStep * lerpSpeed, 0.0f, 1.0f);
 	_position = glm::mix(_position, targetPosition, lerpFactor);
 	readyTransformMatrix();
+}
+
+void Transform::rotate(glm::quat quaternionRotation)
+{
+	_rotationQuaternion = quaternionRotation * _rotationQuaternion;
 }
 
 void Transform::lerpTowards(Transform* target, float timeStep, float lerpSpeed)

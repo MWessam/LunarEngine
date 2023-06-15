@@ -25,6 +25,9 @@ public:
     const glm::vec3& getScaleVec() const;
     const glm::quat& getRotationQuaternion() const;
     const glm::vec3& getForward() const;
+    const glm::vec3& getRight() const;
+    const glm::vec3& getUp() const;
+
 
     //SETTERS
     //Vector Inputs
@@ -37,6 +40,7 @@ public:
 
     //Quaternion Input
     void setRotation(glm::quat quaternionRotation);
+    void rotate(glm::quat quaternionRotation);
 
     //Lerping Slerping
     void lerpTowards(glm::vec3 target, float timeStep, float lerpSpeed);
@@ -48,6 +52,8 @@ public:
     void readyTransformMatrix();
     void readyRotationQuaternion();
     void readyForwardVector();
+    void readyUpVector();
+    void readyRightVector();
 private:
     //Values
     glm::vec3 _position = { 0.0f, 0.0f, 0.0f };
@@ -56,6 +62,8 @@ private:
     glm::quat _rotationQuaternion;
     glm::mat4 _transformMatrix;
     glm::vec3 _forwardVector = ORIGINFORWARDVECTOR;
+    glm::vec3 _upVector = ORIGINUPVECTOR;
+    glm::vec3 _rightVector = ORIGINRIGHTVECTOR;
 
 };
 
