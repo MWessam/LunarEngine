@@ -7,6 +7,8 @@
 #include "glm/glm.hpp"
 #include "Camera.h"
 
+
+//Main renderer for the current window context.
 class Renderer
 {
 private:

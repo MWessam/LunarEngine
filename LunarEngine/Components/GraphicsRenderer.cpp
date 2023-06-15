@@ -14,9 +14,18 @@ void GraphicsRenderer::computeMVP(const glm::mat4& projection, const glm::mat4& 
 {
 	_mvpMatrix = projection * view * _transform->getTransformMatrix();
 }
+bool GraphicsRenderer::canRender()
+{
+	fustumCullingCheck();
+	return false;
+}
 GraphicsRenderer::GraphicsRenderer(const std::string& shaderFile, const std::string& textureFile, glm::vec4 color, GLenum drawType) :
 	_shader( new Shader(shaderFile)), _texture( new Texture(textureFile)), _color(color), _drawType(drawType)
 {
+}
+void GraphicsRenderer::fustumCullingCheck()
+{
+
 }
 GraphicsRenderer::GraphicsRenderer(const std::string& textureFile, GLenum drawType):
 	_shader( new Shader(DEFAULTSHADER)), _texture( new Texture(textureFile)), _drawType(drawType)
@@ -38,8 +47,12 @@ GraphicsRenderer::~GraphicsRenderer()
 
 void GraphicsRenderer::render(const glm::mat4& projection, const glm::mat4& view)	// Setup the rendering pipeline and render your object.
 {
-	_shader->useProgram();
 	computeMVP(projection, view);
+	if (!canRender())
+	{
+		return;
+	}
+	_shader->useProgram();
 	_shader->setUniformMat4("u_MVP", 1, GL_FALSE, glm::value_ptr(_mvpMatrix));
 	//testMVP(projection, view, _transform->getTransformMatrix(), _object.Vertices->Position);
 	_vao->bind();
@@ -70,7 +83,7 @@ void GraphicsRenderer::setShader(const std::string& shaderFile)
 	_shader = new Shader(shaderFile);
 }
 
-void GraphicsRenderer::instantiate()	// Use only when you first create a gameObject or any object that might inherit from this class
+void GraphicsRenderer::instantiate()	
 {
 	createQuad(_transform);
 	_vao = new VertexArray();

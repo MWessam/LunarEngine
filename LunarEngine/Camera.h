@@ -1,7 +1,8 @@
 #pragma once
 #include "Components/Transform.h"
 
-class Camera	// Perspective (FOV) camera to render on
+// Perspective (FOV) camera to render on
+class Camera	
 {
 private:
 	//Constants
@@ -9,7 +10,7 @@ private:
 	const glm::vec3 target = { 0.0f, 0.0f, 0.0f };
 
 	//Components
-	Transform _camTransform;
+	Transform* _camTransform;
 
 	//Data
 	float _fov;
@@ -22,6 +23,7 @@ private:
 public:
 	//Constructors
 	Camera(float fov);
+	~Camera();
 
 	//Getters
 	const Transform& getCamTransform() const;
@@ -32,9 +34,16 @@ public:
 	void setFOV(float fov);
 
 	//TODO: Implement camera rotation and movement (Might use transform component too)
-	void zoomByFOV(float fov);
+	
+	// Take in value and subtract it from _fov to zoom.
+	void zoomByFOV(float fov);	
+
 	void moveCameraForward(float speed);
-	void cameraTilt(float vertical);	// VERTICAL CAMERA ROTATION
-	void cameraYawn(float horizontal);	// HORIZONTAL CAMERA ROTATION
+
+	// VERTICAL CAMERA ROTATION
+	void cameraTilt(float vertical);	
+
+	// HORIZONTAL CAMERA ROTATION
+	void cameraYawn(float horizontal);	
 };
 

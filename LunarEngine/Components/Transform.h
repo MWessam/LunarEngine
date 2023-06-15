@@ -8,9 +8,9 @@ class Transform
 {
 public:
     //Constants
-    const glm::vec3 ORIGINUPVECTOR;
-    const glm::vec3 ORIGINRIGHTVECTOR;
-    const glm::vec3 ORIGINFORWARDVECTOR;
+    static const glm::vec3 ORIGINUPVECTOR;
+    static const glm::vec3 ORIGINRIGHTVECTOR;
+    static const glm::vec3 ORIGINFORWARDVECTOR;
 
     //Testing
     void moveBenchmark();

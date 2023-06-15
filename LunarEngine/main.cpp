@@ -31,5 +31,9 @@ int main()
 	while (mainRenderer.clear())
 	{
 		gameObjs[0]->getTransform()->lerpTowards(gameObjs[1]->getTransform(), mainRenderer.DeltaTime, 1.0f);
+		if (glfwGetKey(mainwindow.getWindow(), GLFW_KEY_W))
+			cam.moveCameraForward(0.1f);
+		if (glfwGetKey(mainwindow.getWindow(), GLFW_KEY_S))
+			cam.moveCameraForward(-0.1f);
 	}
 }

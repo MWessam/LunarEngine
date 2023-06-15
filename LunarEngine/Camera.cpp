@@ -1,13 +1,13 @@
 #include "Camera.h"
 void Camera::readyProjectionMatrix()
 {
-	glm::vec3 cameraPos = _camTransform.getPositionVec();
+	glm::vec3 cameraPos = _camTransform->getPositionVec();
 	_projectionMatrix = glm::perspective(_fov, 1920 / 1080.0f, 0.0f, 0.5f);
 	//Perspective clip plane apparently can't have a negative near value (took me too long to figure out i feel bad lol)
 }
 void Camera::readyViewMatrix()
 {
-	_view = glm::lookAt(_camTransform.getPositionVec(), _camTransform.getForward(), cameraUp);
+	_view = glm::lookAt(_camTransform->getPositionVec(), _camTransform->getForward(), cameraUp);
 }
 Camera::Camera(float fov):
 	_fov(fov)
@@ -16,14 +16,18 @@ Camera::Camera(float fov):
 		_fov = 120.0f;
 	else if (fov < 30.0f)
 		_fov = 30.0f;
-
-	_camTransform.setPosition({ 0, 0, -1.3 });
+	_camTransform = new Transform();
+	_camTransform->setPosition({ 0, 0, -1.3 });
 	readyProjectionMatrix();
 	readyViewMatrix();
 }
+Camera::~Camera()
+{
+	delete _camTransform;
+}
 const Transform& Camera::getCamTransform() const
 {
-	return _camTransform;
+	return *_camTransform;
 }
 const glm::mat4& Camera::getProjectionMatrix()
 {
@@ -42,11 +46,17 @@ void Camera::setFOV(float fov)
 
 void Camera::zoomByFOV(float addOntoFOV)
 {
-	_fov += addOntoFOV;
+	_fov -= addOntoFOV;
 	readyProjectionMatrix();
 }
 
 void Camera::moveCameraForward(float speed)
+{
+	_camTransform->setPosition(_camTransform->getPositionVec() + (_camTransform->getForward() * -speed));
+	readyViewMatrix();
+}
+
+void Camera::cameraYawn(float horizontal)
 {
 }
 

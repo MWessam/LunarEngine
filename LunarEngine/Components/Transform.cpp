@@ -1,9 +1,9 @@
 #include "Transform.h"
 #include <iostream>
 
-constexpr glm::vec3 ORIGINUPVECTOR = { 0.0f, 1.0f, 0.0f };
-constexpr glm::vec3 ORIGINRIGHTVECTOR = { 1.0f, 0.0f, 0.0f };
-constexpr glm::vec3 ORIGINFORWARDVECTOR = { 0.0f, 0.0f, -1.0f };
+constexpr glm::vec3 Transform::ORIGINUPVECTOR = { 0.0f, 1.0f, 0.0f };
+constexpr glm::vec3 Transform::ORIGINRIGHTVECTOR = { 1.0f, 0.0f, 0.0f };
+constexpr glm::vec3 Transform::ORIGINFORWARDVECTOR = { 0.0f, 0.0f, -1.0f };
 
 Transform::Transform()
 {

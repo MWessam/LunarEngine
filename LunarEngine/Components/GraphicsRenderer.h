@@ -12,7 +12,10 @@ const float DEFAULTTEXINDEX = 0;
 const int DEFAULTENTITYID = 0;
 const std::string DEFAULTSHADER = "D:/SwE/C#/LunarEngine/LunarEngine/Graphics/ShaderSource/Default.shader";
 
-struct QuadVertex		// Rectangle/square on which we will render our sprite on
+// Rectangle/square on which we will render our sprite on
+//TODO: Probably move it to sprite renderer class and only have this class be a base class
+//for mesh and sprite renderers.
+struct QuadVertex		
 {
 	Vertex Vertices[4];
 	glm::vec4 Color = DEFAULTCOLOR;
@@ -40,7 +43,8 @@ struct QuadVertex		// Rectangle/square on which we will render our sprite on
 		Layout.Push<float>(2);
 	}
 };
-class GraphicsRenderer		// TODO: implement a way to store my vao vbo ibo and shader and have it all encapsulated This will handle all the rendering of this specific game object.
+//Handles the renderer pipeline and stores all necessary data so the main renderer can render later on
+class GraphicsRenderer
 {
 private:
 	QuadVertex _object;
@@ -48,6 +52,8 @@ private:
 	void createQuad(Transform* transform);
 	void computeMVP(const glm::mat4& projection, const glm::mat4& view);
 	GLenum _drawType;
+	bool canRender();
+	void fustumCullingCheck();
 protected:
 	Shader* _shader;
 	Texture* _texture;
@@ -62,11 +68,17 @@ public:
 	GraphicsRenderer(const std::string& textureFile, GLenum drawType);
 	GraphicsRenderer(GLenum drawType);
 	virtual ~GraphicsRenderer();
-	virtual void render(const glm::mat4& projection, const glm::mat4& view);	//TODO: Fix this, it doesn't want to render to the screen whatsoever. I am not sure what went wrong
+
+	//NOTE: Apparently having it as virtual messed up the code?
+	void render(const glm::mat4& projection, const glm::mat4& view);	
+
 	void setColor(const glm::vec4& color);
 	void setTexture(const std::string& textureFile);
 	void setShader(const std::string& shaderFile);
+
+	// Use only when you first create a gameObject or any object that might inherit from this class
 	void instantiate();
+
 	void setTransform(Transform* transform);
 	Transform* getTransform();
 };
