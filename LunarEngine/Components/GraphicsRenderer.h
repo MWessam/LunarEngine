@@ -44,7 +44,9 @@ class GraphicsRenderer		// TODO: implement a way to store my vao vbo ibo and sha
 {
 private:
 	QuadVertex _object;
+	glm::mat4 _mvpMatrix;
 	void createQuad(Transform* transform);
+	void computeMVP(const glm::mat4& projection, const glm::mat4& view);
 	GLenum _drawType;
 protected:
 	Shader* _shader;

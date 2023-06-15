@@ -2,7 +2,7 @@
 #include "GraphicsRenderer.h"
 
 
-class SpriteRenderer :
+class MeshRenderer :
     public GraphicsRenderer
 {
 public:

@@ -1,11 +1,10 @@
 #include "Renderer.h"
 #include <random>
-float Renderer::calculateDeltaTime()
+void Renderer::calculateDeltaTime()
 {
     clock_t currentTime = clock();
-    float delta = (float)(currentTime - _lastTime) / CLOCKS_PER_SEC;
+    DeltaTime = (float)(currentTime - _lastTime) / CLOCKS_PER_SEC;
     _lastTime = currentTime;
-    return delta;
 }
 Renderer::Renderer(Window* window, Camera* camera):
     _window(window), _windowContextCached(window->getWindow()), _currentCamera(camera)
@@ -14,16 +13,15 @@ Renderer::Renderer(Window* window, Camera* camera):
 
 bool Renderer::clear()
 {
-    float dt = calculateDeltaTime();
-    std::cout << 1 / dt << std::endl;
-    return renderWindow(dt);
+    calculateDeltaTime();
+    return renderWindow();
 }
-bool Renderer::renderWindow(float dt)
+bool Renderer::renderWindow()
 {
     if (!glfwWindowShouldClose(_windowContextCached))
     {
         _window->clear();
-        updateObjects(dt);
+        updateObjects();
         renderObjects();
         _window->update();
         return true;
@@ -41,13 +39,13 @@ void Renderer::renderObjects()
         }
     }
 }
-void Renderer::updateObjects(float dt)
+void Renderer::updateObjects()
 {
     for (GameObject* gameObject : _gameObjects) 
     {
         if (gameObject->getEnabledState())
         {
-            gameObject->updateAll(dt);
+            gameObject->updateAll(DeltaTime);
         }
     }
 }

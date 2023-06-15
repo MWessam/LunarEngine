@@ -15,15 +15,16 @@ private:
 	GLFWwindow* _windowContextCached;
 	clock_t _lastTime = clock();
 	std::vector<GameObject*> _gameObjects;
-	float calculateDeltaTime();
-	bool renderWindow(float dt);
+	void calculateDeltaTime();
+	bool renderWindow();
 	void renderObjects();
-	void updateObjects(float dt);
+	void updateObjects();
 	void deleteObjects();
 public:
 	Renderer(Window* window, Camera* camera);
 	bool clear();
 	void addGameObject(GameObject* gameObject);
 	~Renderer();
+	float DeltaTime = 0.0f;
 };
 
