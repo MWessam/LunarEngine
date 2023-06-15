@@ -37,7 +37,7 @@ void Renderer::renderObjects()
         if (gameObject->getEnabledState())
         {
             gameObject->render(_currentCamera->getProjectionMatrix(), _currentCamera->getViewMatrix());
-            gameObject->getTransform()->scale((rand() / (double)RAND_MAX) * 2 - 1); //BENCHMARK ONLY
+            //gameObject->getTransform()->scale((rand() / (double)RAND_MAX) * 2 - 1); //BENCHMARK ONLY
         }
     }
 }

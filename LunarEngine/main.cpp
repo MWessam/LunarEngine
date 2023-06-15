@@ -22,7 +22,7 @@ int main()
 	for (int i = 0; i < 10; i++) 
 	{
 		GameObject* go = new GameObject();
-		go->getGraphicsRenderer()->setTexture("Graphics/Textures/flappyBird.png");
+		go->getGraphicsRenderer()->setTexture("D:/SwE/C#/LunarEngine/LunarEngine/Graphics/Textures/flappyBird.png");
 		mainRenderer.addGameObject(go);
 	}
 	while (mainRenderer.clear()) 

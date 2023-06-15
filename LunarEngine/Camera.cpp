@@ -2,8 +2,8 @@
 void Camera::readyProjectionMatrix()
 {
 	glm::vec3 cameraPos = _camTransform.getPosition();
-	_projectionMatrix = glm::ortho(cameraPos.x - (_camWidth / 2.0f), cameraPos.x + (_camWidth / 2.0f),
-		cameraPos.y - (_camHeight / 2.0f), cameraPos.y + (_camHeight / 2.0f), -1.0f, 1.0f);
+	_projectionMatrix = glm::perspective(90.0f, 1920 / 1080.0f, 0.0f, 0.5f);
+	//Perspective clip plane apparently can't have a negative near value (took me too long to figure out i feel bad lol)
 }
 void Camera::readyViewMatrix()
 {
@@ -12,6 +12,7 @@ void Camera::readyViewMatrix()
 Camera::Camera(float camWidth, float camHeight):
 	_camWidth(camWidth), _camHeight(camHeight)
 {
+	_camTransform.move(0, 0, -0.3);
 	readyProjectionMatrix();
 	readyViewMatrix();
 }
@@ -24,7 +25,7 @@ const glm::mat4& Camera::getProjectionMatrix()
 	readyProjectionMatrix();
 	return _projectionMatrix;
 }
-const glm::mat4 Camera::getViewMatrix()
+const glm::mat4& Camera::getViewMatrix()
 {
 	readyViewMatrix();
 	return _view;
