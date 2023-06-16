@@ -7,6 +7,7 @@ constexpr glm::vec3 Transform::ORIGINFORWARDVECTOR = { 0.0f, 0.0f, -1.0f };
 
 Transform::Transform()
 {
+	readyRotationQuaternion();	// Initialize rotation quat first just to avoid uninitialized bugs
 	readyTransformMatrix();
 }
 
@@ -74,19 +75,20 @@ void Transform::scale(float factor)
 
 void Transform::readyTransformMatrix()
 {
-	glm::mat4 rotationMatrix = glm::toMat4(glm::quat(_rotation));
+	glm::mat4 rotationMatrix = glm::toMat4(_rotationQuaternion);
 	glm::mat4 model(1.0f);
-	model = glm::translate(model, _position) * rotationMatrix * glm::scale(model, _scale);
+	model = glm::translate(model, _position) * glm::toMat4(glm::quat(_rotation)) * glm::scale(model, _scale);
 	_transformMatrix = model;
+	_rotation = glm::eulerAngles(_rotationQuaternion);
 	readyForwardVector();
 	readyRightVector();
 	readyUpVector();
+	readyRotationQuaternion();
 }
 
 void Transform::readyRotationQuaternion()
 {
 	_rotationQuaternion = glm::quat(_rotation);
-
 }
 
 void Transform::readyForwardVector()
@@ -130,7 +132,8 @@ void Transform::lerpTowards(glm::vec3 targetPosition, float timeStep, float lerp
 
 void Transform::rotate(glm::quat quaternionRotation)
 {
-	_rotationQuaternion = quaternionRotation * _rotationQuaternion;
+	_rotationQuaternion = _rotationQuaternion * quaternionRotation;
+	readyTransformMatrix();
 }
 
 void Transform::lerpTowards(Transform* target, float timeStep, float lerpSpeed)

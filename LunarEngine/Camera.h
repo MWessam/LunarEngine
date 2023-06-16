@@ -44,6 +44,6 @@ public:
 	void cameraTilt(float vertical);	
 
 	// HORIZONTAL CAMERA ROTATION, INPUT MUST BE IN RADIANS!
-	void cameraYawn(float angleHorizontal);
+	void cameraYaw(float angleHorizontal);
 };
 

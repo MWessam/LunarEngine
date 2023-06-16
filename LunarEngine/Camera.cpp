@@ -61,13 +61,13 @@ void Camera::moveCameraForward(float speed)
 }
 
 // I NEED TO UNDERSTAND QUATERNIONS AND ROTATIONS FIRST CUZ THIS IS SO HARD :(
-void Camera::cameraYawn(float angleHorizontal)		
+// DONE! NOW CAMERA CAN YAW
+void Camera::cameraYaw(float angleHorizontal)
 {
 	glm::quat rotationQuaternion = glm::angleAxis(angleHorizontal, _camTransform->getUp());
 	_camTransform->rotate(rotationQuaternion);
 	glm::mat4 rotationMatrix = glm::toMat4(_camTransform->getRotationQuaternion());
 	readyViewMatrix();
-	_view = _view * rotationMatrix;
 }
 
 
