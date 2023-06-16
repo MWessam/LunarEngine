@@ -49,6 +49,6 @@ int main()
 			PlayerTransform->setPosition(PlayerTransform->getPositionVec() + glm::vec3(-0.01f, 0, 0));
 		}
 		//Apparently i cant follow the player object either...
-		//cam.getCamTransform().setPosition(glm::vec3(PlayerTransform->getPositionVec().x, PlayerTransform->getPositionVec().y, cam.getCamTransform().getPositionVec().z));
+		cam.getCamTransform().setPosition(glm::vec3(PlayerTransform->getPositionVec().x, PlayerTransform->getPositionVec().y, cam.getCamTransform().getPositionVec().z));
 	}
 }

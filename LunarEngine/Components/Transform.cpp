@@ -63,7 +63,6 @@ void Transform::setRotation(glm::quat quaternionRotation)
 {
 	_rotationQuaternion = quaternionRotation;
 	readyTransformMatrix();
-	readyForwardVector();
 }
 
 void Transform::scale(float factor)
@@ -79,6 +78,9 @@ void Transform::readyTransformMatrix()
 	glm::mat4 model(1.0f);
 	model = glm::translate(model, _position) * rotationMatrix * glm::scale(model, _scale);
 	_transformMatrix = model;
+	readyForwardVector();
+	readyRightVector();
+	readyUpVector();
 }
 
 void Transform::readyRotationQuaternion()
@@ -89,17 +91,19 @@ void Transform::readyRotationQuaternion()
 
 void Transform::readyForwardVector()
 {
-	_forwardVector = glm::normalize(glm::rotate(_rotationQuaternion, ORIGINFORWARDVECTOR));
+	_forwardVector = glm::vec3(_transformMatrix[0][2], _transformMatrix[1][2], _transformMatrix[2][2]);
 }
 
 void Transform::readyUpVector()
 {
-	_upVector = glm::normalize(glm::rotate(_rotationQuaternion, ORIGINUPVECTOR));
+	_upVector = glm::vec3(_transformMatrix[0][1], _transformMatrix[1][1], _transformMatrix[2][1]);
+
 }
 
 void Transform::readyRightVector()
 {
-	_rightVector = glm::normalize(glm::rotate(_rotationQuaternion, ORIGINRIGHTVECTOR));
+	_rightVector = glm::vec3(_transformMatrix[0][0], _transformMatrix[1][0], _transformMatrix[2][0]);
+
 }
 
 const glm::vec3& Transform::getPositionVec() const

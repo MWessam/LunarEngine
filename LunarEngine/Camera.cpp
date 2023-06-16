@@ -7,7 +7,10 @@ void Camera::readyProjectionMatrix()
 }
 void Camera::readyViewMatrix()
 {
-	_view = glm::lookAt(_camTransform->getPositionVec(), _camTransform->getForward(), _camTransform->getUp());
+	glm::vec3 camPositionVector = _camTransform->getPositionVec();
+	glm::vec3 camForward = glm::vec3(_camTransform->getTransformMatrix()[0][2], _camTransform->getTransformMatrix()[1][2], _camTransform->getTransformMatrix()[2][2]);
+	glm::vec3 target = camPositionVector + camForward;
+	_view = glm::lookAt(camPositionVector, target, _camTransform->getUp());
 }
 Camera::Camera(float fov):
 	_fov(fov)
