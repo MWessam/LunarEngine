@@ -5,6 +5,9 @@ layout(location = 1) in vec2 texCoord;
 out vec4 vCol;
 out vec2 v_TexCoord;
 uniform mat4 u_MVP;
+uniform mat4 u_Model;
+uniform mat4 u_Proj;
+uniform mat4 u_View;
 void main()
 {
 	gl_Position = u_MVP * position;

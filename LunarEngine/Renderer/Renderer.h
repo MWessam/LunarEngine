@@ -26,6 +26,7 @@ public:
 	Renderer(Window* window, Camera* camera);
 	bool clear();
 	void addGameObject(GameObject* gameObject);
+	void printFPS();
 	~Renderer();
 	float DeltaTime = 0.0f;
 };

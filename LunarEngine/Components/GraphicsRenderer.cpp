@@ -16,7 +16,6 @@ void GraphicsRenderer::computeMVP(const glm::mat4& projection, const glm::mat4& 
 }
 bool GraphicsRenderer::canRender()
 {
-	
 	return fustumCullingCheck();
 }
 GraphicsRenderer::GraphicsRenderer(const std::string& shaderFile, const std::string& textureFile, glm::vec4 color, GLenum drawType) :
@@ -25,14 +24,13 @@ GraphicsRenderer::GraphicsRenderer(const std::string& shaderFile, const std::str
 }
 
 //Check if object is within camera bounds, if not then don't render.
+//Very expensive operation, need to optimize
 bool GraphicsRenderer::fustumCullingCheck()
 {
-
 	// Ugly hack but will fix later dont worry
-	for (Vertex vertex : _object.Vertices)
+	for (const Vertex vertex : _object.Vertices)
 	{
 		glm::vec4 clipSpacePosition = _mvpMatrix * vertex.Position;
-
 		if (clipSpacePosition.x < -clipSpacePosition.w ||
 			clipSpacePosition.x > clipSpacePosition.w ||
 			clipSpacePosition.y < -clipSpacePosition.w ||
@@ -63,6 +61,7 @@ GraphicsRenderer::~GraphicsRenderer()
 	delete _vao;
 }
 
+//Computing mvp on cpu side is roughly 15% faster than on gpu side for each vertex.
 void GraphicsRenderer::render(const glm::mat4& projection, const glm::mat4& view)	// Setup the rendering pipeline and render your object.
 {
 	computeMVP(projection, view);
@@ -72,6 +71,7 @@ void GraphicsRenderer::render(const glm::mat4& projection, const glm::mat4& view
 	}
 	_shader->useProgram();
 	_shader->setUniformMat4("u_MVP", 1, GL_FALSE, glm::value_ptr(_mvpMatrix));
+
 	_vao->bind();
 	_ibo->bind();
 	_vb->bind();

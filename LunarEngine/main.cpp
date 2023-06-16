@@ -19,7 +19,7 @@ int main()
 	mainwindow.setColor({1.0f, 0.4f, 0.3f, 1.0f});
 	int step = 0;
 	float x = 0.005f;
-	for (int i = 0; i < 2; i++) 
+	for (int i = 0; i < 2000; i++) 
 	{
 		GameObject* go = new GameObject();
 		go->getGraphicsRenderer()->setTexture("D:/SwE/C#/LunarEngine/LunarEngine/Graphics/Textures/flappyBird.png");
@@ -52,10 +52,11 @@ int main()
 			PlayerTransform->setPosition(PlayerTransform->getPositionVec() + glm::vec3(-0.01f, 0, 0));
 		}
 		if (glfwGetKey(mainwindow.getWindow(), GLFW_KEY_LEFT_SHIFT))
-			cam.cameraYawn(-0.01f);
+			cam.cameraTilt(-0.01f);
 		if (glfwGetKey(mainwindow.getWindow(), GLFW_KEY_LEFT_CONTROL))
-			cam.cameraYawn(0.01f);
+			cam.cameraTilt(0.01f);
 		//Apparently i cant follow the player object either...
-		//cam.getCamTransform().setPosition(glm::vec3(PlayerTransform->getPositionVec().x, PlayerTransform->getPositionVec().y, cam.getCamTransform().getPositionVec().z));
+		cam.getCamTransform().setPosition(glm::vec3(PlayerTransform->getPositionVec().x, PlayerTransform->getPositionVec().y, cam.getCamTransform().getPositionVec().z));
+		mainRenderer.printFPS();
 	}
 }

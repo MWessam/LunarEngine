@@ -35,7 +35,7 @@ void Renderer::renderObjects()
         if (gameObject->getEnabledState())
         {
             gameObject->render(_currentCamera->getProjectionMatrix(), _currentCamera->getViewMatrix());
-            //gameObject->getTransform()->scale((rand() / (double)RAND_MAX) * 2 - 1); //BENCHMARK ONLY
+            gameObject->getTransform()->scale((rand() / (double)RAND_MAX) * 2 - 1); //BENCHMARK ONLY
         }
     }
 }
@@ -61,6 +61,10 @@ void Renderer::deleteObjects()
 void Renderer::addGameObject(GameObject* gameObject)
 {
     _gameObjects.push_back(gameObject);
+}
+void Renderer::printFPS()
+{
+    std::cout << 1 / DeltaTime << std::endl;
 }
 Renderer::~Renderer() 
 {

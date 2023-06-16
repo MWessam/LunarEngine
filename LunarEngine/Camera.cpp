@@ -60,6 +60,14 @@ void Camera::moveCameraForward(float speed)
 	readyViewMatrix();
 }
 
+void Camera::cameraTilt(float angleVertical)
+{
+	glm::quat rotationQuaternion = glm::angleAxis(angleVertical, _camTransform->getRight());
+	_camTransform->rotate(rotationQuaternion);
+	glm::mat4 rotationMatrix = glm::toMat4(_camTransform->getRotationQuaternion());
+	readyViewMatrix();
+}
+
 // I NEED TO UNDERSTAND QUATERNIONS AND ROTATIONS FIRST CUZ THIS IS SO HARD :(
 // DONE! NOW CAMERA CAN YAW
 void Camera::cameraYaw(float angleHorizontal)

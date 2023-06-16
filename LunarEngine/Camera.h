@@ -40,6 +40,10 @@ public:
 
 	void moveCameraForward(float speed);
 
+
+	// Camera rotation handler, I know I could just group both in a similar method but i prefer having both seperate
+	// in case I needed to handle them differently too, and besides the common behaviour is like 2 lines.
+	
 	// VERTICAL CAMERA ROTATION, INPUT MUST BE IN RADIANS!
 	void cameraTilt(float vertical);	
 
