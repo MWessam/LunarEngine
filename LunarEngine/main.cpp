@@ -3,7 +3,7 @@
 #include "Renderer/Renderer.h"
 #include "Camera.h"
 #include "Components/GameObject.h"
-#include "Components/GraphicsRenderer.h"
+#include "Components/InstanceRenderer.h"
 
 enum renderType 
 {
@@ -16,13 +16,13 @@ int main()
 	Camera cam(90.0f);
 	Renderer mainRenderer(&mainwindow, &cam);
 	std::vector<GameObject*> gameObjs;
+	InstanceRenderer instance("D:/SwE/C#/LunarEngine/LunarEngine/Graphics/Textures/flappyBird.png", GL_STATIC_DRAW);
 	mainwindow.setColor({1.0f, 0.4f, 0.3f, 1.0f});
 	int step = 0;
 	float x = 0.005f;
-	for (int i = 0; i < 2000; i++) 
+	for (int i = 0; i < 20; i++) 
 	{
-		GameObject* go = new GameObject();
-		go->getGraphicsRenderer()->setTexture("D:/SwE/C#/LunarEngine/LunarEngine/Graphics/Textures/flappyBird.png");
+		GameObject* go = new GameObject(&instance);
 		mainRenderer.addGameObject(go);
 		gameObjs.push_back(go);
 	}
@@ -30,6 +30,7 @@ int main()
 	gameObjs[1]->getTransform()->setPosition({ 0.7f, 0.6f , 0.0f });
 	GameObject* Player = gameObjs[0];
 	Transform* PlayerTransform = Player->getTransform();
+	mainRenderer.addInstance(&instance);
 	while (mainRenderer.clear())
 	{
 		if (glfwGetKey(mainwindow.getWindow(), GLFW_KEY_W))

@@ -14,11 +14,13 @@ private:
 	GLsizei _size;	// Number of vertices
 	VertexBufferLayout _layout;
 public:
-	VertexBuffer(const Vertex* vertices, GLsizei size, GLenum drawType, VertexBufferLayout layout);
-	VertexBuffer() = default;
+	VertexBuffer(const Vertex* vertices, GLsizei size, GLenum drawType, VertexBufferLayout& layout);
+	VertexBuffer();
+	void createVB(const Vertex* vertices, GLsizei size, GLenum drawType, VertexBufferLayout& layout);
 	~VertexBuffer();
 	void bind() const;
 	void unbind() const;
+	void setLayout(VertexBufferLayout& layout);
 	GLsizei getSize() const;
 	VertexBufferLayout getLayout() const;
 

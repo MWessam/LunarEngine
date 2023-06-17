@@ -136,12 +136,12 @@
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Components\GameObject.cpp" />
     <ClCompile Include="glad.c" />
-    <ClCompile Include="Components\GraphicsRenderer.cpp" />
-    <ClCompile Include="Components\SpriteRenderer.cpp" />
     <ClCompile Include="Graphics\GLDebug.cpp" />
     <ClCompile Include="Components\GObjectComponent.cpp" />
     <ClCompile Include="Components\Enableable.cpp" />
     <ClCompile Include="Graphics\IndexBuffer.cpp" />
+    <ClCompile Include="Components\InstanceRenderer.cpp" />
+    <ClCompile Include="Components\Instance.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Renderer\Renderer.cpp" />
     <ClCompile Include="Graphics\Shader.cpp" />
@@ -156,12 +156,12 @@
   <ItemGroup>
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Components\GameObject.h" />
-    <ClInclude Include="Components\GraphicsRenderer.h" />
-    <ClInclude Include="Components\SpriteRenderer.h" />
     <ClInclude Include="Graphics\GLDebug.h" />
     <ClInclude Include="Components\GObjectComponent.h" />
     <ClInclude Include="Components\Enableable.h" />
     <ClInclude Include="Graphics\IndexBuffer.h" />
+    <ClInclude Include="Components\InstanceRenderer.h" />
+    <ClInclude Include="Components\Instance.h" />
     <ClInclude Include="Renderer\Renderer.h" />
     <ClInclude Include="Graphics\Shader.h" />
     <ClInclude Include="Graphics\Texture.h" />

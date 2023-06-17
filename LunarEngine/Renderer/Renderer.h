@@ -17,6 +17,7 @@ private:
 	GLFWwindow* _windowContextCached;
 	clock_t _lastTime = clock();
 	std::vector<GameObject*> _gameObjects;
+	std::vector<InstanceRenderer*> _instances;
 	void calculateDeltaTime();
 	bool renderWindow();
 	void renderObjects();
@@ -27,6 +28,7 @@ public:
 	bool clear();
 	void addGameObject(GameObject* gameObject);
 	void printFPS();
+	void addInstance(InstanceRenderer* instance);
 	~Renderer();
 	float DeltaTime = 0.0f;
 };

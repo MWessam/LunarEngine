@@ -13,13 +13,13 @@ void GameObject::updateAll(float dt)		// Updates all active components.
 }
 void GameObject::render(const glm::mat4& projection, const glm::mat4& view)
 {
-	_objectRenderer.render(projection, view);
+	_objectRenderer->render(projection, view);
 }
-GameObject::GameObject():
-	_objectRenderer(GL_STATIC_DRAW)
+GameObject::GameObject(InstanceRenderer* instance):
+	_objectRenderer(instance),
+	_instance(_transform)
 {
-	_objectRenderer.setTransform(&_transform);
-	_objectRenderer.instantiate();
+	_objectRenderer->addInstance(&_instance);
 }
 
 
@@ -53,8 +53,8 @@ inline T* GameObject::getComponent() const		// Return component if it exists
 	}
 	return nullptr;
 }
-GraphicsRenderer* GameObject::getGraphicsRenderer() 
+InstanceRenderer* GameObject::getGraphicsRenderer() 
 {
-	return &_objectRenderer;
+	return _objectRenderer;
 }
 

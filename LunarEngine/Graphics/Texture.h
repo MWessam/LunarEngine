@@ -11,10 +11,12 @@ private:
 	int _width, _height, _BPP;		//Bits per pixel
 public:
 	Texture(const std::string& path);
+	Texture() = default;
 	~Texture();
 	void bind(unsigned int slot = 0) const;
 	void unbind() const;
 	inline int GetWidth() const { return _width; }
 	inline int GetHeight() const { return _height; }
+	void createTexture();
 };
 

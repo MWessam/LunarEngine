@@ -30,6 +30,10 @@ void VertexArray::addBuffer(const VertexBuffer& vb)
     }
 }
 
+void VertexArray::addInstanceBuffer(const VertexBuffer& vb)
+{
+}
+
 void VertexArray::bind() const
 {
     glCall(glBindVertexArray(_id));
