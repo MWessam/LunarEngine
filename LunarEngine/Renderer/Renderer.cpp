@@ -21,53 +21,28 @@ bool Renderer::renderWindow()
     if (!glfwWindowShouldClose(_windowContextCached))
     {
         _window->clear();
-        updateObjects();
-        renderObjects();
+        renderScene();
         _window->update();
         return true;
     }
     return false;
 }
-void Renderer::renderObjects()
+
+void Renderer::renderScene()
 {
-    for (GameObject* gameObject : _gameObjects)
-    {
-        if (gameObject->getEnabledState())
-        {
-            gameObject->render(_currentCamera->getProjectionMatrix(), _currentCamera->getViewMatrix());
-            gameObject->getTransform()->scale((rand() / (double)RAND_MAX) * 2 - 1); //BENCHMARK ONLY
-        }
-    }
-}
-void Renderer::updateObjects()
-{
-    for (GameObject* gameObject : _gameObjects) 
-    {
-        if (gameObject->getEnabledState())
-        {
-            gameObject->updateAll(DeltaTime);
-        }
-    }
+    _instance->draw(_currentCamera->getProjectionMatrix() * _currentCamera->getViewMatrix());
 }
 
-void Renderer::deleteObjects()
-{
-    for (GameObject* gameObject : _gameObjects)
-    {
-        delete gameObject;
-    }
-}
 
-void Renderer::addGameObject(GameObject* gameObject)
-{
-    _gameObjects.push_back(gameObject);
-}
 void Renderer::printFPS()
 {
     std::cout << 1 / DeltaTime << std::endl;
 }
+void Renderer::setCurrentScene(Scene* scene)
+{
+    _currentScene = scene;
+}
 Renderer::~Renderer() 
 {
-    deleteObjects();
     glfwTerminate();
 }

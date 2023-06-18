@@ -6,7 +6,6 @@
 VertexArray::VertexArray()
 {
     glCall(glGenVertexArrays(1, &_id));
-    glCall(glBindVertexArray(_id));
 }
 
 VertexArray::~VertexArray()

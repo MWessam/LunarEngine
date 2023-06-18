@@ -108,17 +108,17 @@ void Transform::readyRightVector()
 
 }
 
-const glm::vec3& Transform::getPositionVec() const
+inline const glm::vec3& Transform::getPositionVec() const
 {
 	return _position;
 }
 
-const glm::vec3& Transform::getRotationVec() const
+inline const glm::vec3& Transform::getRotationVec() const
 {
 	return _rotation;
 }
 
-const glm::vec3& Transform::getScaleVec() const
+inline const glm::vec3& Transform::getScaleVec() const
 {
 	return _scale;
 }

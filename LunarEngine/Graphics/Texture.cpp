@@ -8,8 +8,7 @@ Texture::Texture(const std::string& path)
 	stbi_set_flip_vertically_on_load(1);
 	_localBuffer = stbi_load(path.c_str(), &_width, &_height, &_BPP, 4);
 	glCall(glGenTextures(1, &_id));
-	glCall(glBindTexture(GL_TEXTURE_2D, _id));
-
+	bind();
 	glCall(glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR));
 	glCall(glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR));
 	glCall(glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_MIRRORED_REPEAT));
@@ -22,6 +21,7 @@ Texture::Texture(const std::string& path)
 	}
 	else
 	{
+		unbind();
 		std::cout << "\nError: Failed to load texture" << std::endl;
 		std::cout << stbi_failure_reason() << std::endl;
 		__debugbreak();

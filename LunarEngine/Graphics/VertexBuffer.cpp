@@ -6,6 +6,13 @@ VertexBuffer::VertexBuffer(const Vertex* vertices, GLsizei size, GLenum drawType
 	glCall(glGenBuffers(1, &_id));
 	bind();
 	glCall(glBufferData(GL_ARRAY_BUFFER, size * sizeof(Vertex), vertices, drawType));
+	unbind();
+}
+
+VertexBuffer::VertexBuffer()
+{
+	glCall(glGenBuffers(1, &_id));
+
 }
 
 VertexBuffer::~VertexBuffer()

@@ -1,9 +1,7 @@
 #pragma once
 #include <vector>
 #include "GObjectComponent.h"
-#include "GraphicsRenderer.h"
-#include "Transform.h"
-class Renderer;
+#include "InstanceRenderer.h"
 //TODO: Implement Enableable class
 class GameObject/*: public Enableable*/
 {
@@ -11,19 +9,18 @@ private:
 	GameObject* _parent;
 	std::vector<GObjectComponent*> _components;
 	Transform _transform;
-	GraphicsRenderer _objectRenderer;
 	std::vector<GameObject*> children;
 protected:
-	void updateAll(float dt);
-	void render(const glm::mat4& projection, const glm::mat4& view);
-	friend Renderer;
 public:
 	GameObject();
 	template <typename T>
+	// Add components only if theyre not already added. //TODO: IMPLEMENT A LOG SYSTEM
 	void addComponent();
-	GraphicsRenderer* getGraphicsRenderer();
+	//Pass in an instance renderer reference, then add the current transform to it.
+	void addToInstance(InstanceRenderer& instance);
 	Transform* getTransform();
 	template <typename T>
+	// Return component if it exists
 	T* getComponent() const;
 	bool getEnabledState() const { return true; }
 	

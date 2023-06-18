@@ -4,7 +4,7 @@
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/quaternion.hpp>
 // LEAVE FOR NOW (TEST ONLY)
-class Transform
+class Transform 
 {
 public:
     //Constants

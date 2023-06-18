@@ -15,12 +15,21 @@ private:
 	VertexBufferLayout _layout;
 public:
 	VertexBuffer(const Vertex* vertices, GLsizei size, GLenum drawType, VertexBufferLayout layout);
-	VertexBuffer() = default;
+	VertexBuffer();
 	~VertexBuffer();
 	void bind() const;
 	void unbind() const;
 	GLsizei getSize() const;
 	VertexBufferLayout getLayout() const;
+	template <typename T>
+	void createBuffer(GLenum target, GLsizei size, T* data, GLenum drawType);
 
 };
 
+template<typename T>
+void VertexBuffer::createBuffer(GLenum target, GLsizei size, T* data, GLenum drawType)
+{
+	_size = size;
+	bind();
+	glBufferData(target, size * sizeof(T), data, drawType);
+}

@@ -1,35 +1,24 @@
 #include "GameObject.h"
-#include "Renderer/Renderer.h"
-
-void GameObject::updateAll(float dt)		// Updates all active components.
-{
-	for (GObjectComponent* component : _components) 
-	{
-		if (component->getEnabledState()) 
-		{
-			component->clear(dt);
-		}
-	}
-}
-void GameObject::render(const glm::mat4& projection, const glm::mat4& view)
-{
-	_objectRenderer.render(projection, view);
-}
-GameObject::GameObject():
-	_objectRenderer(GL_STATIC_DRAW)
-{
-	_objectRenderer.setTransform(&_transform);
-	_objectRenderer.instantiate();
-}
 
 
+void GameObject::addToInstance(InstanceRenderer& instance)
+{
+	instance.addTransform(&_transform);
+}
 
 Transform* GameObject::getTransform()
 {
 	return &_transform;
 }
+
+GameObject::GameObject()
+	:_transform()
+{
+
+}
+
 template<typename T>
-void GameObject::addComponent()		// Add components only if theyre not already added. //TODO: IMPLEMENT A LOG SYSTEM
+void GameObject::addComponent()		
 {
 	
 	if (getComponent<T>() == nullptr)
@@ -41,7 +30,7 @@ void GameObject::addComponent()		// Add components only if theyre not already ad
 	return;
 }
 template<typename T>
-inline T* GameObject::getComponent() const		// Return component if it exists
+T* GameObject::getComponent() const		
 {
 	for (GObjectComponent* component : _components)
 	{
@@ -52,9 +41,5 @@ inline T* GameObject::getComponent() const		// Return component if it exists
 		}
 	}
 	return nullptr;
-}
-GraphicsRenderer* GameObject::getGraphicsRenderer() 
-{
-	return &_objectRenderer;
 }
 

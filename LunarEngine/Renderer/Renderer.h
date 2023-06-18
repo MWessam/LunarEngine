@@ -1,13 +1,9 @@
 #pragma once
 #include "Window/Window.h"
-#include "Components/GameObject.h"
-#include "Camera.h"
 #include <ctime>
 #include <vector>
 #include "glm/glm.hpp"
-#include "Camera.h"
-
-
+#include "Scene.h"
 //Main renderer for the current window context.
 class Renderer
 {
@@ -16,17 +12,16 @@ private:
 	Camera* _currentCamera;
 	GLFWwindow* _windowContextCached;
 	clock_t _lastTime = clock();
-	std::vector<GameObject*> _gameObjects;
+	Scene* _currentScene;
 	void calculateDeltaTime();
 	bool renderWindow();
-	void renderObjects();
-	void updateObjects();
-	void deleteObjects();
+	void renderScene();
 public:
+	InstanceRenderer* _instance;
 	Renderer(Window* window, Camera* camera);
 	bool clear();
-	void addGameObject(GameObject* gameObject);
 	void printFPS();
+	void setCurrentScene(Scene* scene);
 	~Renderer();
 	float DeltaTime = 0.0f;
 };

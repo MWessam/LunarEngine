@@ -9,7 +9,6 @@ Shader::Shader(const std::string& filePath)
     std::cout << "FRAGMENT" << std::endl << source.FragmentSource << std::endl;
 
     unsigned int shader = createShader(source.VertexSource, source.FragmentSource);
-    glCall(glUseProgram(shader));
     _shaderID = shader;
 }
 

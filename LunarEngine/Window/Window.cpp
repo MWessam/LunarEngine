@@ -3,6 +3,7 @@
 Window::Window(unsigned int antiAliasing, unsigned int majorVersion, unsigned int minorVersion, unsigned int width, unsigned int height, GLint glProfile, const std::string title):
 _antiAliasing(antiAliasing), _majorVersion(majorVersion), _minorVersion(minorVersion), _width(width), _height(height), _glProfile(glProfile), _title(title)
 {
+    
     if (!glfwInit()) {
         std::cerr << "Failed to initialize GLFW\n";
         return;
