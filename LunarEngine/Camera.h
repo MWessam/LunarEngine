@@ -10,7 +10,7 @@ private:
 	const glm::vec3 target = { 0.0f, 0.0f, 0.0f };
 
 	//Components
-	Transform* _camTransform;
+	Transform _camTransform;
 
 	//Data
 	float _fov;
@@ -20,13 +20,16 @@ private:
 	//Lazy evaluation methods to compute them.
 	void readyProjectionMatrix();
 	void readyViewMatrix();
+
+
 public:
 	//Constructors
-	Camera(float fov);
+	Camera();
+	void createCamera(float fov);
 	~Camera();
 
 	//Getters
-	Transform& getCamTransform();
+	Transform* getCamTransform();
 	const glm::mat4& getProjectionMatrix();
 	const glm::mat4& getViewMatrix();
 

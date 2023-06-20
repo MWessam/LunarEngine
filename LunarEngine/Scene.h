@@ -6,10 +6,11 @@ class Scene
 {
 private:
 	// Nodes/Gameobjects (Every object got pointer to parent and a vector of children)
-	std::vector<GameObject*> _gameObjects;
-	std::vector<InstanceRenderer*> _instances;
-	Camera _camera;
+	std::vector<GameObject> _gameObjects;
+	std::vector<InstanceRenderer> _instances;
+	//Camera _camera;
 public:
-	void addGameObject(GameObject* gameObject);
+	void addGameObject(GameObject gameObject);
+	Scene();
 };
 

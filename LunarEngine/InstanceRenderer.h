@@ -51,6 +51,9 @@ public:
 	void draw(const glm::mat4& viewProjection);
 	InstanceRenderer(GLenum drawType);
 	~InstanceRenderer();
+	InstanceRenderer() = default;
+	// Use only when you first create a gameObject or any object that might inherit from this class
+	void instantiate();
 private:
 	std::vector<Transform*> _instancesTransforms;
 	uint32_t _amountToInstantiate;
@@ -65,8 +68,6 @@ private:
 	std::unique_ptr<IndexBuffer> _ibo;
 	GLsizei _indicesCount;
 
-	// Use only when you first create a gameObject or any object that might inherit from this class
-	void instantiate();
 
 	void createQuad();
 	void createInstanceBuffer();

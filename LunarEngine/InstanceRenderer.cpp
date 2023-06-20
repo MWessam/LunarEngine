@@ -30,7 +30,7 @@ void InstanceRenderer::draw(const glm::mat4& viewProjection)
 	_vb->bind();
 	_instanceBuffer->bind();
 	_texture->bind();
-	glCall(glDrawArraysInstanced(GL_TRIANGLES, 0, 6, _amountToInstantiate));
+	glCall(glDrawElementsInstanced(GL_TRIANGLES, _object.indiciesCount, GL_UNSIGNED_INT, nullptr, _amountToInstantiate));
 	_vao->unbind();
 	_ibo->unbind();
 	_vb->unbind();
@@ -42,7 +42,6 @@ void InstanceRenderer::draw(const glm::mat4& viewProjection)
 InstanceRenderer::InstanceRenderer(GLenum drawType) :
 	_drawType(drawType), _object()
 {
-	instantiate();
 }
 
 InstanceRenderer::~InstanceRenderer()
@@ -52,7 +51,7 @@ InstanceRenderer::~InstanceRenderer()
 void InstanceRenderer::instantiate()
 {
 	createQuad();
-	_vb.reset(new VertexBuffer(_object.Vertices, 6, _drawType, _object.Layout));
+	_vb.reset(new VertexBuffer(_object.Vertices, 4, _drawType, _object.Layout));
 	createInstanceBuffer();
 	_ibo.reset(new IndexBuffer(_object.indices, _object.indiciesCount));
 	_vao.reset(new VertexArray());
@@ -103,5 +102,4 @@ void InstanceRenderer::checkRenderableObjects()
 	}
 	_instanceBuffer->createBuffer<glm::mat4>(GL_ARRAY_BUFFER, _amountToInstantiate,
 		availableObjects.data(), GL_STATIC_DRAW);
-
 }

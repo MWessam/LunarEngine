@@ -1,37 +1,39 @@
 #include "Camera.h"
 void Camera::readyProjectionMatrix()
 {
-	glm::vec3 cameraPos = _camTransform->getPositionVec();
+	glm::vec3 cameraPos = _camTransform.getPositionVec();
 	_projectionMatrix = glm::perspective(_fov, 1920 / 1080.0f, 0.0f, 0.5f);
 	//Perspective clip plane apparently can't have a negative near value (took me too long to figure out i feel bad lol)
 }
 void Camera::readyViewMatrix()
 {
-	glm::vec3 camPositionVector = _camTransform->getPositionVec();
-	glm::vec3 camForward = glm::vec3(_camTransform->getTransformMatrix()[0][2], _camTransform->getTransformMatrix()[1][2], _camTransform->getTransformMatrix()[2][2]);
+	glm::vec3 camPositionVector = _camTransform.getPositionVec();
+	glm::vec3 camForward = glm::vec3(_camTransform.getTransformMatrix()[0][2], _camTransform.getTransformMatrix()[1][2], _camTransform.getTransformMatrix()[2][2]);
 	glm::vec3 target = camPositionVector + camForward;
-	_view = glm::lookAt(camPositionVector, target, _camTransform->getUp());
+	_view = glm::lookAt(camPositionVector, target, _camTransform.getUp());
 }
-Camera::Camera(float fov):
-	_fov(fov)
+Camera::Camera()
+{
+}
+void Camera::createCamera(float fov)
 {
 	if (fov > 120.0f)
 		_fov = 120.0f;
 	else if (fov < 30.0f)
 		_fov = 30.0f;
-	_camTransform = new Transform();
-	_camTransform->setPosition({ 0, 0, -1.3 });
+	else
+		_fov = fov;
+	_camTransform.setPosition({ 0, 0, -1.3 });
 	readyProjectionMatrix();
 	readyViewMatrix();
 }
 Camera::~Camera()
 {
-	delete _camTransform;
 }
-Transform& Camera::getCamTransform()
+Transform* Camera::getCamTransform()
 {
 	readyViewMatrix();
-	return *_camTransform;
+	return &_camTransform;
 }
 const glm::mat4& Camera::getProjectionMatrix()
 {
@@ -56,15 +58,15 @@ void Camera::zoomByFOV(float addOntoFOV)
 
 void Camera::moveCameraForward(float speed)
 {
-	_camTransform->setPosition(_camTransform->getPositionVec() + (_camTransform->getForward() * -speed));
+	_camTransform.setPosition(_camTransform.getPositionVec() + (_camTransform.getForward() * -speed));
 	readyViewMatrix();
 }
 
 void Camera::cameraTilt(float angleVertical)
 {
-	glm::quat rotationQuaternion = glm::angleAxis(angleVertical, _camTransform->getRight());
-	_camTransform->rotate(rotationQuaternion);
-	glm::mat4 rotationMatrix = glm::toMat4(_camTransform->getRotationQuaternion());
+	glm::quat rotationQuaternion = glm::angleAxis(angleVertical, _camTransform.getRight());
+	_camTransform.rotate(rotationQuaternion);
+	glm::mat4 rotationMatrix = glm::toMat4(_camTransform.getRotationQuaternion());
 	readyViewMatrix();
 }
 
@@ -72,9 +74,9 @@ void Camera::cameraTilt(float angleVertical)
 // DONE! NOW CAMERA CAN YAW
 void Camera::cameraYaw(float angleHorizontal)
 {
-	glm::quat rotationQuaternion = glm::angleAxis(angleHorizontal, _camTransform->getUp());
-	_camTransform->rotate(rotationQuaternion);
-	glm::mat4 rotationMatrix = glm::toMat4(_camTransform->getRotationQuaternion());
+	glm::quat rotationQuaternion = glm::angleAxis(angleHorizontal, _camTransform.getUp());
+	_camTransform.rotate(rotationQuaternion);
+	glm::mat4 rotationMatrix = glm::toMat4(_camTransform.getRotationQuaternion());
 	readyViewMatrix();
 }
 

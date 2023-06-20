@@ -1,21 +1,24 @@
 #include "Window.h"
 
-Window::Window(unsigned int antiAliasing, unsigned int majorVersion, unsigned int minorVersion, unsigned int width, unsigned int height, GLint glProfile, const std::string title):
-_antiAliasing(antiAliasing), _majorVersion(majorVersion), _minorVersion(minorVersion), _width(width), _height(height), _glProfile(glProfile), _title(title)
+Window::Window()
 {
-    
+}
+
+void Window::createWindow(unsigned int antiAliasing, unsigned int majorVersion, unsigned int minorVersion, unsigned int width, unsigned int height, GLint glProfile, const std::string title)
+{
+
     if (!glfwInit()) {
         std::cerr << "Failed to initialize GLFW\n";
         return;
     }
 
     // Set the window creation hints
-    glfwWindowHint(GLFW_OPENGL_PROFILE, _glProfile);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, _majorVersion);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, _minorVersion);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, glProfile);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, majorVersion);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, minorVersion);
 
     // Create the GLFW window object
-    _window = glfwCreateWindow(_width, _height, _title.c_str(), NULL, NULL);
+    _window = glfwCreateWindow(width, height, title.c_str(), NULL, NULL);
     if (!_window) {
         std::cerr << "Failed to create GLFW window\n";
         glfwTerminate();
@@ -24,7 +27,7 @@ _antiAliasing(antiAliasing), _majorVersion(majorVersion), _minorVersion(minorVer
     assignAsCurrentContext();
     glfwSetFramebufferSizeCallback(_window, framebuffer_size_callback);
     initializeGlad();
-    changeViewport(0, 0, _width, _height);
+    changeViewport(0, 0, width, height);
 }
 
 Window::~Window()
@@ -80,7 +83,7 @@ void Window::processInput()
 void Window::clear()
 {
     glCall(glClearColor(_screenColor.x, _screenColor.y, _screenColor.z, _screenColor.w));
-    glCall(glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT));
+    glCall(glClear(GL_COLOR_BUFFER_BIT ));
 }
 
 void Window::update()
