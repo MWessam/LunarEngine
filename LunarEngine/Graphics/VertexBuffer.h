@@ -2,6 +2,7 @@
 #include "GLDebug.h"
 #include "VertexBufferLayout.h"
 #include "glm/glm.hpp"
+#include <iostream>
 struct Vertex
 {
 	glm::vec4 Position;

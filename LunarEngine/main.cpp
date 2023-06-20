@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Window/Window.h"
 #include "Renderer/Renderer.h"
-#include <memory>
+
 
 enum renderType 
 {
@@ -14,19 +14,22 @@ int main()
 	mainRenderer.createCamera(90);
 	mainRenderer.createWindow(1920, 1080, "Lunar Engine");
 	mainRenderer.createInstance();
-	std::vector<GameObject> gameObjs;
+	double xpos = 0.0f;
+	double ypos = 0.0f;
+	double pixelX, pixelY;
 	// Instantiating objects
-	for (int i = 0; i < 200; i++)
-	{
-		float random = rand() / (float)RAND_MAX * 2 - 1;
-		GameObject gameObject;
-		gameObject.getTransform()->scale(random);
-		gameObject.getTransform()->setPosition({ random, random, 0.0f });
-		gameObject.addToInstance(mainRenderer._instance);
-		gameObjs.push_back(gameObject);
-	}
 	while (mainRenderer.clear())
 	{
+		glfwGetCursorPos(mainRenderer.getWindow(), &xpos, &ypos);
+		pixelX = ( xpos - ( 1920 ) ) / 1920;
+		pixelY = 1 - (2.0 * ypos) / 1080;
+		if (glfwGetMouseButton(mainRenderer.getWindow(), GLFW_MOUSE_BUTTON_1))
+		{
+			GameObject* gameObject = new GameObject();
+			gameObject->addToInstance(mainRenderer._instance);
+			gameObject->getTransform()->setPosition({ pixelX, pixelY, 0.0f });
+		}
 		mainRenderer.printFPS();
 	}
+	
 }

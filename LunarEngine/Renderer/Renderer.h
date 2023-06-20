@@ -24,6 +24,7 @@ public:
 	void setCurrentScene(Scene scene);
 	void createCamera(float fov);
 	void createInstance();
+	GLFWwindow* getWindow() const;
 	InstanceRenderer* getInstance();
 	void createWindow(unsigned int width, unsigned int height, const std::string title);
 	~Renderer();

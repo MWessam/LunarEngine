@@ -60,18 +60,19 @@ void InstanceRenderer::instantiate()
 	_vao->addBuffer(*_vb);
 	_instanceBuffer->bind();
 	std::size_t vec4Size = sizeof(glm::vec4);
-	glVertexAttribPointer(2, 4, GL_FLOAT, GL_FALSE, vec4Size, nullptr);
-	glEnableVertexAttribArray(2);
-	glVertexAttribPointer(3, 4, GL_FLOAT, GL_FALSE, vec4Size, (void*)(1 * vec4Size));
-	glEnableVertexAttribArray(3);
-	glVertexAttribPointer(4, 4, GL_FLOAT, GL_FALSE, vec4Size, (void*)(2 * vec4Size));
-	glEnableVertexAttribArray(4);
-	glVertexAttribPointer(5, 4, GL_FLOAT, GL_FALSE, vec4Size, (void*)(3 * vec4Size));
-	glEnableVertexAttribArray(5);
+	std::size_t mat4Size = sizeof(glm::mat4);
+	glVertexAttribPointer(2, 4, GL_FLOAT, GL_FALSE, mat4Size, nullptr);
+	glVertexAttribPointer(3, 4, GL_FLOAT, GL_FALSE, mat4Size, (void*)(1 * vec4Size));
+	glVertexAttribPointer(4, 4, GL_FLOAT, GL_FALSE, mat4Size, (void*)(2 * vec4Size));
+	glVertexAttribPointer(5, 4, GL_FLOAT, GL_FALSE, mat4Size, (void*)(3 * vec4Size));
 	glVertexAttribDivisor(2, 1);
 	glVertexAttribDivisor(3, 1);
 	glVertexAttribDivisor(4, 1);
 	glVertexAttribDivisor(5, 1);
+	glEnableVertexAttribArray(2);
+	glEnableVertexAttribArray(3);
+	glEnableVertexAttribArray(4);
+	glEnableVertexAttribArray(5);
 	_vao->unbind();
 }
 void InstanceRenderer::createQuad()

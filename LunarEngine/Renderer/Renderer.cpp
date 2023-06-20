@@ -49,8 +49,12 @@ void Renderer::createCamera(float fov)
 void Renderer::createInstance()
 {
     _instance.instantiate();
-    _instance.setShader("../LunarEngine/Graphics/ShaderSource/Default.shader");
-    _instance.setTexture("../LunarEngine/Graphics/Textures/cat.png");
+    _instance.setShader("D:/SwE/C#/LunarEngine/LunarEngine/Graphics/ShaderSource/Default.shader");
+    _instance.setTexture("D:/SwE/C#/LunarEngine/LunarEngine/Graphics/Textures/cat.png");
+}
+GLFWwindow* Renderer::getWindow() const
+{
+    return _windowContextCached;
 }
 InstanceRenderer* Renderer::getInstance()
 {

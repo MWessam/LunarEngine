@@ -83,7 +83,7 @@ void Window::processInput()
 void Window::clear()
 {
     glCall(glClearColor(_screenColor.x, _screenColor.y, _screenColor.z, _screenColor.w));
-    glCall(glClear(GL_COLOR_BUFFER_BIT ));
+    glCall(glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT));
 }
 
 void Window::update()
