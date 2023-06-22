@@ -15,7 +15,7 @@ void PhysicsEngine::updatePhysics()
 {
 	for (std::pair <RigidBody2DComponent*, Transform*> physObj : ActivePhysicsObjects)
 	{
-		glm::vec3 newPosition = physObj.second->getPositionVec() * 2.0f - physObj.first->getPrevPosition() + (GRAVITY * FIXED_TIMESTEP * FIXED_TIMESTEP);
+		glm::vec3 newPosition = physObj.second->getPositionVec() * 2.0f - physObj.first->getPrevPosition() + ((GRAVITY + physObj.first->getVelocity()) * FIXED_TIMESTEP * FIXED_TIMESTEP);
 		glm::vec3 newVelocity = ((newPosition - physObj.first->getPrevPosition()) / (2 * FIXED_TIMESTEP));
 		physObj.first->setPrevPosition(physObj.second->getPositionVec());
 		physObj.second->setPosition(newPosition);

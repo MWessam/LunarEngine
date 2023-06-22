@@ -5,7 +5,7 @@ void Camera::readyProjectionMatrix()
 	{
 		case Perspective:
 			glm::vec3 cameraPos = _camTransform.getPositionVec();
-			_projectionMatrix = glm::perspective(glm::radians(_fov), 1920 / 1080.0f, 0.0f, 0.5f);
+			_projectionMatrix = glm::perspective(glm::radians(_fov), 1920 / 1080.0f, -0.1f, 0.5f);
 			break;
 		case Ortho:
 			_projectionMatrix = glm::ortho(0.0f, _width, 0.0f, _height, -1.0f,1.0f);
