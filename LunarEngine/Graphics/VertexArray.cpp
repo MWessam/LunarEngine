@@ -14,7 +14,6 @@ VertexArray::~VertexArray()
     glCall(glDeleteVertexArrays(1, &_id));
 }
 
-
 void VertexArray::addBuffer(const VertexBuffer& vb)
 {
     const std::vector<VertexBufferElement> elements = vb.getLayout().GetElements();

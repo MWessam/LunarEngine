@@ -10,10 +10,14 @@ private:
 	unsigned char* _localBuffer;
 	int _width, _height, _BPP;		//Bits per pixel
 public:
+	//Constructors and destructor
 	Texture(const std::string& path);
 	~Texture();
+
 	void bind(unsigned int slot = 0) const;
 	void unbind() const;
+
+	//Getters
 	inline int GetWidth() const { return _width; }
 	inline int GetHeight() const { return _height; }
 };

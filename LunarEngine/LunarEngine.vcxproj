@@ -142,6 +142,7 @@
     <ClCompile Include="Graphics\IndexBuffer.cpp" />
     <ClCompile Include="InstanceRenderer.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="PhysicsEngine.cpp" />
     <ClCompile Include="Renderer\Renderer.cpp" />
     <ClCompile Include="Graphics\Shader.cpp" />
     <ClCompile Include="Graphics\Texture.cpp" />
@@ -149,6 +150,7 @@
     <ClCompile Include="Graphics\VertexArray.cpp" />
     <ClCompile Include="Graphics\VertexBuffer.cpp" />
     <ClCompile Include="Graphics\VertexBufferLayout.h" />
+    <ClCompile Include="Components\RigidBody2DComponent.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="testing.cpp" />
     <ClCompile Include="Window\Window.cpp" />
@@ -161,12 +163,14 @@
     <ClInclude Include="Components\Enableable.h" />
     <ClInclude Include="Graphics\IndexBuffer.h" />
     <ClInclude Include="InstanceRenderer.h" />
+    <ClInclude Include="PhysicsEngine.h" />
     <ClInclude Include="Renderer\Renderer.h" />
     <ClInclude Include="Graphics\Shader.h" />
     <ClInclude Include="Graphics\Texture.h" />
     <ClInclude Include="Components\Transform.h" />
     <ClInclude Include="Graphics\VertexArray.h" />
     <ClInclude Include="Graphics\VertexBuffer.h" />
+    <ClInclude Include="Components\RigidBody2DComponent.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="Window\Window.h" />
   </ItemGroup>

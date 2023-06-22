@@ -23,6 +23,7 @@ void InstanceRenderer::setShader(const std::string& shaderFile)
 void InstanceRenderer::draw(const glm::mat4& viewProjection)
 {
 	checkRenderableObjects();
+	std::cout << _amountToInstantiate << std::endl;
 	_shader->useProgram();
 	_shader->setUniformMat4("u_ViewProjection", 1, GL_FALSE, glm::value_ptr(viewProjection));
 	_vao->bind();

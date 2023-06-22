@@ -1,6 +1,11 @@
 #pragma once
 #include "Components/Transform.h"
 
+enum CameraType
+{
+	Perspective,
+	Ortho
+};
 // Perspective (FOV) camera to render on
 class Camera	
 {
@@ -14,6 +19,10 @@ private:
 
 	//Data
 	float _fov;
+	float _width;
+	float _height;
+	CameraType _type;
+	
 	glm::mat4 _projectionMatrix;
 	glm::mat4 _view = glm::mat4(1.0f);
 
@@ -25,7 +34,8 @@ private:
 public:
 	//Constructors
 	Camera();
-	void createCamera(float fov);
+	void createPerspectiveCamera(float fov);
+	void createOrthoCamera(float width, float height);
 	~Camera();
 
 	//Getters

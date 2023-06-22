@@ -22,7 +22,9 @@ public:
 	bool clear();
 	void printFPS();
 	void setCurrentScene(Scene scene);
-	void createCamera(float fov);
+	Camera* getCamera();
+	void createOrthoCamera(float width, float height);
+	void createPerspectiveCamera(float fov);
 	void createInstance();
 	GLFWwindow* getWindow() const;
 	InstanceRenderer* getInstance();

@@ -14,16 +14,15 @@ Transform* GameObject::getTransform()
 GameObject::GameObject()
 	:_transform()
 {
-
+	addComponent<RigidBody2DComponent>();
 }
-
 template<typename T>
 void GameObject::addComponent()		
 {
 	
 	if (getComponent<T>() == nullptr)
 	{
-		_components.push_back(T());
+		_components.push_back(new T());
 		return;
 	}
 	//TODO: IMPLEMENT A LOG SYSTEM

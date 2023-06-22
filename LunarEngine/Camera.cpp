@@ -1,8 +1,15 @@
 #include "Camera.h"
 void Camera::readyProjectionMatrix()
 {
-	glm::vec3 cameraPos = _camTransform.getPositionVec();
-	_projectionMatrix = glm::perspective(_fov, 1920 / 1080.0f, 0.0f, 0.5f);
+	switch (_type)
+	{
+		case Perspective:
+			glm::vec3 cameraPos = _camTransform.getPositionVec();
+			_projectionMatrix = glm::perspective(glm::radians(_fov), 1920 / 1080.0f, 0.0f, 0.5f);
+			break;
+		case Ortho:
+			_projectionMatrix = glm::ortho(0.0f, _width, 0.0f, _height, -1.0f,1.0f);
+	}
 	//Perspective clip plane apparently can't have a negative near value (took me too long to figure out i feel bad lol)
 }
 void Camera::readyViewMatrix()
@@ -15,7 +22,7 @@ void Camera::readyViewMatrix()
 Camera::Camera()
 {
 }
-void Camera::createCamera(float fov)
+void Camera::createPerspectiveCamera(float fov)
 {
 	if (fov > 120.0f)
 		_fov = 120.0f;
@@ -23,7 +30,17 @@ void Camera::createCamera(float fov)
 		_fov = 30.0f;
 	else
 		_fov = fov;
-	_camTransform.setPosition({ 0, 0, -1.3 });
+	_camTransform.setPosition({ 0, 0, -1.3f});
+	_type = Perspective;
+	readyProjectionMatrix();
+	readyViewMatrix();
+}
+void Camera::createOrthoCamera(float width, float height)
+{
+	_type = Ortho;
+	_width = width;
+	_height = height;
+	_camTransform.setPosition({ 0, 0, -0.0f });
 	readyProjectionMatrix();
 	readyViewMatrix();
 }

@@ -14,6 +14,8 @@ Renderer::Renderer()
 bool Renderer::clear()
 {
     calculateDeltaTime();
+    std::string title = "Lunar Engine - FPS = " + std::to_string(1 / DeltaTime);
+    glfwSetWindowTitle(_windowContextCached, title.c_str());
     return renderWindow();
 }
 bool Renderer::renderWindow()
@@ -42,9 +44,17 @@ void Renderer::setCurrentScene(Scene scene)
 {
     //_currentScene = scene;
 }
-void Renderer::createCamera(float fov)
+Camera* Renderer::getCamera()
 {
-    _currentCamera.createCamera(fov);
+    return &_currentCamera;
+}
+void Renderer::createOrthoCamera(float width, float height)
+{
+    _currentCamera.createOrthoCamera(width, height);
+}
+void Renderer::createPerspectiveCamera(float fov)
+{
+    _currentCamera.createPerspectiveCamera(fov);
 }
 void Renderer::createInstance()
 {

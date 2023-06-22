@@ -14,7 +14,7 @@ Shader::Shader(const std::string& filePath)
 
 Shader::~Shader()
 {
-    unBind();
+    unuseProgram();
     glCall(glDeleteProgram(_shaderID));
 }
 
@@ -116,15 +116,6 @@ unsigned int Shader::getShaderId() const
     return _shaderID;
 }
 
-void Shader::bind() const
-{
-    glCall(glUseProgram(_shaderID));
-}
-
-void Shader::unBind() const
-{
-    glCall(glUseProgram(0));
-}
 
 void Shader::useProgram() const
 {
