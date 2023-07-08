@@ -1,5 +1,6 @@
 #pragma once
 #include "RendererAPI/RendererAPI.h"
+#include "Graphics/GLDebug.h"
 class OpenGLAPI :
     public RendererAPI
 {

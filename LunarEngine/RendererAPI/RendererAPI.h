@@ -1,5 +1,6 @@
 #pragma once
 #include "glm/glm.hpp"
+#include <memory>
 
 class RendererAPI
 {
@@ -20,7 +21,7 @@ public:
 	virtual void clear() = 0;
 	virtual void setLineWidth(float width) = 0;
 
-	static RendererAPI create();
+	static std::unique_ptr<RendererAPI> create();
 	inline static const API getAPI() { return s_API; }
 private:
 	static API s_API;
