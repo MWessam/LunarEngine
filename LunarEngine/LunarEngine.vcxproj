@@ -133,52 +133,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Camera.cpp" />
-    <ClCompile Include="Components\GameObject.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="Graphics\GLDebug.cpp" />
-    <ClCompile Include="Components\GObjectComponent.cpp" />
-    <ClCompile Include="Components\Enableable.cpp" />
-    <ClCompile Include="Graphics\IndexBuffer.cpp" />
-    <ClCompile Include="InstanceRenderer.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="PhysicsEngine.cpp" />
-    <ClCompile Include="Renderer\Renderer.cpp" />
-    <ClCompile Include="Graphics\Shader.cpp" />
-    <ClCompile Include="Graphics\Texture.cpp" />
-    <ClCompile Include="Components\Transform.cpp" />
-    <ClCompile Include="Graphics\VertexArray.cpp" />
-    <ClCompile Include="Graphics\VertexBuffer.cpp" />
-    <ClCompile Include="Graphics\VertexBufferLayout.h" />
-    <ClCompile Include="Components\RigidBody2DComponent.cpp" />
-    <ClCompile Include="Scene.cpp" />
-    <ClCompile Include="testing.cpp" />
-    <ClCompile Include="Window\Window.cpp" />
+    <ClCompile Include="RendererAPI.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Camera.h" />
-    <ClInclude Include="Components\GameObject.h" />
     <ClInclude Include="Graphics\GLDebug.h" />
-    <ClInclude Include="Components\GObjectComponent.h" />
-    <ClInclude Include="Components\Enableable.h" />
-    <ClInclude Include="Graphics\IndexBuffer.h" />
-    <ClInclude Include="InstanceRenderer.h" />
-    <ClInclude Include="PhysicsEngine.h" />
-    <ClInclude Include="Renderer\Renderer.h" />
-    <ClInclude Include="Graphics\Shader.h" />
-    <ClInclude Include="Graphics\Texture.h" />
-    <ClInclude Include="Components\Transform.h" />
-    <ClInclude Include="Graphics\VertexArray.h" />
-    <ClInclude Include="Graphics\VertexBuffer.h" />
-    <ClInclude Include="Components\RigidBody2DComponent.h" />
-    <ClInclude Include="Scene.h" />
-    <ClInclude Include="Window\Window.h" />
+    <ClInclude Include="RendererAPI.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Graphics\ShaderSource\Default.shader" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Graphics\Textures\cat.png" />
+    <Image Include="Graphics\Textures\flappyBird.png" />
+    <Image Include="Graphics\Textures\pipe.png" />
     <Image Include="Graphics\Textures\sample.jpeg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -57,19 +57,28 @@
     <ClCompile Include="Graphics\Shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Components\GraphicsRenderer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Graphics\Texture.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Components\SpriteRenderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="testing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InstanceRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\PhysicsEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\RigidBody2DComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Collider.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -107,16 +116,25 @@
     <ClInclude Include="Graphics\Shader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Components\GraphicsRenderer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Graphics\Texture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Components\SpriteRenderer.h">
+    <ClInclude Include="Camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Camera.h">
+    <ClInclude Include="InstanceRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\PhysicsEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\RigidBody2DComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Collider.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -128,6 +146,12 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="Graphics\Textures\cat.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Graphics\Textures\flappyBird.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Graphics\Textures\pipe.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
