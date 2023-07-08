@@ -18,123 +18,27 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Window\Window.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="glad.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Renderer\Renderer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Components\GameObject.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Components\GObjectComponent.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Components\Enableable.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Components\Transform.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphics\VertexBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\GLDebug.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Graphics\IndexBuffer.cpp">
+    <ClCompile Include="RendererAPI\RendererAPI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Graphics\VertexArray.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphics\VertexBufferLayout.h">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphics\Shader.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphics\Texture.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Camera.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="testing.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="InstanceRenderer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Physics\PhysicsEngine.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Components\RigidBody2DComponent.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Scene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Components\Collider.cpp">
+    <ClCompile Include="Platforms\ogl\OpenGLAPI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Window\Window.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Renderer\Renderer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Components\GameObject.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Components\GObjectComponent.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Components\Enableable.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Components\Transform.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\VertexBuffer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Graphics\GLDebug.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Graphics\IndexBuffer.h">
+    <ClInclude Include="RendererAPI\RendererAPI.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Graphics\VertexArray.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\Shader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\Texture.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Camera.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="InstanceRenderer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Physics\PhysicsEngine.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Components\RigidBody2DComponent.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Components\Collider.h">
+    <ClInclude Include="Platforms\ogl\OpenGLAPI.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

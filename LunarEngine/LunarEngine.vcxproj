@@ -136,11 +136,13 @@
     <ClCompile Include="glad.c" />
     <ClCompile Include="Graphics\GLDebug.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="RendererAPI.cpp" />
+    <ClCompile Include="Platforms\ogl\OpenGLAPI.cpp" />
+    <ClCompile Include="RendererAPI\RendererAPI.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graphics\GLDebug.h" />
-    <ClInclude Include="RendererAPI.h" />
+    <ClInclude Include="Platforms\ogl\OpenGLAPI.h" />
+    <ClInclude Include="RendererAPI\RendererAPI.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Graphics\ShaderSource\Default.shader" />
