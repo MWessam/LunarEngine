@@ -30,7 +30,16 @@
     <ClCompile Include="Platforms\ogl\OpenGLAPI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Buffers.cpp">
+    <ClCompile Include="RendererAPI\GeneralAPIStuff\Buffers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Platforms\ogl\OpenGLBuffers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RendererAPI\GeneralAPIStuff\VertexArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Platforms\ogl\OpenGLVertexArray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -44,7 +53,16 @@
     <ClInclude Include="Platforms\ogl\OpenGLAPI.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Buffers.h">
+    <ClInclude Include="RendererAPI\GeneralAPIStuff\Buffers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Platforms\ogl\OpenGLBuffers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RendererAPI\GeneralAPIStuff\VertexArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Platforms\ogl\OpenGLVertexArray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
