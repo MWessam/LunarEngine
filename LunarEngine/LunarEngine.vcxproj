@@ -138,11 +138,13 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Platforms\ogl\OpenGLAPI.cpp" />
     <ClCompile Include="RendererAPI\RendererAPI.cpp" />
+    <ClCompile Include="VertexBuffer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graphics\GLDebug.h" />
     <ClInclude Include="Platforms\ogl\OpenGLAPI.h" />
     <ClInclude Include="RendererAPI\RendererAPI.h" />
+    <ClInclude Include="VertexBuffer.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Graphics\ShaderSource\Default.shader" />
