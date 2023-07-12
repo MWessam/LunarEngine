@@ -4,17 +4,16 @@
 #include "RendererAPI/GeneralAPIStuff/VertexArray.h"
 #include <memory>
 
-class RendererAPI
-{
-public:		// Enum
 	enum class API
 	{
+		None,
 		OpenGL,
 		DirectX11,
 		DriectX12,
 		Vulkan
 	};
-
+class RendererAPI
+{
 public:		// Methods
 	virtual ~RendererAPI() = default;
 	// Setup and modify API
@@ -32,7 +31,7 @@ public:		// Methods
 
 
 	// Static methods
-	static std::unique_ptr<RendererAPI> create();
+	static std::unique_ptr<RendererAPI> create(API api);
 	inline static const API getAPI() { return s_API; }
 
 protected:	// Methods

@@ -9,7 +9,7 @@ namespace GeneralAPIs
 		virtual ~VertexArray() = default;
 		virtual void bind() = 0;
 		virtual void unbind() = 0;
-		virtual void addVertexBuffer(const std::unique_ptr<GeneralAPIs::VertexBuffer>& vb);
+		virtual void addVertexBuffer(std::unique_ptr<GeneralAPIs::VertexBuffer>& vb);
 		virtual void setIndexBuffer(std::unique_ptr<GeneralAPIs::IndexBuffer>& ib);
 
 	protected:	// Members

@@ -10,7 +10,7 @@ namespace OpenGL
 	public:		// Methods
 		~VertexArray() override;
 		VertexArray();
-		void addVertexBuffer(const std::unique_ptr<GeneralAPIs::VertexBuffer>& vb) override;
+		void addVertexBuffer(std::unique_ptr<GeneralAPIs::VertexBuffer>& vb) override;
 		void setIndexBuffer(std::unique_ptr<GeneralAPIs::IndexBuffer>& ib) override;
 		void bind() override;
 		void unbind() override;

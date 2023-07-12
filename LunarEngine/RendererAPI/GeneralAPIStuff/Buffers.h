@@ -1,18 +1,20 @@
 #pragma once
 #include <cstdint>
 #include <vector>
+#include <memory>
 
 namespace GeneralAPIs
 {
 	enum class ShaderDataType
 	{
-		None = 0, Vec3, Vec4, Float, Mat3, Mat4
+		None = 0, Vec2, Vec3, Vec4, Float, Mat3, Mat4
 	};
 	static uint32_t ShaderDataTypeSize(ShaderDataType type)
 	{
 		switch (type)
 		{
 		case ShaderDataType::Float:    return 4;
+		case ShaderDataType::Vec2:	return 4 * 2;
 		case ShaderDataType::Vec3:   return 4 * 3;
 		case ShaderDataType::Vec4:   return 4 * 4;
 		case ShaderDataType::Mat3:     return 4 * 3 * 3;
@@ -23,12 +25,12 @@ namespace GeneralAPIs
 
 	// Struct that stores the size of data of specifc elements.
 	// Example: storing 3 floats for position vertices, and 2 floats for tex coords.
+	template <typename T>
 	struct BufferLayoutElement	// Currently only handles floats
 	{
 	public:		// Methods
-		template <typename T>
 		BufferLayoutElement(uint32_t count, ShaderDataType type):
-			Count(count), _sizePerElement(sizeof(T)), Type(type), SizeInBytes(ShaderDataTypeSize(Type))
+			Count(count), Type(type), SizeInBytes(ShaderDataTypeSize(Type))
 		{}
 
 	public:		// Members
@@ -47,12 +49,12 @@ namespace GeneralAPIs
 		template<typename T>
 		void push(uint32_t count, ShaderDataType type)
 		{
-			_elements.push_back(BufferLayoutElement<T>(count, type));
-			_elements.end()->Type = type;
+			_elements.emplace_back(BufferLayoutElement<T>(count, type));
+			_elements.back().Type = type;
 			recalculateOffsetAndStride();
 		}
 
-		inline const std::vector<BufferLayoutElement> getElements() const { return _elements; }
+		inline const std::vector<BufferLayoutElement<float>>& getElements() const { return _elements; }
 		inline const uint32_t getStride() const { return _stride; }
 	
 	private:	// Methods
@@ -60,17 +62,21 @@ namespace GeneralAPIs
 	
 	private:	// Members
 		uint32_t _stride;
-		std::vector<BufferLayoutElement> _elements;
+		std::vector<BufferLayoutElement<float>> _elements;
 	};
 
 	class Buffer
 	{
 	public:		// Methods
+		Buffer()
+		{
+
+		}
 		virtual ~Buffer() = default;
 		virtual void bind() const = 0;
 		virtual void unbind() const = 0;
 		const inline uint32_t getSize() const { return _size; }
-		inline BufferLayout getLayout() { return _layout; }
+		inline BufferLayout& getLayout() { return _layout; }
 	protected:	// Methods
 		virtual void setData(uint64_t dataSizeInBytes) = 0;
 		virtual void updateData(uint64_t dataSizeInBytes) = 0;
@@ -97,6 +103,7 @@ namespace GeneralAPIs
 		: public Buffer
 	{
 	public:		// Methods
+		virtual ~VertexBuffer() = default;
 		template <typename T>
 		void createBuffer(uint32_t size, T* data)
 		{
@@ -122,6 +129,7 @@ namespace GeneralAPIs
 		: public Buffer
 	{
 	public:		// Methods
+		virtual ~IndexBuffer() = default;
 		void createBuffer(uint32_t size, uint64_t* data)
 		{
 			readyBuffer<uint64_t>(size, data);

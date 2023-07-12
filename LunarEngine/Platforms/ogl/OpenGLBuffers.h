@@ -22,6 +22,7 @@ namespace OpenGL
 	class IndexBuffer
 		: public GeneralAPIs::IndexBuffer
 	{
+	public:
 		~IndexBuffer() override;
 		void bind() const override;
 		void unbind() const override;

@@ -7,7 +7,7 @@ void GeneralAPIs::BufferLayout::recalculateOffsetAndStride()
 	for (auto& element : _elements)
 	{
 		element.Offset = offset;
-		offset += element.SizeInBytes * element.Count;
-		_stride += element.SizeInBytes * element.Count;
+		offset += element.SizeInBytes;
+		_stride += element.SizeInBytes;
 	}
 }

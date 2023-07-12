@@ -1,18 +1,18 @@
 #include "OpenGLVertexArray.h"
 #include <math.h>
 
-OpenGL::OpenGLVertexArray::~OpenGLVertexArray()
+OpenGL::VertexArray::~VertexArray()
 {
 	unbind();
 	glDeleteVertexArrays(1, &_id);
 }
 
-OpenGL::OpenGLVertexArray::OpenGLVertexArray()
+OpenGL::VertexArray::VertexArray()
 {
 	glGenVertexArrays(1, &_id);
 }
 
-void OpenGL::OpenGLVertexArray::addVertexBuffer(const std::unique_ptr<GeneralAPIs::VertexBuffer>& vb)
+void OpenGL::VertexArray::addVertexBuffer(std::unique_ptr<GeneralAPIs::VertexBuffer>& vb)
 {
 	const GeneralAPIs::BufferLayout& layout = vb->getLayout();
 
@@ -21,10 +21,11 @@ void OpenGL::OpenGLVertexArray::addVertexBuffer(const std::unique_ptr<GeneralAPI
 		switch (element.Type)
 		{
 			case GeneralAPIs::ShaderDataType::Float:
+			case GeneralAPIs::ShaderDataType::Vec2:
 			case GeneralAPIs::ShaderDataType::Vec3:
 			case GeneralAPIs::ShaderDataType::Vec4:
 			{	
-				glEnableVertexAttribArray(_vertexBufferIndex);
+				glCall(glEnableVertexAttribArray(_vertexBufferIndex));
 				glCall(glVertexAttribPointer(_vertexBufferIndex, element.Count, GL_FLOAT, GL_FALSE, layout.getStride(), (void*)element.Offset));
 				++_vertexBufferIndex;
 				break;
@@ -36,9 +37,9 @@ void OpenGL::OpenGLVertexArray::addVertexBuffer(const std::unique_ptr<GeneralAPI
 				
 				for (uint8_t i = 0; i < count; i++)
 				{
-					glEnableVertexAttribArray(_vertexBufferIndex);
-					glVertexAttribPointer(_vertexBufferIndex, count, GL_FLOAT, GL_FALSE, layout.getStride(), (const void*)(element.Offset + sizeof(float) * count * i));
-					glVertexAttribDivisor(_vertexBufferIndex, 1);
+					glCall(glEnableVertexAttribArray(_vertexBufferIndex));
+					glCall(glVertexAttribPointer(_vertexBufferIndex, count, GL_FLOAT, GL_FALSE, layout.getStride(), (const void*)(element.Offset + sizeof(float) * count * i)));
+					glCall(glVertexAttribDivisor(_vertexBufferIndex, 1));
 					++_vertexBufferIndex;
 				}
 			}
@@ -47,19 +48,19 @@ void OpenGL::OpenGLVertexArray::addVertexBuffer(const std::unique_ptr<GeneralAPI
 	GeneralAPIs::VertexArray::addVertexBuffer(vb);
 }
 
-void OpenGL::OpenGLVertexArray::setIndexBuffer(std::unique_ptr<GeneralAPIs::IndexBuffer>& ib)
+void OpenGL::VertexArray::setIndexBuffer(std::unique_ptr<GeneralAPIs::IndexBuffer>& ib)
 {
 	bind();
 	ib->bind();
 	_indexBuffer.reset(ib.release());
 }
 
-void OpenGL::OpenGLVertexArray::bind()
+void OpenGL::VertexArray::bind()
 {
-	glBindVertexArray(_id);
+	glCall(glBindVertexArray(_id));
 }
 
-void OpenGL::OpenGLVertexArray::unbind()
+void OpenGL::VertexArray::unbind()
 {
 	glCall(glBindVertexArray(0));
 }
