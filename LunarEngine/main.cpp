@@ -27,8 +27,8 @@ int main()
 	std::unique_ptr<GeneralAPIs::VertexBuffer> vb(std::move(renderer->createVertexBuffer()));
 	vb->createBuffer<float>(8, vertices);
 	vb->getLayout().push<float>(2, GeneralAPIs::ShaderDataType::Vec2);
-	//std::unique_ptr<GeneralAPIs::IndexBuffer> ib(std::move(renderer->createIndexBuffer().release()));
-	//ib->createBuffer(6, indices);
+	std::unique_ptr<GeneralAPIs::IndexBuffer> ib(std::move(renderer->createIndexBuffer().release()));
+	ib->createBuffer(6, indices);
 
 	const char* vertexShaderSource = "#version 330 core\n"
 		"layout (location = 0) in vec2 aPos;\n"
@@ -65,10 +65,10 @@ int main()
 		// Use the shader program
 		glUseProgram(shaderProgram);
 		vao->bind();
-		//ib->bind();
+		ib->bind();
 
 		// Draw the triangle
-		glDrawArrays(GL_TRIANGLES, 0, 3);
+		glDrawElements(GL_TRIANGLES, 6, GL_FLOAT, nullptr);
 
 		// Swap the front and back buffers
 		glfwSwapBuffers(window);
