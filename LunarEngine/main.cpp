@@ -58,7 +58,7 @@ int main()
 	renderer->setClearColor({ 0.1f, 0.4f, 0.2f , 1.0f });
 	std::unique_ptr<GeneralAPIs::VertexArray> vao(std::move(renderer->createVAO()));
 	vao->bind();
-	vao->addVertexBuffer(vb);
+	vao->addVertexBuffer(vb); 
 	while (!glfwWindowShouldClose(window)) {
 		// Clear the screen
 		renderer->clear();
