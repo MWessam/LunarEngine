@@ -1,6 +1,7 @@
 #include "OpenGLAPI.h"
 #include "OpenGLBuffers.h"
 #include "OpenGLVertexArray.h"
+#include "OpenGLShaders.h"
 
 namespace OpenGL
 {
@@ -43,5 +44,9 @@ namespace OpenGL
 	std::unique_ptr<GeneralAPIs::VertexArray> OpenGLAPI::createVAO()
 	{
 		return std::make_unique<OpenGL::VertexArray>();
+	}
+	std::unique_ptr<GeneralAPIs::Shaders> OpenGLAPI::createShader()
+	{
+		return std::make_unique<OpenGL::OpenGLShaders>();
 	}
 }

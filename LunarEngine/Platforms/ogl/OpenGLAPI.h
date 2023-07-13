@@ -17,6 +17,8 @@ namespace OpenGL
         std::unique_ptr<GeneralAPIs::VertexBuffer> createVertexBuffer() override;
         std::unique_ptr<GeneralAPIs::IndexBuffer> createIndexBuffer() override;
         std::unique_ptr<GeneralAPIs::VertexArray> createVAO() override;
+        std::unique_ptr<GeneralAPIs::Shaders> createShader() override;
+
     };
 }
 

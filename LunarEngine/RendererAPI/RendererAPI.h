@@ -2,6 +2,7 @@
 #include "glm/glm.hpp"
 #include "RendererAPI/GeneralAPIStuff/Buffers.h"
 #include "RendererAPI/GeneralAPIStuff/VertexArray.h"
+#include "RendererAPI/GeneralAPIStuff/Shaders.h"
 #include <memory>
 
 	enum class API
@@ -28,7 +29,7 @@ public:		// Methods
 	virtual std::unique_ptr<GeneralAPIs::VertexBuffer> createVertexBuffer() = 0;
 	virtual std::unique_ptr<GeneralAPIs::IndexBuffer> createIndexBuffer() = 0;
 	virtual std::unique_ptr<GeneralAPIs::VertexArray> createVAO() = 0;
-
+	virtual std::unique_ptr<GeneralAPIs::Shaders> createShader() = 0;
 
 	// Static methods
 	static std::unique_ptr<RendererAPI> create(API api);
