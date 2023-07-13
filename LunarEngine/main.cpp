@@ -6,7 +6,7 @@ int main()
 {
 	API api = API::OpenGL;
 	std::unique_ptr<RendererAPI> renderer = RendererAPI::create(api);
-	uint64_t indices[] = {
+	uint32_t indices[] = {
 		0, 1, 2,
 		2, 3, 0
 	};
@@ -68,7 +68,7 @@ int main()
 		ib->bind();
 
 		// Draw the triangle
-		glDrawElements(GL_TRIANGLES, 6, GL_FLOAT, nullptr);
+		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
 		// Swap the front and back buffers
 		glfwSwapBuffers(window);

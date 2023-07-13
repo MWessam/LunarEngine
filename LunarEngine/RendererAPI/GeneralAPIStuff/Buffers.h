@@ -2,6 +2,7 @@
 #include <cstdint>
 #include <vector>
 #include <memory>
+#include <iostream>
 
 namespace GeneralAPIs
 {
@@ -83,7 +84,6 @@ namespace GeneralAPIs
 		template <typename T> 
 		void readyBuffer(uint32_t size, T* data)
 		{
-			bind();
 			_size = size;
 			_data = data;
 		}
@@ -130,10 +130,11 @@ namespace GeneralAPIs
 	{
 	public:		// Methods
 		virtual ~IndexBuffer() = default;
-		void createBuffer(uint32_t size, uint64_t* data)
+		void createBuffer(uint32_t size, uint32_t* data)
 		{
-			readyBuffer<uint64_t>(size, data);
-			setData(sizeof(uint64_t));
+			std::cout << data[2] << std::endl;
+			readyBuffer<uint32_t>(size, data);
+			setData(sizeof(uint32_t));
 		}
 
 	private:	// Methods
