@@ -1,11 +1,12 @@
 #pragma once
 #include "RendererAPI/RendererAPI.h"
 #include <glad/glad.h>
+#include <GLFW/glfw3.h>
 #include "Graphics/GLDebug.h"
 namespace OpenGL
 {
     class OpenGLAPI :
-        public RendererAPI
+        public GeneralAPIs::RendererAPI
     {
     public:     //Methods
         // Overriden methods
@@ -18,6 +19,9 @@ namespace OpenGL
         std::unique_ptr<GeneralAPIs::IndexBuffer> createIndexBuffer() override;
         std::unique_ptr<GeneralAPIs::VertexArray> createVAO() override;
         std::unique_ptr<GeneralAPIs::Shaders> createShader() override;
+        std::unique_ptr<GeneralAPIs::Context> createContext() override;
+        std::unique_ptr<GeneralAPIs::Window> createWindow(int width, int height, const std::string& title, std::unique_ptr<GeneralAPIs::Context>& context) override;
+
 
     };
 }

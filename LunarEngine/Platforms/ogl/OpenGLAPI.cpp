@@ -2,6 +2,8 @@
 #include "OpenGLBuffers.h"
 #include "OpenGLVertexArray.h"
 #include "OpenGLShaders.h"
+#include "OpenGlContext.h"
+#include "OpenGLWindow.h"
 
 namespace OpenGL
 {
@@ -48,5 +50,13 @@ namespace OpenGL
 	std::unique_ptr<GeneralAPIs::Shaders> OpenGLAPI::createShader()
 	{
 		return std::make_unique<OpenGL::OpenGLShaders>();
+	}
+	std::unique_ptr<GeneralAPIs::Context> OpenGLAPI::createContext()
+	{
+		return std::make_unique<OpenGL::OpenGlContext>();
+	}
+	std::unique_ptr<GeneralAPIs::Window> OpenGLAPI::createWindow(int width, int height, const std::string& title, std::unique_ptr<GeneralAPIs::Context>& context)
+	{
+		return std::make_unique<OpenGL::OpenGLWindow>(width, height, title, std::move(context));
 	}
 }

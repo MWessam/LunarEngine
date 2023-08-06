@@ -1,7 +1,7 @@
 #include "RendererAPI.h"
 #include "Platforms/ogl/OpenGLAPI.h"
-API RendererAPI::s_API = API::None;
-std::unique_ptr<RendererAPI> RendererAPI::create(API api)
+GeneralAPIs::API GeneralAPIs::RendererAPI::s_API = API::None;
+std::unique_ptr<GeneralAPIs::RendererAPI> GeneralAPIs::RendererAPI::create(API api)
 {
 	s_API = api;
 	switch (s_API)

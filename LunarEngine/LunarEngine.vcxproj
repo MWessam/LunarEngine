@@ -133,28 +133,39 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Platforms\ogl\OpenGLWindow.cpp" />
+    <ClCompile Include="RendererAPI\GeneralAPIStuff\Context.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="Graphics\GLDebug.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Platforms\ogl\OpenGlContext.cpp" />
     <ClCompile Include="Platforms\ogl\OpenGLShaders.cpp" />
     <ClCompile Include="Platforms\ogl\OpenGLVertexArray.cpp" />
     <ClCompile Include="Platforms\ogl\OpenGLBuffers.cpp" />
     <ClCompile Include="Platforms\ogl\OpenGLAPI.cpp" />
+    <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="RendererAPI\RendererAPI.cpp" />
     <ClCompile Include="RendererAPI\GeneralAPIStuff\Buffers.cpp" />
     <ClCompile Include="RendererAPI\GeneralAPIStuff\VertexArray.cpp" />
     <ClCompile Include="RendererAPI\GeneralAPIStuff\Shaders.cpp" />
+    <ClCompile Include="RendererAPI\GeneralAPIStuff\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Platforms\ogl\OpenGLWindow.h" />
+    <ClInclude Include="RendererAPI\GeneralAPIStuff\Context.h" />
     <ClInclude Include="Graphics\GLDebug.h" />
+    <ClInclude Include="Platforms\ogl\OpenGlContext.h" />
     <ClInclude Include="Platforms\ogl\OpenGLShaders.h" />
     <ClInclude Include="Platforms\ogl\OpenGLVertexArray.h" />
     <ClInclude Include="Platforms\ogl\OpenGLBuffers.h" />
     <ClInclude Include="Platforms\ogl\OpenGLAPI.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="RendererAPI\GeneralAPIStuff\WindowProperties.h" />
     <ClInclude Include="RendererAPI\RendererAPI.h" />
     <ClInclude Include="RendererAPI\GeneralAPIStuff\Buffers.h" />
     <ClInclude Include="RendererAPI\GeneralAPIStuff\VertexArray.h" />
     <ClInclude Include="RendererAPI\GeneralAPIStuff\Shaders.h" />
+    <ClInclude Include="RendererAPI\GeneralAPIStuff\Window.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Graphics\ShaderSource\Default.shader" />
