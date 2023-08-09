@@ -55,7 +55,7 @@ namespace OpenGL
 	{
 		return std::make_unique<OpenGL::OpenGlContext>();
 	}
-	std::unique_ptr<GeneralAPIs::Window> OpenGLAPI::createWindow(int width, int height, const std::string& title, std::unique_ptr<GeneralAPIs::Context>& context)
+	std::unique_ptr<GeneralAPIs::Window> OpenGLAPI::createWindow(int width, int height, const std::string& title, std::unique_ptr<GeneralAPIs::Context> context)
 	{
 		return std::make_unique<OpenGL::OpenGLWindow>(width, height, title, std::move(context));
 	}

@@ -14,6 +14,7 @@ namespace GeneralAPIs
 		virtual void pollEvents() = 0;
 		virtual void swapBuffers() = 0;
 		virtual void terminate() = 0;
+		void updateWindow();
 		
 	protected:	// Methods
 

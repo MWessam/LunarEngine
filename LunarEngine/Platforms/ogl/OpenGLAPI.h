@@ -20,7 +20,7 @@ namespace OpenGL
         std::unique_ptr<GeneralAPIs::VertexArray> createVAO() override;
         std::unique_ptr<GeneralAPIs::Shaders> createShader() override;
         std::unique_ptr<GeneralAPIs::Context> createContext() override;
-        std::unique_ptr<GeneralAPIs::Window> createWindow(int width, int height, const std::string& title, std::unique_ptr<GeneralAPIs::Context>& context) override;
+        std::unique_ptr<GeneralAPIs::Window> createWindow(int width, int height, const std::string& title, std::unique_ptr<GeneralAPIs::Context> context) override;
 
 
     };
