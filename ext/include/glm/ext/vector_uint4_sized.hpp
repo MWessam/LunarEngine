@@ -13,8 +13,8 @@
 
 #pragma once
 
-#include "../ext/vector_uint4.hpp"
-#include "../ext/scalar_uint_sized.hpp"
+#include "vector_uint4.hpp"
+#include "scalar_uint_sized.hpp"
 
 #if GLM_MESSAGES == GLM_ENABLE && !defined(GLM_EXT_INCLUDED)
 #	pragma message("GLM: GLM_EXT_vector_uint4_sized extension included")

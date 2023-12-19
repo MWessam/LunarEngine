@@ -30,7 +30,6 @@ void OpenGL::VertexBuffer::updateData(uint64_t dataSizeInBytes)
 	glCall(glBufferData(GL_ARRAY_BUFFER, _size * dataSizeInBytes, _data, GL_STATIC_DRAW));
 }
 
-
 /// INDEX BUFFER vvvvvvv
 OpenGL::IndexBuffer::~IndexBuffer()
 {

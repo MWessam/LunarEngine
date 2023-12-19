@@ -132,7 +132,6 @@ namespace GeneralAPIs
 		virtual ~IndexBuffer() = default;
 		void createBuffer(uint32_t size, uint32_t* data)
 		{
-			std::cout << data[2] << std::endl;
 			readyBuffer<uint32_t>(size, data);
 			setData(sizeof(uint32_t));
 		}

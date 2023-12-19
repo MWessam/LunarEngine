@@ -11,14 +11,15 @@ namespace Renderer
 	public:		// Members
 		float DeltaTime;
 	public:		// Methods
-		Renderer(const GeneralAPIs::API& apiType);
+		Renderer(std::shared_ptr<GeneralAPIs::RendererAPI> apiType);
 		void createWindow(uint16_t width, uint16_t height, std::string title);
 		bool render();
+		void updateRenderer();
+
 	private:	// Members
-		std::unique_ptr<GeneralAPIs::RendererAPI> _api;
+		std::shared_ptr<GeneralAPIs::RendererAPI> _api;
 		std::unique_ptr<GeneralAPIs::Window> _window;
 		clock_t _lastTime = clock();
-
 	private:	// Methods
 		void renderFrame();
 		void updateScene();

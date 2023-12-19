@@ -14,7 +14,7 @@
 
 // Dependency:
 #include "../mat4x2.hpp"
-#include "../ext/scalar_int_sized.hpp"
+#include "scalar_int_sized.hpp"
 
 #if GLM_MESSAGES == GLM_ENABLE && !defined(GLM_EXT_INCLUDED)
 #	pragma message("GLM: GLM_EXT_matrix_int4x2_sized extension included")

@@ -13,12 +13,8 @@ namespace OpenGL
 		void pollEvents() override;
 		void swapBuffers() override;
 		void terminate() override;
-
 	private:	// Members
 		GLFWwindow* _contextCached;
-
 	protected:	// Methods
 	};
 }
-
-

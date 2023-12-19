@@ -36,9 +36,8 @@ namespace GeneralAPIs
 		virtual std::unique_ptr<GeneralAPIs::Shaders> createShader() = 0;
 		virtual std::unique_ptr<GeneralAPIs::Context> createContext() = 0;
 		virtual std::unique_ptr<GeneralAPIs::Window> createWindow(int width, int height, const std::string& title, std::unique_ptr<GeneralAPIs::Context> context) = 0;
-
 		// Static methods
-		static std::unique_ptr<RendererAPI> create(API api);
+		static std::shared_ptr<RendererAPI> create(API api);
 		inline static const API getAPI() { return s_API; }
 
 	protected:	// Methods
