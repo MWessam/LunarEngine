@@ -1,4 +1,4 @@
-# Install script for directory: D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm
+# Install script for directory: D:/Active Projects/LunarEngine/thirdparty/glm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

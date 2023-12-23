@@ -1,7 +1,6 @@
 #pragma once
 #include "Shaders.h"
 #include "OpenGLAPI.h"
-#include <unordered_map>
 namespace OpenGL
 {
 	class OpenGLShaders
@@ -16,7 +15,7 @@ namespace OpenGL
 
 
 	public:		// Methods
-		OpenGLShaders() {}
+		OpenGLShaders(const std::string &name, const std::string &path) : Shaders(name, path) {}
 		~OpenGLShaders() override;
 
 		void bind() override;

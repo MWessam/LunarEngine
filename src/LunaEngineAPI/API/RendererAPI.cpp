@@ -7,7 +7,19 @@ std::shared_ptr<GeneralAPIs::RendererAPI> GeneralAPIs::RendererAPI::create(API a
 	switch (s_API)
 	{
 		case API::OpenGL:
-			std::shared_ptr<OpenGL::OpenGLAPI> apiPtr(new OpenGL::OpenGLAPI());
-			return apiPtr;
-	}
+			S_API = std::make_shared<OpenGL::OpenGLAPI>();
+			return S_API;
+        case API::DirectX11:
+            break;
+        case API::DriectX12:
+            break;
+        case API::Vulkan:
+            break;
+        case API::None:
+            break;
+    }
+}
+
+std::shared_ptr<GeneralAPIs::ShaderLibrary> GeneralAPIs::RendererAPI::createShaderLibrary() {
+    return std::make_shared<GeneralAPIs::ShaderLibrary>();
 }

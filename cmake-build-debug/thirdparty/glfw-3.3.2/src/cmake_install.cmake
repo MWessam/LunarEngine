@@ -1,4 +1,4 @@
-# Install script for directory: D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src
+# Install script for directory: D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

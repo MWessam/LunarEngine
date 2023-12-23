@@ -5,7 +5,7 @@
 #include "Shaders.h"
 #include "Context.h"
 #include "Window.h"
-#include <memory>
+#include "LunaEngineAPI/Core/LunarIncludes.h"
 
 namespace GeneralAPIs
 {
@@ -33,13 +33,15 @@ namespace GeneralAPIs
 		virtual std::unique_ptr<GeneralAPIs::VertexBuffer> createVertexBuffer() = 0;
 		virtual std::unique_ptr<GeneralAPIs::IndexBuffer> createIndexBuffer() = 0;
 		virtual std::unique_ptr<GeneralAPIs::VertexArray> createVAO() = 0;
-		virtual std::unique_ptr<GeneralAPIs::Shaders> createShader() = 0;
 		virtual std::unique_ptr<GeneralAPIs::Context> createContext() = 0;
-		virtual std::unique_ptr<GeneralAPIs::Window> createWindow(int width, int height, const std::string& title, std::unique_ptr<GeneralAPIs::Context> context) = 0;
+        virtual std::shared_ptr<GeneralAPIs::Shaders> createShader(const std::string& name, const std::string& path) = 0;
+		virtual std::shared_ptr<GeneralAPIs::Window> createWindow(int width, int height, const std::string& title, std::unique_ptr<GeneralAPIs::Context> context) = 0;
+        std::shared_ptr<GeneralAPIs::ShaderLibrary> createShaderLibrary();
 		// Static methods
 		static std::shared_ptr<RendererAPI> create(API api);
 		inline static const API getAPI() { return s_API; }
-
+    public:
+        static std::shared_ptr<RendererAPI> S_API;
 	protected:	// Methods
 
 	private:	// Members

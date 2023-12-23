@@ -47,16 +47,16 @@ namespace OpenGL
 	{
 		return std::make_unique<OpenGL::VertexArray>();
 	}
-	std::unique_ptr<GeneralAPIs::Shaders> OpenGLAPI::createShader()
+	std::shared_ptr<GeneralAPIs::Shaders> OpenGLAPI::createShader(const std::string& name, const std::string& path)
 	{
-		return std::make_unique<OpenGL::OpenGLShaders>();
+		return std::make_shared<OpenGL::OpenGLShaders>(name, path);
 	}
 	std::unique_ptr<GeneralAPIs::Context> OpenGLAPI::createContext()
 	{
 		return std::make_unique<OpenGL::OpenGlContext>();
 	}
-	std::unique_ptr<GeneralAPIs::Window> OpenGLAPI::createWindow(int width, int height, const std::string& title, std::unique_ptr<GeneralAPIs::Context> context)
+	std::shared_ptr<GeneralAPIs::Window> OpenGLAPI::createWindow(int width, int height, const std::string& title, std::unique_ptr<GeneralAPIs::Context> context)
 	{
-		return std::make_unique<OpenGL::OpenGLWindow>(width, height, title, std::move(context));
+		return std::make_shared<OpenGL::OpenGLWindow>(width, height, title, std::move(context));
 	}
 }

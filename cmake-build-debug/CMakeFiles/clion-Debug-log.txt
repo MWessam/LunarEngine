@@ -1,4 +1,4 @@
-"D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S "D:\Active Projects\LunarEngineCmake\LunaEngine" -B "D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug"
+"D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S "D:\Active Projects\LunarEngine" -B "D:\Active Projects\LunarEngine\cmake-build-debug"
 -- Using Win32 for window creation
 -- Configuring done (0.1s)
 CMake Warning (dev) at thirdparty/stb_image/CMakeLists.txt:4 (add_library):
@@ -8,7 +8,7 @@ CMake Warning (dev) at thirdparty/stb_image/CMakeLists.txt:4 (add_library):
 
   File:
 
-    D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_image/src/stb_image.cpp
+    D:/Active Projects/LunarEngine/thirdparty/stb_image/src/stb_image.cpp
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
 CMake Warning (dev) at thirdparty/stb_truetype/CMakeLists.txt:4 (add_library):
@@ -18,8 +18,8 @@ CMake Warning (dev) at thirdparty/stb_truetype/CMakeLists.txt:4 (add_library):
 
   File:
 
-    D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_truetype/src/stb_truetype.cpp
+    D:/Active Projects/LunarEngine/thirdparty/stb_truetype/src/stb_truetype.cpp
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
 -- Generating done (0.0s)
--- Build files have been written to: D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug
+-- Build files have been written to: D:/Active Projects/LunarEngine/cmake-build-debug

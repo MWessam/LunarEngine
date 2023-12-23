@@ -1,4 +1,4 @@
-# Install script for directory: D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_truetype
+# Install script for directory: D:/Active Projects/LunarEngine/thirdparty/stb_truetype
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

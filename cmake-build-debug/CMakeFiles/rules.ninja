@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: mygame
+# Project: LunaEngine
 # Configurations: Debug
 # =============================================================================
 # =============================================================================
@@ -14,7 +14,7 @@
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__mygame_unscanned_Debug
+rule CXX_COMPILER__LunaEngine_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = "D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,7 @@ rule CXX_COMPILER__mygame_unscanned_Debug
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__mygame_Debug
+rule CXX_EXECUTABLE_LINKER__LunaEngine_Debug
   command = cmd.exe /C "$PRE_LINK && "D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -156,7 +156,7 @@ rule CXX_STATIC_LIBRARY_LINKER__imgui_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"D:\Active Projects\LunarEngineCmake\LunaEngine" -B"D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug"
+  command = "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"D:\Active Projects\LunarEngine" -B"D:\Active Projects\LunarEngine\cmake-build-debug"
   description = Re-running CMake...
   generator = 1
 
@@ -165,7 +165,7 @@ rule RERUN_CMAKE
 # Rule for re-checking globbed directories.
 
 rule VERIFY_GLOBS
-  command = "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -P "D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug\CMakeFiles\VerifyGlobs.cmake"
+  command = "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -P "D:\Active Projects\LunarEngine\cmake-build-debug\CMakeFiles\VerifyGlobs.cmake"
   description = Re-checking globbed directories...
   generator = 1
 

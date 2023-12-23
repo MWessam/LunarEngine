@@ -1,4 +1,4 @@
-# Install script for directory: D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking
+# Install script for directory: D:/Active Projects/LunarEngine/thirdparty/imgui-docking
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

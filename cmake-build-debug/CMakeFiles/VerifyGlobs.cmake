@@ -3,27 +3,27 @@
 cmake_policy(SET CMP0009 NEW)
 
 # MY_SOURCES at CMakeLists.txt:33 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/Active Projects/LunarEngineCmake/LunaEngine/src/*.cpp")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/Active Projects/LunarEngine/src/*.cpp")
 set(OLD_GLOB
-  "D:/Active Projects/LunarEngineCmake/LunaEngine/src/LunaEngineAPI/Buffers.cpp"
-  "D:/Active Projects/LunarEngineCmake/LunaEngine/src/LunaEngineAPI/Context.cpp"
-  "D:/Active Projects/LunarEngineCmake/LunaEngine/src/LunaEngineAPI/Renderer.cpp"
-  "D:/Active Projects/LunarEngineCmake/LunaEngine/src/LunaEngineAPI/RendererAPI.cpp"
-  "D:/Active Projects/LunarEngineCmake/LunaEngine/src/LunaEngineAPI/Shaders.cpp"
-  "D:/Active Projects/LunarEngineCmake/LunaEngine/src/LunaEngineAPI/VertexArray.cpp"
-  "D:/Active Projects/LunarEngineCmake/LunaEngine/src/LunaEngineAPI/Window.cpp"
-  "D:/Active Projects/LunarEngineCmake/LunaEngine/src/OpenGLPlatform/GLDebug.cpp"
-  "D:/Active Projects/LunarEngineCmake/LunaEngine/src/OpenGLPlatform/OpenGLAPI.cpp"
-  "D:/Active Projects/LunarEngineCmake/LunaEngine/src/OpenGLPlatform/OpenGLBuffers.cpp"
-  "D:/Active Projects/LunarEngineCmake/LunaEngine/src/OpenGLPlatform/OpenGLShaders.cpp"
-  "D:/Active Projects/LunarEngineCmake/LunaEngine/src/OpenGLPlatform/OpenGLVertexArray.cpp"
-  "D:/Active Projects/LunarEngineCmake/LunaEngine/src/OpenGLPlatform/OpenGLWindow.cpp"
-  "D:/Active Projects/LunarEngineCmake/LunaEngine/src/OpenGLPlatform/OpenGlContext.cpp"
-  "D:/Active Projects/LunarEngineCmake/LunaEngine/src/Scene/ECS/Transform.cpp"
-  "D:/Active Projects/LunarEngineCmake/LunaEngine/src/Scene/Scene.cpp"
-  "D:/Active Projects/LunarEngineCmake/LunaEngine/src/main.cpp"
+  "D:/Active Projects/LunarEngine/src/LunaEngineAPI/API/Buffers.cpp"
+  "D:/Active Projects/LunarEngine/src/LunaEngineAPI/API/Context.cpp"
+  "D:/Active Projects/LunarEngine/src/LunaEngineAPI/API/Renderer.cpp"
+  "D:/Active Projects/LunarEngine/src/LunaEngineAPI/API/RendererAPI.cpp"
+  "D:/Active Projects/LunarEngine/src/LunaEngineAPI/API/Shaders.cpp"
+  "D:/Active Projects/LunarEngine/src/LunaEngineAPI/API/VertexArray.cpp"
+  "D:/Active Projects/LunarEngine/src/LunaEngineAPI/API/Window.cpp"
+  "D:/Active Projects/LunarEngine/src/LunaEngineAPI/Core/Log.cpp"
+  "D:/Active Projects/LunarEngine/src/LunaEngineAPI/OpenGLPlatform/GLDebug.cpp"
+  "D:/Active Projects/LunarEngine/src/LunaEngineAPI/OpenGLPlatform/OpenGLAPI.cpp"
+  "D:/Active Projects/LunarEngine/src/LunaEngineAPI/OpenGLPlatform/OpenGLBuffers.cpp"
+  "D:/Active Projects/LunarEngine/src/LunaEngineAPI/OpenGLPlatform/OpenGLShaders.cpp"
+  "D:/Active Projects/LunarEngine/src/LunaEngineAPI/OpenGLPlatform/OpenGLVertexArray.cpp"
+  "D:/Active Projects/LunarEngine/src/LunaEngineAPI/OpenGLPlatform/OpenGLWindow.cpp"
+  "D:/Active Projects/LunarEngine/src/LunaEngineAPI/OpenGLPlatform/OpenGlContext.cpp"
+  "D:/Active Projects/LunarEngine/src/Scene/Scene.cpp"
+  "D:/Active Projects/LunarEngine/src/main.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "D:/Active Projects/LunarEngine/cmake-build-debug/CMakeFiles/cmake.verify_globs")
 endif()

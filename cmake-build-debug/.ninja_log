@@ -1,51 +1,39 @@
 # ninja log v5
 2710	4247	7250125535605358	thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/osmesa_context.c.obj	ccd34e150027cb36
-637	1473	7250138734477384	CMakeFiles/mygame.dir/src/LunaEngineAPI/Buffers.cpp.obj	3b5e20291558abf6
-6	1243	7250139898175441	CMakeFiles/mygame.dir/src/main.cpp.obj	9a3cb6f6bf50544e
-1	18	7250140142710919	D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/CMakeFiles/cmake.verify_globs	745b40e0cac8181
-13	573	7250093290128876	CMakeFiles/mygame.dir/src/LunaEngine.cpp.obj	eed4675e6690573b
+0	29	0	D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/CMakeFiles/cmake.verify_globs	745b40e0cac8181
 2809	8391	7250125576978628	thirdparty/raudio/CMakeFiles/raudio.dir/src/raudio.c.obj	1f5b51d623a97681
-48	596	7250093290358888	CMakeFiles/mygame.dir/src/RendererAPI/GeneralAPIStuff/Context.cpp.obj	7979e5858bb132c5
-623	1440	7250138734155559	CMakeFiles/mygame.dir/src/Graphics/GLDebug.cpp.obj	aad5c067e6ebadb8
-36	2577	7250138745526312	CMakeFiles/mygame.dir/src/OpenGLPlatform/OpenGLVertexArray.cpp.obj	fcefa83f032c1cc2
-20	221	7250140143837026	build.ninja	8bfa8ce12540b09f
+0	21	0	D:/Active Projects/LunarEngine/cmake-build-debug/CMakeFiles/cmake.verify_globs	24a3f42d8f0c04dc
 38	951	7250124021183018	thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/monitor.c.obj	a27af52c495a4f5e
-8	623	7250138725980635	CMakeFiles/mygame.dir/src/LunaEngineAPI/Context.cpp.obj	996941638f15f710
-15	636	7250138726071115	CMakeFiles/mygame.dir/src/LunaEngineAPI/Shaders.cpp.obj	8138fcb6d8ea11d8
+18	208	7250676386554690	build.ninja	8bfa8ce12540b09f
 23	1259	7250124897110753	thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_thread.c.obj	b37c3a0935bd6144
-19	921	7250138728963873	CMakeFiles/mygame.dir/src/LunaEngineAPI/VertexArray.cpp.obj	67ec365a49b16bc6
-4	2359	7250138743297658	CMakeFiles/mygame.dir/src/LunaEngineAPI/Renderer.cpp.obj	7b69acb6fa74e6f0
-28	3007	7250138749818924	CMakeFiles/mygame.dir/src/OpenGLPlatform/OpenGLAPI.cpp.obj	504afd76bbdd8893
-836	2944	7250138749213946	CMakeFiles/mygame.dir/src/Scene/ECS/Transform.cpp.obj	f27f4021ee12d6f8
-1473	3816	7250138757888962	CMakeFiles/mygame.dir/src/Scene/Scene.cpp.obj	a1d55c0f205764f2
+26	1077	7250631770643757	CMakeFiles/mygame.dir/src/LunaEngineAPI/API/Window.cpp.obj	9eefc4216f338e82
 8	842	7250123969704100	thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/context.c.obj	cda425d31ef66b30
 45	860	7250123969878181	thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/init.c.obj	ca482a74df014c31
 43	1025	7250124021911515	thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/input.c.obj	c417fd9906288a37
 42	1306	7250124555424492	thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_init.c.obj	80f50cb3cdf8c9b5
+13	1037	7250631770319423	CMakeFiles/mygame.dir/src/LunaEngineAPI/API/Context.cpp.obj	cc066c295143f217
 36	1392	7250124556308304	thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/window.c.obj	69ffb96a9264ed76
-32	2447	7250138744227743	CMakeFiles/mygame.dir/src/OpenGLPlatform/OpenGLBuffers.cpp.obj	ca0a61353c3c5e2c
 4160	7379	7250125566904777	thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.obj	5559852e45d784a6
-921	3177	7250138751538907	CMakeFiles/mygame.dir/src/OpenGLPlatform/OpenGlContext.cpp.obj	9c7e561f5f0197e
-5	1230	7250139178516414	CMakeFiles/mygame.dir/src/OpenGLPlatform/OpenGLShaders.cpp.obj	71657e170cc6c972
 4373	6841	7250125561561530	thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.obj	208210aade97335c
 32	1284	7250124897373902	thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_time.c.obj	9b73b69cce96c491
 14	1301	7250124897449939	thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/vulkan.c.obj	8729e48bd1b9022d
 4547	5064	7250125543792814	thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.obj	e1326c2264859f15
+41	2900	7250631789112334	CMakeFiles/mygame.dir/src/LunaEngineAPI/OpenGLPlatform/OpenGLBuffers.cpp.obj	43fee698883291db
 18	1345	7250124897992615	thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_monitor.c.obj	9920679f67974759
 5064	6709	7250125560188462	thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.obj	bcfa88acfb9b446e
 2831	7885	7250125571957365	thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/imgui.cpp.obj	d2f48d8bed5d4ed8
 37	1350	7250124898042622	thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/wgl_context.c.obj	f0c4f17d1cf542d3
 43	1365	7250124898184639	thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/egl_context.c.obj	a6d565e1dd5d8100
 28	1433	7250124898884628	thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_window.c.obj	3597b60891067c67
-12	2459	7250138744297746	CMakeFiles/mygame.dir/src/LunaEngineAPI/RendererAPI.cpp.obj	637e2c3abec2ab17
 3485	6511	7250125558218596	thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.obj	f6f978463035f9ad
-23	835	7250138728080091	CMakeFiles/mygame.dir/src/LunaEngineAPI/Window.cpp.obj	71f302ea88068e81
-1440	3433	7250138754108872	CMakeFiles/mygame.dir/src/OpenGLPlatform/OpenGLWindow.cpp.obj	693b716feca2894d
 1098	2911	7250125522263670	thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_joystick.c.obj	3e681d6d83ba6b49
 2777	3814	7250125531287131	thirdparty/stb_truetype/CMakeFiles/stb_truetype.dir/src/stb_truetype.cpp.obj	f2d0c03271b797b1
+36	1207	7250631772177528	CMakeFiles/mygame.dir/src/LunaEngineAPI/API/VertexArray.cpp.obj	ba2fdbdc5f085f4c
+1025	3545	7250631795578011	CMakeFiles/mygame.dir/src/LunaEngineAPI/OpenGLPlatform/OpenGLVertexArray.cpp.obj	f664901104602644
 3815	4160	7250125534639676	thirdparty/stb_truetype/libstb_truetype.a	234334f4acf38e31
 4248	4373	7250125536830082	thirdparty/glfw-3.3.2/src/libglfw3.a	d4e9821a48c9d0c5
 2802	4428	7250125537401257	thirdparty/stb_image/CMakeFiles/stb_image.dir/src/stb_image.cpp.obj	fc0aa6520e6db47d
+55	1088	7250631770759116	CMakeFiles/mygame.dir/src/LunaEngineAPI/API/Buffers.cpp.obj	d60c5583bc4e32ac
 4428	4546	7250125538575118	thirdparty/stb_image/libstb_image.a	be034006cde6a14d
 3134	5210	7250125545241392	thirdparty/safeSave/CMakeFiles/safeSave.dir/src/safeSave.cpp.obj	ea8393f575d47abe
 5210	5399	7250125546930997	thirdparty/safeSave/libsafeSave.a	7a25ca7a1d77ea92
@@ -56,13 +44,9 @@
 5519	8449	7250125577610849	thirdparty/glui/CMakeFiles/glui.dir/src/glui.cpp.obj	4603e18dd905621
 6	73	7250137102268121	thirdparty/raudio/libraudio.a	a84a2e0b09c3272b
 11	244	7250137103968098	thirdparty/imgui-docking/libimgui.a	a6206af30ae673d8
-1231	1610	7250139182260060	mygame.exe	da303fc90150f56f
-18	208	7250140143837026	build.ninja	8bfa8ce12540b09f
-1	25	0	D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/CMakeFiles/cmake.verify_globs	745b40e0cac8181
-5	372	7250140148698948	CMakeFiles/mygame.dir/src/OpenGLPlatform/GLDebug.cpp.obj	8c7635b61168b6e1
-372	736	7250140152268288	mygame.exe	43cb5b6fd53cd7ca
-0	20	0	D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/CMakeFiles/cmake.verify_globs	745b40e0cac8181
-1	17	0	D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/CMakeFiles/cmake.verify_globs	745b40e0cac8181
-0	29	0	D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/CMakeFiles/cmake.verify_globs	745b40e0cac8181
-6	1847	7250141710746303	CMakeFiles/mygame.dir/src/main.cpp.obj	9a3cb6f6bf50544e
 1848	2308	7250141715265489	mygame.exe	43cb5b6fd53cd7ca
+23	1024	7250631770287928	CMakeFiles/mygame.dir/src/LunaEngineAPI/OpenGLPlatform/GLDebug.cpp.obj	74754784b80bb1da
+16	2946	7250631789522183	CMakeFiles/mygame.dir/src/LunaEngineAPI/API/RendererAPI.cpp.obj	bff0bfbef969769e
+1037	3636	7250631796485911	CMakeFiles/mygame.dir/src/LunaEngineAPI/OpenGLPlatform/OpenGLShaders.cpp.obj	d8d193a1db4e480e
+1077	3477	7250631794889048	CMakeFiles/mygame.dir/src/LunaEngineAPI/OpenGLPlatform/OpenGLWindow.cpp.obj	e64665ceae87c93f
+1207	3564	7250631795778358	CMakeFiles/mygame.dir/src/LunaEngineAPI/OpenGLPlatform/OpenGlContext.cpp.obj	3936fdbf78351f2d

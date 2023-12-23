@@ -1,4 +1,4 @@
-# Install script for directory: D:/Active Projects/LunarEngineCmake/LunaEngine
+# Install script for directory: D:/Active Projects/LunarEngine
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,37 +39,37 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/glfw-3.3.2/cmake_install.cmake")
+  include("D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/glfw-3.3.2/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/glad/cmake_install.cmake")
+  include("D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/glad/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/stb_image/cmake_install.cmake")
+  include("D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/stb_image/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/stb_truetype/cmake_install.cmake")
+  include("D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/stb_truetype/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/raudio/cmake_install.cmake")
+  include("D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/raudio/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/glm/cmake_install.cmake")
+  include("D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/glm/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/imgui-docking/cmake_install.cmake")
+  include("D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/imgui-docking/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -80,5 +80,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Active Projects/LunarEngine/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

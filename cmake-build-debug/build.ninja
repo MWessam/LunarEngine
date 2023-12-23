@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: mygame
+# Project: LunaEngine
 # Configurations: Debug
 # =============================================================================
 
@@ -39,176 +39,176 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = D$:/Active$ Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/
+cmake_ninja_workdir = D$:/Active$ Projects/LunarEngine/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target mygame
+# Object build statements for EXECUTABLE target LunaEngine
 
 
 #############################################
-# Order-only phony target for mygame
+# Order-only phony target for LunaEngine
 
-build cmake_object_order_depends_target_mygame: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_imgui cmake_object_order_depends_target_raudio cmake_object_order_depends_target_stb_image cmake_object_order_depends_target_stb_truetype
+build cmake_object_order_depends_target_LunaEngine: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_imgui cmake_object_order_depends_target_raudio cmake_object_order_depends_target_stb_image cmake_object_order_depends_target_stb_truetype
 
-build CMakeFiles/mygame.dir/src/LunaEngineAPI/Buffers.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/src/LunaEngineAPI/Buffers.cpp || cmake_object_order_depends_target_mygame
-  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngineCmake/LunaEngine/resources/\""
-  DEP_FILE = CMakeFiles\mygame.dir\src\LunaEngineAPI\Buffers.cpp.obj.d
+build CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/API/Buffers.cpp.obj: CXX_COMPILER__LunaEngine_unscanned_Debug D$:/Active$ Projects/LunarEngine/src/LunaEngineAPI/API/Buffers.cpp || cmake_object_order_depends_target_LunaEngine
+  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngine/resources/\""
+  DEP_FILE = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\API\Buffers.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/entt" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/Scene" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui"
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src\LunaEngineAPI
+  INCLUDES = -I"D:/Active Projects/LunarEngine/include" -I"D:/Active Projects/LunarEngine/include/entt" -I"D:/Active Projects/LunarEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngine/include/Scene" -I"D:/Active Projects/LunarEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngine/thirdparty/imgui-docking/imgui"
+  OBJECT_DIR = CMakeFiles\LunaEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\API
 
-build CMakeFiles/mygame.dir/src/LunaEngineAPI/Context.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/src/LunaEngineAPI/Context.cpp || cmake_object_order_depends_target_mygame
-  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngineCmake/LunaEngine/resources/\""
-  DEP_FILE = CMakeFiles\mygame.dir\src\LunaEngineAPI\Context.cpp.obj.d
+build CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/API/Context.cpp.obj: CXX_COMPILER__LunaEngine_unscanned_Debug D$:/Active$ Projects/LunarEngine/src/LunaEngineAPI/API/Context.cpp || cmake_object_order_depends_target_LunaEngine
+  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngine/resources/\""
+  DEP_FILE = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\API\Context.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/entt" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/Scene" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui"
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src\LunaEngineAPI
+  INCLUDES = -I"D:/Active Projects/LunarEngine/include" -I"D:/Active Projects/LunarEngine/include/entt" -I"D:/Active Projects/LunarEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngine/include/Scene" -I"D:/Active Projects/LunarEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngine/thirdparty/imgui-docking/imgui"
+  OBJECT_DIR = CMakeFiles\LunaEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\API
 
-build CMakeFiles/mygame.dir/src/LunaEngineAPI/Renderer.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/src/LunaEngineAPI/Renderer.cpp || cmake_object_order_depends_target_mygame
-  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngineCmake/LunaEngine/resources/\""
-  DEP_FILE = CMakeFiles\mygame.dir\src\LunaEngineAPI\Renderer.cpp.obj.d
+build CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/API/Renderer.cpp.obj: CXX_COMPILER__LunaEngine_unscanned_Debug D$:/Active$ Projects/LunarEngine/src/LunaEngineAPI/API/Renderer.cpp || cmake_object_order_depends_target_LunaEngine
+  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngine/resources/\""
+  DEP_FILE = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\API\Renderer.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/entt" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/Scene" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui"
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src\LunaEngineAPI
+  INCLUDES = -I"D:/Active Projects/LunarEngine/include" -I"D:/Active Projects/LunarEngine/include/entt" -I"D:/Active Projects/LunarEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngine/include/Scene" -I"D:/Active Projects/LunarEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngine/thirdparty/imgui-docking/imgui"
+  OBJECT_DIR = CMakeFiles\LunaEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\API
 
-build CMakeFiles/mygame.dir/src/LunaEngineAPI/RendererAPI.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/src/LunaEngineAPI/RendererAPI.cpp || cmake_object_order_depends_target_mygame
-  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngineCmake/LunaEngine/resources/\""
-  DEP_FILE = CMakeFiles\mygame.dir\src\LunaEngineAPI\RendererAPI.cpp.obj.d
+build CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/API/RendererAPI.cpp.obj: CXX_COMPILER__LunaEngine_unscanned_Debug D$:/Active$ Projects/LunarEngine/src/LunaEngineAPI/API/RendererAPI.cpp || cmake_object_order_depends_target_LunaEngine
+  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngine/resources/\""
+  DEP_FILE = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\API\RendererAPI.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/entt" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/Scene" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui"
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src\LunaEngineAPI
+  INCLUDES = -I"D:/Active Projects/LunarEngine/include" -I"D:/Active Projects/LunarEngine/include/entt" -I"D:/Active Projects/LunarEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngine/include/Scene" -I"D:/Active Projects/LunarEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngine/thirdparty/imgui-docking/imgui"
+  OBJECT_DIR = CMakeFiles\LunaEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\API
 
-build CMakeFiles/mygame.dir/src/LunaEngineAPI/Shaders.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/src/LunaEngineAPI/Shaders.cpp || cmake_object_order_depends_target_mygame
-  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngineCmake/LunaEngine/resources/\""
-  DEP_FILE = CMakeFiles\mygame.dir\src\LunaEngineAPI\Shaders.cpp.obj.d
+build CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/API/Shaders.cpp.obj: CXX_COMPILER__LunaEngine_unscanned_Debug D$:/Active$ Projects/LunarEngine/src/LunaEngineAPI/API/Shaders.cpp || cmake_object_order_depends_target_LunaEngine
+  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngine/resources/\""
+  DEP_FILE = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\API\Shaders.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/entt" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/Scene" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui"
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src\LunaEngineAPI
+  INCLUDES = -I"D:/Active Projects/LunarEngine/include" -I"D:/Active Projects/LunarEngine/include/entt" -I"D:/Active Projects/LunarEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngine/include/Scene" -I"D:/Active Projects/LunarEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngine/thirdparty/imgui-docking/imgui"
+  OBJECT_DIR = CMakeFiles\LunaEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\API
 
-build CMakeFiles/mygame.dir/src/LunaEngineAPI/VertexArray.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/src/LunaEngineAPI/VertexArray.cpp || cmake_object_order_depends_target_mygame
-  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngineCmake/LunaEngine/resources/\""
-  DEP_FILE = CMakeFiles\mygame.dir\src\LunaEngineAPI\VertexArray.cpp.obj.d
+build CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/API/VertexArray.cpp.obj: CXX_COMPILER__LunaEngine_unscanned_Debug D$:/Active$ Projects/LunarEngine/src/LunaEngineAPI/API/VertexArray.cpp || cmake_object_order_depends_target_LunaEngine
+  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngine/resources/\""
+  DEP_FILE = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\API\VertexArray.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/entt" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/Scene" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui"
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src\LunaEngineAPI
+  INCLUDES = -I"D:/Active Projects/LunarEngine/include" -I"D:/Active Projects/LunarEngine/include/entt" -I"D:/Active Projects/LunarEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngine/include/Scene" -I"D:/Active Projects/LunarEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngine/thirdparty/imgui-docking/imgui"
+  OBJECT_DIR = CMakeFiles\LunaEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\API
 
-build CMakeFiles/mygame.dir/src/LunaEngineAPI/Window.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/src/LunaEngineAPI/Window.cpp || cmake_object_order_depends_target_mygame
-  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngineCmake/LunaEngine/resources/\""
-  DEP_FILE = CMakeFiles\mygame.dir\src\LunaEngineAPI\Window.cpp.obj.d
+build CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/API/Window.cpp.obj: CXX_COMPILER__LunaEngine_unscanned_Debug D$:/Active$ Projects/LunarEngine/src/LunaEngineAPI/API/Window.cpp || cmake_object_order_depends_target_LunaEngine
+  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngine/resources/\""
+  DEP_FILE = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\API\Window.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/entt" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/Scene" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui"
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src\LunaEngineAPI
+  INCLUDES = -I"D:/Active Projects/LunarEngine/include" -I"D:/Active Projects/LunarEngine/include/entt" -I"D:/Active Projects/LunarEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngine/include/Scene" -I"D:/Active Projects/LunarEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngine/thirdparty/imgui-docking/imgui"
+  OBJECT_DIR = CMakeFiles\LunaEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\API
 
-build CMakeFiles/mygame.dir/src/OpenGLPlatform/GLDebug.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/src/OpenGLPlatform/GLDebug.cpp || cmake_object_order_depends_target_mygame
-  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngineCmake/LunaEngine/resources/\""
-  DEP_FILE = CMakeFiles\mygame.dir\src\OpenGLPlatform\GLDebug.cpp.obj.d
+build CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/Core/Log.cpp.obj: CXX_COMPILER__LunaEngine_unscanned_Debug D$:/Active$ Projects/LunarEngine/src/LunaEngineAPI/Core/Log.cpp || cmake_object_order_depends_target_LunaEngine
+  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngine/resources/\""
+  DEP_FILE = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\Core\Log.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/entt" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/Scene" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui"
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src\OpenGLPlatform
+  INCLUDES = -I"D:/Active Projects/LunarEngine/include" -I"D:/Active Projects/LunarEngine/include/entt" -I"D:/Active Projects/LunarEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngine/include/Scene" -I"D:/Active Projects/LunarEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngine/thirdparty/imgui-docking/imgui"
+  OBJECT_DIR = CMakeFiles\LunaEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\Core
 
-build CMakeFiles/mygame.dir/src/OpenGLPlatform/OpenGLAPI.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/src/OpenGLPlatform/OpenGLAPI.cpp || cmake_object_order_depends_target_mygame
-  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngineCmake/LunaEngine/resources/\""
-  DEP_FILE = CMakeFiles\mygame.dir\src\OpenGLPlatform\OpenGLAPI.cpp.obj.d
+build CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/OpenGLPlatform/GLDebug.cpp.obj: CXX_COMPILER__LunaEngine_unscanned_Debug D$:/Active$ Projects/LunarEngine/src/LunaEngineAPI/OpenGLPlatform/GLDebug.cpp || cmake_object_order_depends_target_LunaEngine
+  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngine/resources/\""
+  DEP_FILE = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\OpenGLPlatform\GLDebug.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/entt" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/Scene" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui"
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src\OpenGLPlatform
+  INCLUDES = -I"D:/Active Projects/LunarEngine/include" -I"D:/Active Projects/LunarEngine/include/entt" -I"D:/Active Projects/LunarEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngine/include/Scene" -I"D:/Active Projects/LunarEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngine/thirdparty/imgui-docking/imgui"
+  OBJECT_DIR = CMakeFiles\LunaEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\OpenGLPlatform
 
-build CMakeFiles/mygame.dir/src/OpenGLPlatform/OpenGLBuffers.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/src/OpenGLPlatform/OpenGLBuffers.cpp || cmake_object_order_depends_target_mygame
-  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngineCmake/LunaEngine/resources/\""
-  DEP_FILE = CMakeFiles\mygame.dir\src\OpenGLPlatform\OpenGLBuffers.cpp.obj.d
+build CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/OpenGLPlatform/OpenGLAPI.cpp.obj: CXX_COMPILER__LunaEngine_unscanned_Debug D$:/Active$ Projects/LunarEngine/src/LunaEngineAPI/OpenGLPlatform/OpenGLAPI.cpp || cmake_object_order_depends_target_LunaEngine
+  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngine/resources/\""
+  DEP_FILE = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\OpenGLPlatform\OpenGLAPI.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/entt" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/Scene" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui"
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src\OpenGLPlatform
+  INCLUDES = -I"D:/Active Projects/LunarEngine/include" -I"D:/Active Projects/LunarEngine/include/entt" -I"D:/Active Projects/LunarEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngine/include/Scene" -I"D:/Active Projects/LunarEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngine/thirdparty/imgui-docking/imgui"
+  OBJECT_DIR = CMakeFiles\LunaEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\OpenGLPlatform
 
-build CMakeFiles/mygame.dir/src/OpenGLPlatform/OpenGLShaders.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/src/OpenGLPlatform/OpenGLShaders.cpp || cmake_object_order_depends_target_mygame
-  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngineCmake/LunaEngine/resources/\""
-  DEP_FILE = CMakeFiles\mygame.dir\src\OpenGLPlatform\OpenGLShaders.cpp.obj.d
+build CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/OpenGLPlatform/OpenGLBuffers.cpp.obj: CXX_COMPILER__LunaEngine_unscanned_Debug D$:/Active$ Projects/LunarEngine/src/LunaEngineAPI/OpenGLPlatform/OpenGLBuffers.cpp || cmake_object_order_depends_target_LunaEngine
+  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngine/resources/\""
+  DEP_FILE = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\OpenGLPlatform\OpenGLBuffers.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/entt" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/Scene" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui"
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src\OpenGLPlatform
+  INCLUDES = -I"D:/Active Projects/LunarEngine/include" -I"D:/Active Projects/LunarEngine/include/entt" -I"D:/Active Projects/LunarEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngine/include/Scene" -I"D:/Active Projects/LunarEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngine/thirdparty/imgui-docking/imgui"
+  OBJECT_DIR = CMakeFiles\LunaEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\OpenGLPlatform
 
-build CMakeFiles/mygame.dir/src/OpenGLPlatform/OpenGLVertexArray.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/src/OpenGLPlatform/OpenGLVertexArray.cpp || cmake_object_order_depends_target_mygame
-  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngineCmake/LunaEngine/resources/\""
-  DEP_FILE = CMakeFiles\mygame.dir\src\OpenGLPlatform\OpenGLVertexArray.cpp.obj.d
+build CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/OpenGLPlatform/OpenGLShaders.cpp.obj: CXX_COMPILER__LunaEngine_unscanned_Debug D$:/Active$ Projects/LunarEngine/src/LunaEngineAPI/OpenGLPlatform/OpenGLShaders.cpp || cmake_object_order_depends_target_LunaEngine
+  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngine/resources/\""
+  DEP_FILE = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\OpenGLPlatform\OpenGLShaders.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/entt" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/Scene" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui"
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src\OpenGLPlatform
+  INCLUDES = -I"D:/Active Projects/LunarEngine/include" -I"D:/Active Projects/LunarEngine/include/entt" -I"D:/Active Projects/LunarEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngine/include/Scene" -I"D:/Active Projects/LunarEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngine/thirdparty/imgui-docking/imgui"
+  OBJECT_DIR = CMakeFiles\LunaEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\OpenGLPlatform
 
-build CMakeFiles/mygame.dir/src/OpenGLPlatform/OpenGLWindow.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/src/OpenGLPlatform/OpenGLWindow.cpp || cmake_object_order_depends_target_mygame
-  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngineCmake/LunaEngine/resources/\""
-  DEP_FILE = CMakeFiles\mygame.dir\src\OpenGLPlatform\OpenGLWindow.cpp.obj.d
+build CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/OpenGLPlatform/OpenGLVertexArray.cpp.obj: CXX_COMPILER__LunaEngine_unscanned_Debug D$:/Active$ Projects/LunarEngine/src/LunaEngineAPI/OpenGLPlatform/OpenGLVertexArray.cpp || cmake_object_order_depends_target_LunaEngine
+  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngine/resources/\""
+  DEP_FILE = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\OpenGLPlatform\OpenGLVertexArray.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/entt" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/Scene" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui"
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src\OpenGLPlatform
+  INCLUDES = -I"D:/Active Projects/LunarEngine/include" -I"D:/Active Projects/LunarEngine/include/entt" -I"D:/Active Projects/LunarEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngine/include/Scene" -I"D:/Active Projects/LunarEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngine/thirdparty/imgui-docking/imgui"
+  OBJECT_DIR = CMakeFiles\LunaEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\OpenGLPlatform
 
-build CMakeFiles/mygame.dir/src/OpenGLPlatform/OpenGlContext.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/src/OpenGLPlatform/OpenGlContext.cpp || cmake_object_order_depends_target_mygame
-  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngineCmake/LunaEngine/resources/\""
-  DEP_FILE = CMakeFiles\mygame.dir\src\OpenGLPlatform\OpenGlContext.cpp.obj.d
+build CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/OpenGLPlatform/OpenGLWindow.cpp.obj: CXX_COMPILER__LunaEngine_unscanned_Debug D$:/Active$ Projects/LunarEngine/src/LunaEngineAPI/OpenGLPlatform/OpenGLWindow.cpp || cmake_object_order_depends_target_LunaEngine
+  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngine/resources/\""
+  DEP_FILE = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\OpenGLPlatform\OpenGLWindow.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/entt" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/Scene" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui"
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src\OpenGLPlatform
+  INCLUDES = -I"D:/Active Projects/LunarEngine/include" -I"D:/Active Projects/LunarEngine/include/entt" -I"D:/Active Projects/LunarEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngine/include/Scene" -I"D:/Active Projects/LunarEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngine/thirdparty/imgui-docking/imgui"
+  OBJECT_DIR = CMakeFiles\LunaEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\OpenGLPlatform
 
-build CMakeFiles/mygame.dir/src/Scene/ECS/Transform.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/src/Scene/ECS/Transform.cpp || cmake_object_order_depends_target_mygame
-  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngineCmake/LunaEngine/resources/\""
-  DEP_FILE = CMakeFiles\mygame.dir\src\Scene\ECS\Transform.cpp.obj.d
+build CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/OpenGLPlatform/OpenGlContext.cpp.obj: CXX_COMPILER__LunaEngine_unscanned_Debug D$:/Active$ Projects/LunarEngine/src/LunaEngineAPI/OpenGLPlatform/OpenGlContext.cpp || cmake_object_order_depends_target_LunaEngine
+  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngine/resources/\""
+  DEP_FILE = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\OpenGLPlatform\OpenGlContext.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/entt" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/Scene" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui"
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src\Scene\ECS
+  INCLUDES = -I"D:/Active Projects/LunarEngine/include" -I"D:/Active Projects/LunarEngine/include/entt" -I"D:/Active Projects/LunarEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngine/include/Scene" -I"D:/Active Projects/LunarEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngine/thirdparty/imgui-docking/imgui"
+  OBJECT_DIR = CMakeFiles\LunaEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\LunaEngine.dir\src\LunaEngineAPI\OpenGLPlatform
 
-build CMakeFiles/mygame.dir/src/Scene/Scene.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/src/Scene/Scene.cpp || cmake_object_order_depends_target_mygame
-  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngineCmake/LunaEngine/resources/\""
-  DEP_FILE = CMakeFiles\mygame.dir\src\Scene\Scene.cpp.obj.d
+build CMakeFiles/LunaEngine.dir/src/Scene/Scene.cpp.obj: CXX_COMPILER__LunaEngine_unscanned_Debug D$:/Active$ Projects/LunarEngine/src/Scene/Scene.cpp || cmake_object_order_depends_target_LunaEngine
+  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngine/resources/\""
+  DEP_FILE = CMakeFiles\LunaEngine.dir\src\Scene\Scene.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/entt" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/Scene" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui"
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src\Scene
+  INCLUDES = -I"D:/Active Projects/LunarEngine/include" -I"D:/Active Projects/LunarEngine/include/entt" -I"D:/Active Projects/LunarEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngine/include/Scene" -I"D:/Active Projects/LunarEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngine/thirdparty/imgui-docking/imgui"
+  OBJECT_DIR = CMakeFiles\LunaEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\LunaEngine.dir\src\Scene
 
-build CMakeFiles/mygame.dir/src/main.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/src/main.cpp || cmake_object_order_depends_target_mygame
-  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngineCmake/LunaEngine/resources/\""
-  DEP_FILE = CMakeFiles\mygame.dir\src\main.cpp.obj.d
+build CMakeFiles/LunaEngine.dir/src/main.cpp.obj: CXX_COMPILER__LunaEngine_unscanned_Debug D$:/Active$ Projects/LunarEngine/src/main.cpp || cmake_object_order_depends_target_LunaEngine
+  DEFINES = -DPRODUCTION_BUILD=0 -DRESOURCES_PATH="\"D:/Active Projects/LunarEngine/resources/\""
+  DEP_FILE = CMakeFiles\LunaEngine.dir\src\main.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/entt" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/include/Scene" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui"
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src
+  INCLUDES = -I"D:/Active Projects/LunarEngine/include" -I"D:/Active Projects/LunarEngine/include/entt" -I"D:/Active Projects/LunarEngine/include/LunaEngineAPI" -I"D:/Active Projects/LunarEngine/include/OpenGLPlatform" -I"D:/Active Projects/LunarEngine/include/Scene" -I"D:/Active Projects/LunarEngine/thirdparty/glm/include" -I"D:/Active Projects/LunarEngine/thirdparty/glm" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glad/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_image/include" -I"D:/Active Projects/LunarEngine/thirdparty/stb_truetype/include" -I"D:/Active Projects/LunarEngine/thirdparty/raudio/include" -I"D:/Active Projects/LunarEngine/thirdparty/imgui-docking/imgui"
+  OBJECT_DIR = CMakeFiles\LunaEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\LunaEngine.dir\src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target mygame
+# Link build statements for EXECUTABLE target LunaEngine
 
 
 #############################################
-# Link the executable mygame.exe
+# Link the executable LunaEngine.exe
 
-build mygame.exe: CXX_EXECUTABLE_LINKER__mygame_Debug CMakeFiles/mygame.dir/src/LunaEngineAPI/Buffers.cpp.obj CMakeFiles/mygame.dir/src/LunaEngineAPI/Context.cpp.obj CMakeFiles/mygame.dir/src/LunaEngineAPI/Renderer.cpp.obj CMakeFiles/mygame.dir/src/LunaEngineAPI/RendererAPI.cpp.obj CMakeFiles/mygame.dir/src/LunaEngineAPI/Shaders.cpp.obj CMakeFiles/mygame.dir/src/LunaEngineAPI/VertexArray.cpp.obj CMakeFiles/mygame.dir/src/LunaEngineAPI/Window.cpp.obj CMakeFiles/mygame.dir/src/OpenGLPlatform/GLDebug.cpp.obj CMakeFiles/mygame.dir/src/OpenGLPlatform/OpenGLAPI.cpp.obj CMakeFiles/mygame.dir/src/OpenGLPlatform/OpenGLBuffers.cpp.obj CMakeFiles/mygame.dir/src/OpenGLPlatform/OpenGLShaders.cpp.obj CMakeFiles/mygame.dir/src/OpenGLPlatform/OpenGLVertexArray.cpp.obj CMakeFiles/mygame.dir/src/OpenGLPlatform/OpenGLWindow.cpp.obj CMakeFiles/mygame.dir/src/OpenGLPlatform/OpenGlContext.cpp.obj CMakeFiles/mygame.dir/src/Scene/ECS/Transform.cpp.obj CMakeFiles/mygame.dir/src/Scene/Scene.cpp.obj CMakeFiles/mygame.dir/src/main.cpp.obj | thirdparty/glfw-3.3.2/src/libglfw3.a thirdparty/glad/libglad.a thirdparty/stb_image/libstb_image.a thirdparty/stb_truetype/libstb_truetype.a thirdparty/raudio/libraudio.a thirdparty/imgui-docking/libimgui.a thirdparty/glfw-3.3.2/src/libglfw3.a thirdparty/glad/libglad.a || thirdparty/glad/libglad.a thirdparty/glfw-3.3.2/src/libglfw3.a thirdparty/imgui-docking/libimgui.a thirdparty/raudio/libraudio.a thirdparty/stb_image/libstb_image.a thirdparty/stb_truetype/libstb_truetype.a
+build LunaEngine.exe: CXX_EXECUTABLE_LINKER__LunaEngine_Debug CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/API/Buffers.cpp.obj CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/API/Context.cpp.obj CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/API/Renderer.cpp.obj CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/API/RendererAPI.cpp.obj CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/API/Shaders.cpp.obj CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/API/VertexArray.cpp.obj CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/API/Window.cpp.obj CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/Core/Log.cpp.obj CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/OpenGLPlatform/GLDebug.cpp.obj CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/OpenGLPlatform/OpenGLAPI.cpp.obj CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/OpenGLPlatform/OpenGLBuffers.cpp.obj CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/OpenGLPlatform/OpenGLShaders.cpp.obj CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/OpenGLPlatform/OpenGLVertexArray.cpp.obj CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/OpenGLPlatform/OpenGLWindow.cpp.obj CMakeFiles/LunaEngine.dir/src/LunaEngineAPI/OpenGLPlatform/OpenGlContext.cpp.obj CMakeFiles/LunaEngine.dir/src/Scene/Scene.cpp.obj CMakeFiles/LunaEngine.dir/src/main.cpp.obj | thirdparty/glfw-3.3.2/src/libglfw3.a thirdparty/glad/libglad.a thirdparty/stb_image/libstb_image.a thirdparty/stb_truetype/libstb_truetype.a thirdparty/raudio/libraudio.a thirdparty/imgui-docking/libimgui.a thirdparty/glfw-3.3.2/src/libglfw3.a thirdparty/glad/libglad.a || thirdparty/glad/libglad.a thirdparty/glfw-3.3.2/src/libglfw3.a thirdparty/imgui-docking/libimgui.a thirdparty/raudio/libraudio.a thirdparty/stb_image/libstb_image.a thirdparty/stb_truetype/libstb_truetype.a
   FLAGS = -g
   LINK_LIBRARIES = thirdparty/glfw-3.3.2/src/libglfw3.a  thirdparty/glad/libglad.a  thirdparty/stb_image/libstb_image.a  thirdparty/stb_truetype/libstb_truetype.a  thirdparty/raudio/libraudio.a  thirdparty/imgui-docking/libimgui.a  thirdparty/glfw-3.3.2/src/libglfw3.a  thirdparty/glad/libglad.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\mygame.dir
+  OBJECT_DIR = CMakeFiles\LunaEngine.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = mygame.exe
-  TARGET_IMPLIB = libmygame.dll.a
-  TARGET_PDB = mygame.exe.dbg
+  TARGET_FILE = LunaEngine.exe
+  TARGET_IMPLIB = libLunaEngine.dll.a
+  TARGET_PDB = LunaEngine.exe.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngine\cmake-build-debug" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -219,7 +219,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"D:\Active Projects\LunarEngineCmake\LunaEngine" -B"D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngine\cmake-build-debug" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"D:\Active Projects\LunarEngine" -B"D:\Active Projects\LunarEngine\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -228,7 +228,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# D:/Active Projects/LunarEngineCmake/LunaEngine/CMakeLists.txt
+# D:/Active Projects/LunarEngine/CMakeLists.txt
 # =============================================================================
 
 
@@ -236,7 +236,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build thirdparty/glfw-3.3.2/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug\thirdparty\glfw-3.3.2" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngine\cmake-build-debug\thirdparty\glfw-3.3.2" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -247,7 +247,7 @@ build thirdparty/glfw-3.3.2/edit_cache: phony thirdparty/glfw-3.3.2/CMakeFiles/e
 # Utility command for rebuild_cache
 
 build thirdparty/glfw-3.3.2/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug\thirdparty\glfw-3.3.2" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"D:\Active Projects\LunarEngineCmake\LunaEngine" -B"D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngine\cmake-build-debug\thirdparty\glfw-3.3.2" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"D:\Active Projects\LunarEngine" -B"D:\Active Projects\LunarEngine\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -256,7 +256,7 @@ build thirdparty/glfw-3.3.2/rebuild_cache: phony thirdparty/glfw-3.3.2/CMakeFile
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/CMakeLists.txt
+# D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -268,123 +268,123 @@ build thirdparty/glfw-3.3.2/rebuild_cache: phony thirdparty/glfw-3.3.2/CMakeFile
 
 build cmake_object_order_depends_target_glfw: phony || thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir
 
-build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/context.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src/context.c || cmake_object_order_depends_target_glfw
+build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/context.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/src/context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
   DEP_FILE = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\context.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always -Wall -Wdeclaration-after-statement
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
 
-build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/init.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src/init.c || cmake_object_order_depends_target_glfw
+build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/init.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/src/init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
   DEP_FILE = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\init.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always -Wall -Wdeclaration-after-statement
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
 
-build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/input.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src/input.c || cmake_object_order_depends_target_glfw
+build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/input.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/src/input.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
   DEP_FILE = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\input.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always -Wall -Wdeclaration-after-statement
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
 
-build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/monitor.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src/monitor.c || cmake_object_order_depends_target_glfw
+build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/monitor.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/src/monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
   DEP_FILE = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\monitor.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always -Wall -Wdeclaration-after-statement
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
 
-build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/vulkan.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src/vulkan.c || cmake_object_order_depends_target_glfw
+build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/vulkan.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/src/vulkan.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
   DEP_FILE = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\vulkan.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always -Wall -Wdeclaration-after-statement
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
 
-build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/window.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src/window.c || cmake_object_order_depends_target_glfw
+build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/window.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/src/window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
   DEP_FILE = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\window.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always -Wall -Wdeclaration-after-statement
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
 
-build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_init.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src/win32_init.c || cmake_object_order_depends_target_glfw
+build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_init.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/src/win32_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
   DEP_FILE = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\win32_init.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always -Wall -Wdeclaration-after-statement
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
 
-build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src/win32_joystick.c || cmake_object_order_depends_target_glfw
+build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/src/win32_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
   DEP_FILE = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\win32_joystick.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always -Wall -Wdeclaration-after-statement
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
 
-build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src/win32_monitor.c || cmake_object_order_depends_target_glfw
+build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/src/win32_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
   DEP_FILE = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\win32_monitor.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always -Wall -Wdeclaration-after-statement
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
 
-build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_time.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src/win32_time.c || cmake_object_order_depends_target_glfw
+build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_time.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/src/win32_time.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
   DEP_FILE = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\win32_time.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always -Wall -Wdeclaration-after-statement
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
 
-build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_thread.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src/win32_thread.c || cmake_object_order_depends_target_glfw
+build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_thread.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/src/win32_thread.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
   DEP_FILE = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\win32_thread.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always -Wall -Wdeclaration-after-statement
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
 
-build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_window.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src/win32_window.c || cmake_object_order_depends_target_glfw
+build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_window.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/src/win32_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
   DEP_FILE = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\win32_window.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always -Wall -Wdeclaration-after-statement
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
 
-build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/wgl_context.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src/wgl_context.c || cmake_object_order_depends_target_glfw
+build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/wgl_context.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/src/wgl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
   DEP_FILE = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\wgl_context.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always -Wall -Wdeclaration-after-statement
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
 
-build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/egl_context.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src/egl_context.c || cmake_object_order_depends_target_glfw
+build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/egl_context.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/src/egl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
   DEP_FILE = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\egl_context.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always -Wall -Wdeclaration-after-statement
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
 
-build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/osmesa_context.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src/osmesa_context.c || cmake_object_order_depends_target_glfw
+build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/osmesa_context.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/src/osmesa_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
   DEP_FILE = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\osmesa_context.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always -Wall -Wdeclaration-after-statement
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/src" -I"D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src"
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
 
@@ -409,7 +409,7 @@ build thirdparty/glfw-3.3.2/src/libglfw3.a: C_STATIC_LIBRARY_LINKER__glfw_Debug 
 # Utility command for edit_cache
 
 build thirdparty/glfw-3.3.2/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug\thirdparty\glfw-3.3.2\src" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngine\cmake-build-debug\thirdparty\glfw-3.3.2\src" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -420,7 +420,7 @@ build thirdparty/glfw-3.3.2/src/edit_cache: phony thirdparty/glfw-3.3.2/src/CMak
 # Utility command for rebuild_cache
 
 build thirdparty/glfw-3.3.2/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug\thirdparty\glfw-3.3.2\src" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"D:\Active Projects\LunarEngineCmake\LunaEngine" -B"D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngine\cmake-build-debug\thirdparty\glfw-3.3.2\src" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"D:\Active Projects\LunarEngine" -B"D:\Active Projects\LunarEngine\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -429,7 +429,7 @@ build thirdparty/glfw-3.3.2/src/rebuild_cache: phony thirdparty/glfw-3.3.2/src/C
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# D:/Active Projects/LunarEngineCmake/LunaEngine/CMakeLists.txt
+# D:/Active Projects/LunarEngine/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -441,10 +441,10 @@ build thirdparty/glfw-3.3.2/src/rebuild_cache: phony thirdparty/glfw-3.3.2/src/C
 
 build cmake_object_order_depends_target_glad: phony || thirdparty/glad/CMakeFiles/glad.dir
 
-build thirdparty/glad/CMakeFiles/glad.dir/src/glad.c.obj: C_COMPILER__glad_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/src/glad.c || cmake_object_order_depends_target_glad
+build thirdparty/glad/CMakeFiles/glad.dir/src/glad.c.obj: C_COMPILER__glad_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/glad/src/glad.c || cmake_object_order_depends_target_glad
   DEP_FILE = thirdparty\glad\CMakeFiles\glad.dir\src\glad.c.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/glad/include"
   OBJECT_DIR = thirdparty\glad\CMakeFiles\glad.dir
   OBJECT_FILE_DIR = thirdparty\glad\CMakeFiles\glad.dir\src
 
@@ -469,7 +469,7 @@ build thirdparty/glad/libglad.a: C_STATIC_LIBRARY_LINKER__glad_Debug thirdparty/
 # Utility command for edit_cache
 
 build thirdparty/glad/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug\thirdparty\glad" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngine\cmake-build-debug\thirdparty\glad" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -480,7 +480,7 @@ build thirdparty/glad/edit_cache: phony thirdparty/glad/CMakeFiles/edit_cache.ut
 # Utility command for rebuild_cache
 
 build thirdparty/glad/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug\thirdparty\glad" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"D:\Active Projects\LunarEngineCmake\LunaEngine" -B"D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngine\cmake-build-debug\thirdparty\glad" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"D:\Active Projects\LunarEngine" -B"D:\Active Projects\LunarEngine\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -489,7 +489,7 @@ build thirdparty/glad/rebuild_cache: phony thirdparty/glad/CMakeFiles/rebuild_ca
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# D:/Active Projects/LunarEngineCmake/LunaEngine/CMakeLists.txt
+# D:/Active Projects/LunarEngine/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -501,10 +501,10 @@ build thirdparty/glad/rebuild_cache: phony thirdparty/glad/CMakeFiles/rebuild_ca
 
 build cmake_object_order_depends_target_stb_image: phony || thirdparty/stb_image/CMakeFiles/stb_image.dir
 
-build thirdparty/stb_image/CMakeFiles/stb_image.dir/src/stb_image.cpp.obj: CXX_COMPILER__stb_image_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_image/src/stb_image.cpp || cmake_object_order_depends_target_stb_image
+build thirdparty/stb_image/CMakeFiles/stb_image.dir/src/stb_image.cpp.obj: CXX_COMPILER__stb_image_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/stb_image/src/stb_image.cpp || cmake_object_order_depends_target_stb_image
   DEP_FILE = thirdparty\stb_image\CMakeFiles\stb_image.dir\src\stb_image.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_image/include"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/stb_image/include"
   OBJECT_DIR = thirdparty\stb_image\CMakeFiles\stb_image.dir
   OBJECT_FILE_DIR = thirdparty\stb_image\CMakeFiles\stb_image.dir\src
 
@@ -529,7 +529,7 @@ build thirdparty/stb_image/libstb_image.a: CXX_STATIC_LIBRARY_LINKER__stb_image_
 # Utility command for edit_cache
 
 build thirdparty/stb_image/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug\thirdparty\stb_image" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngine\cmake-build-debug\thirdparty\stb_image" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -540,7 +540,7 @@ build thirdparty/stb_image/edit_cache: phony thirdparty/stb_image/CMakeFiles/edi
 # Utility command for rebuild_cache
 
 build thirdparty/stb_image/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug\thirdparty\stb_image" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"D:\Active Projects\LunarEngineCmake\LunaEngine" -B"D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngine\cmake-build-debug\thirdparty\stb_image" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"D:\Active Projects\LunarEngine" -B"D:\Active Projects\LunarEngine\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -549,7 +549,7 @@ build thirdparty/stb_image/rebuild_cache: phony thirdparty/stb_image/CMakeFiles/
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# D:/Active Projects/LunarEngineCmake/LunaEngine/CMakeLists.txt
+# D:/Active Projects/LunarEngine/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -561,10 +561,10 @@ build thirdparty/stb_image/rebuild_cache: phony thirdparty/stb_image/CMakeFiles/
 
 build cmake_object_order_depends_target_stb_truetype: phony || thirdparty/stb_truetype/CMakeFiles/stb_truetype.dir
 
-build thirdparty/stb_truetype/CMakeFiles/stb_truetype.dir/src/stb_truetype.cpp.obj: CXX_COMPILER__stb_truetype_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_truetype/src/stb_truetype.cpp || cmake_object_order_depends_target_stb_truetype
+build thirdparty/stb_truetype/CMakeFiles/stb_truetype.dir/src/stb_truetype.cpp.obj: CXX_COMPILER__stb_truetype_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/stb_truetype/src/stb_truetype.cpp || cmake_object_order_depends_target_stb_truetype
   DEP_FILE = thirdparty\stb_truetype\CMakeFiles\stb_truetype.dir\src\stb_truetype.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_truetype/include"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/stb_truetype/include"
   OBJECT_DIR = thirdparty\stb_truetype\CMakeFiles\stb_truetype.dir
   OBJECT_FILE_DIR = thirdparty\stb_truetype\CMakeFiles\stb_truetype.dir\src
 
@@ -589,7 +589,7 @@ build thirdparty/stb_truetype/libstb_truetype.a: CXX_STATIC_LIBRARY_LINKER__stb_
 # Utility command for edit_cache
 
 build thirdparty/stb_truetype/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug\thirdparty\stb_truetype" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngine\cmake-build-debug\thirdparty\stb_truetype" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -600,7 +600,7 @@ build thirdparty/stb_truetype/edit_cache: phony thirdparty/stb_truetype/CMakeFil
 # Utility command for rebuild_cache
 
 build thirdparty/stb_truetype/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug\thirdparty\stb_truetype" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"D:\Active Projects\LunarEngineCmake\LunaEngine" -B"D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngine\cmake-build-debug\thirdparty\stb_truetype" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"D:\Active Projects\LunarEngine" -B"D:\Active Projects\LunarEngine\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -609,7 +609,7 @@ build thirdparty/stb_truetype/rebuild_cache: phony thirdparty/stb_truetype/CMake
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# D:/Active Projects/LunarEngineCmake/LunaEngine/CMakeLists.txt
+# D:/Active Projects/LunarEngine/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -621,10 +621,10 @@ build thirdparty/stb_truetype/rebuild_cache: phony thirdparty/stb_truetype/CMake
 
 build cmake_object_order_depends_target_raudio: phony || thirdparty/raudio/CMakeFiles/raudio.dir
 
-build thirdparty/raudio/CMakeFiles/raudio.dir/src/raudio.c.obj: C_COMPILER__raudio_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/raudio/src/raudio.c || cmake_object_order_depends_target_raudio
+build thirdparty/raudio/CMakeFiles/raudio.dir/src/raudio.c.obj: C_COMPILER__raudio_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/raudio/src/raudio.c || cmake_object_order_depends_target_raudio
   DEP_FILE = thirdparty\raudio\CMakeFiles\raudio.dir\src\raudio.c.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/raudio/include"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/raudio/include"
   OBJECT_DIR = thirdparty\raudio\CMakeFiles\raudio.dir
   OBJECT_FILE_DIR = thirdparty\raudio\CMakeFiles\raudio.dir\src
 
@@ -649,7 +649,7 @@ build thirdparty/raudio/libraudio.a: C_STATIC_LIBRARY_LINKER__raudio_Debug third
 # Utility command for edit_cache
 
 build thirdparty/raudio/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug\thirdparty\raudio" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngine\cmake-build-debug\thirdparty\raudio" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -660,7 +660,7 @@ build thirdparty/raudio/edit_cache: phony thirdparty/raudio/CMakeFiles/edit_cach
 # Utility command for rebuild_cache
 
 build thirdparty/raudio/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug\thirdparty\raudio" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"D:\Active Projects\LunarEngineCmake\LunaEngine" -B"D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngine\cmake-build-debug\thirdparty\raudio" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"D:\Active Projects\LunarEngine" -B"D:\Active Projects\LunarEngine\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -669,7 +669,7 @@ build thirdparty/raudio/rebuild_cache: phony thirdparty/raudio/CMakeFiles/rebuil
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# D:/Active Projects/LunarEngineCmake/LunaEngine/CMakeLists.txt
+# D:/Active Projects/LunarEngine/CMakeLists.txt
 # =============================================================================
 
 
@@ -677,7 +677,7 @@ build thirdparty/raudio/rebuild_cache: phony thirdparty/raudio/CMakeFiles/rebuil
 # Utility command for edit_cache
 
 build thirdparty/glm/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug\thirdparty\glm" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngine\cmake-build-debug\thirdparty\glm" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -688,7 +688,7 @@ build thirdparty/glm/edit_cache: phony thirdparty/glm/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build thirdparty/glm/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug\thirdparty\glm" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"D:\Active Projects\LunarEngineCmake\LunaEngine" -B"D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngine\cmake-build-debug\thirdparty\glm" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"D:\Active Projects\LunarEngine" -B"D:\Active Projects\LunarEngine\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -697,7 +697,7 @@ build thirdparty/glm/rebuild_cache: phony thirdparty/glm/CMakeFiles/rebuild_cach
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# D:/Active Projects/LunarEngineCmake/LunaEngine/CMakeLists.txt
+# D:/Active Projects/LunarEngine/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -709,52 +709,52 @@ build thirdparty/glm/rebuild_cache: phony thirdparty/glm/CMakeFiles/rebuild_cach
 
 build cmake_object_order_depends_target_imgui: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw
 
-build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/imgui.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui/imgui.cpp || cmake_object_order_depends_target_imgui
+build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/imgui.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/imgui-docking/imgui/imgui.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui\imgui.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/imgui-docking/imgui" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glad/include"
   OBJECT_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui
 
-build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui/imgui_demo.cpp || cmake_object_order_depends_target_imgui
+build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/imgui-docking/imgui/imgui_demo.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui\imgui_demo.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/imgui-docking/imgui" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glad/include"
   OBJECT_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui
 
-build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui/imgui_draw.cpp || cmake_object_order_depends_target_imgui
+build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/imgui-docking/imgui/imgui_draw.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui\imgui_draw.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/imgui-docking/imgui" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glad/include"
   OBJECT_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui
 
-build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui/imgui_tables.cpp || cmake_object_order_depends_target_imgui
+build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/imgui-docking/imgui/imgui_tables.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui\imgui_tables.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/imgui-docking/imgui" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glad/include"
   OBJECT_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui
 
-build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui/imgui_widgets.cpp || cmake_object_order_depends_target_imgui
+build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/imgui-docking/imgui/imgui_widgets.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui\imgui_widgets.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/imgui-docking/imgui" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glad/include"
   OBJECT_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui
 
-build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui/backends/imgui_impl_glfw.cpp || cmake_object_order_depends_target_imgui
+build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/imgui-docking/imgui/backends/imgui_impl_glfw.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui\backends\imgui_impl_glfw.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/imgui-docking/imgui" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glad/include"
   OBJECT_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui\backends
 
-build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui/backends/imgui_impl_opengl3.cpp || cmake_object_order_depends_target_imgui
+build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug D$:/Active$ Projects/LunarEngine/thirdparty/imgui-docking/imgui/backends/imgui_impl_opengl3.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui\backends\imgui_impl_opengl3.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/imgui" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/include"
+  INCLUDES = -I"D:/Active Projects/LunarEngine/thirdparty/imgui-docking/imgui" -I"D:/Active Projects/LunarEngine/thirdparty/glfw-3.3.2/include" -I"D:/Active Projects/LunarEngine/thirdparty/glad/include"
   OBJECT_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui\backends
 
@@ -779,7 +779,7 @@ build thirdparty/imgui-docking/libimgui.a: CXX_STATIC_LIBRARY_LINKER__imgui_Debu
 # Utility command for edit_cache
 
 build thirdparty/imgui-docking/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug\thirdparty\imgui-docking" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngine\cmake-build-debug\thirdparty\imgui-docking" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -790,7 +790,7 @@ build thirdparty/imgui-docking/edit_cache: phony thirdparty/imgui-docking/CMakeF
 # Utility command for rebuild_cache
 
 build thirdparty/imgui-docking/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug\thirdparty\imgui-docking" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"D:\Active Projects\LunarEngineCmake\LunaEngine" -B"D:\Active Projects\LunarEngineCmake\LunaEngine\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "D:\Active Projects\LunarEngine\cmake-build-debug\thirdparty\imgui-docking" && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"D:\Active Projects\LunarEngine" -B"D:\Active Projects\LunarEngine\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -799,6 +799,8 @@ build thirdparty/imgui-docking/rebuild_cache: phony thirdparty/imgui-docking/CMa
 
 # =============================================================================
 # Target aliases.
+
+build LunaEngine: phony LunaEngine.exe
 
 build glad: phony thirdparty/glad/libglad.a
 
@@ -818,8 +820,6 @@ build libstb_image.a: phony thirdparty/stb_image/libstb_image.a
 
 build libstb_truetype.a: phony thirdparty/stb_truetype/libstb_truetype.a
 
-build mygame: phony mygame.exe
-
 build raudio: phony thirdparty/raudio/libraudio.a
 
 build stb_image: phony thirdparty/stb_image/libstb_image.a
@@ -832,63 +832,63 @@ build stb_truetype: phony thirdparty/stb_truetype/libstb_truetype.a
 # =============================================================================
 
 #############################################
-# Folder: D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug
+# Folder: D:/Active Projects/LunarEngine/cmake-build-debug
 
-build all: phony mygame.exe thirdparty/glfw-3.3.2/all thirdparty/glad/all thirdparty/stb_image/all thirdparty/stb_truetype/all thirdparty/raudio/all thirdparty/glm/all thirdparty/imgui-docking/all
+build all: phony LunaEngine.exe thirdparty/glfw-3.3.2/all thirdparty/glad/all thirdparty/stb_image/all thirdparty/stb_truetype/all thirdparty/raudio/all thirdparty/glm/all thirdparty/imgui-docking/all
 
 # =============================================================================
 
 #############################################
-# Folder: D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/glad
+# Folder: D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/glad
 
 build thirdparty/glad/all: phony thirdparty/glad/libglad.a
 
 # =============================================================================
 
 #############################################
-# Folder: D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/glfw-3.3.2
+# Folder: D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/glfw-3.3.2
 
 build thirdparty/glfw-3.3.2/all: phony thirdparty/glfw-3.3.2/src/all
 
 # =============================================================================
 
 #############################################
-# Folder: D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src
+# Folder: D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/glfw-3.3.2/src
 
 build thirdparty/glfw-3.3.2/src/all: phony thirdparty/glfw-3.3.2/src/libglfw3.a
 
 # =============================================================================
 
 #############################################
-# Folder: D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/glm
+# Folder: D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/glm
 
 build thirdparty/glm/all: phony
 
 # =============================================================================
 
 #############################################
-# Folder: D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/imgui-docking
+# Folder: D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/imgui-docking
 
 build thirdparty/imgui-docking/all: phony thirdparty/imgui-docking/libimgui.a
 
 # =============================================================================
 
 #############################################
-# Folder: D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/raudio
+# Folder: D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/raudio
 
 build thirdparty/raudio/all: phony thirdparty/raudio/libraudio.a
 
 # =============================================================================
 
 #############################################
-# Folder: D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/stb_image
+# Folder: D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/stb_image
 
 build thirdparty/stb_image/all: phony thirdparty/stb_image/libstb_image.a
 
 # =============================================================================
 
 #############################################
-# Folder: D:/Active Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/thirdparty/stb_truetype
+# Folder: D:/Active Projects/LunarEngine/cmake-build-debug/thirdparty/stb_truetype
 
 build thirdparty/stb_truetype/all: phony thirdparty/stb_truetype/libstb_truetype.a
 
@@ -899,13 +899,13 @@ build thirdparty/stb_truetype/all: phony thirdparty/stb_truetype/libstb_truetype
 #############################################
 # Phony target to force glob verification run.
 
-build D$:/Active$ Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake_force: phony
+build D$:/Active$ Projects/LunarEngine/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake_force: phony
 
 
 #############################################
 # Re-run CMake to check if globbed directories changed.
 
-build D$:/Active$ Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/CMakeFiles/cmake.verify_globs: VERIFY_GLOBS | D$:/Active$ Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake_force
+build D$:/Active$ Projects/LunarEngine/cmake-build-debug/CMakeFiles/cmake.verify_globs: VERIFY_GLOBS | D$:/Active$ Projects/LunarEngine/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake_force
   pool = console
   restat = 1
 
@@ -913,14 +913,14 @@ build D$:/Active$ Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/CMakeFi
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE D$:/Active$ Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/CMakeFiles/cmake.verify_globs | CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/Active$ Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake D$:/Active$ Projects/LunarEngineCmake/LunaEngine/CMakeLists.txt D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/CMakeLists.txt D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/CMakeLists.txt D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src/CMakeLists.txt D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src/glfw3.pc.in D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src/glfw3Config.cmake.in D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src/glfw_config.h.in D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glm/CMakeLists.txt D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/CMakeLists.txt D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/raudio/CMakeLists.txt D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_image/CMakeLists.txt D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_truetype/CMakeLists.txt D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/BasicConfigVersion-SameMajorVersion.cmake.in D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDependentOption.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckFlagCommonConfig.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake
+build build.ninja: RERUN_CMAKE D$:/Active$ Projects/LunarEngine/cmake-build-debug/CMakeFiles/cmake.verify_globs | CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/Active$ Projects/LunarEngine/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake D$:/Active$ Projects/LunarEngine/CMakeLists.txt D$:/Active$ Projects/LunarEngine/thirdparty/glad/CMakeLists.txt D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/CMakeLists.txt D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/src/CMakeLists.txt D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/src/glfw3.pc.in D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/src/glfw3Config.cmake.in D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/src/glfw_config.h.in D$:/Active$ Projects/LunarEngine/thirdparty/glm/CMakeLists.txt D$:/Active$ Projects/LunarEngine/thirdparty/imgui-docking/CMakeLists.txt D$:/Active$ Projects/LunarEngine/thirdparty/raudio/CMakeLists.txt D$:/Active$ Projects/LunarEngine/thirdparty/stb_image/CMakeLists.txt D$:/Active$ Projects/LunarEngine/thirdparty/stb_truetype/CMakeLists.txt D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/BasicConfigVersion-SameMajorVersion.cmake.in D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDependentOption.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckFlagCommonConfig.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/Active$ Projects/LunarEngineCmake/LunaEngine/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake D$:/Active$ Projects/LunarEngineCmake/LunaEngine/CMakeLists.txt D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glad/CMakeLists.txt D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/CMakeLists.txt D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src/CMakeLists.txt D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src/glfw3.pc.in D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src/glfw3Config.cmake.in D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glfw-3.3.2/src/glfw_config.h.in D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/glm/CMakeLists.txt D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/imgui-docking/CMakeLists.txt D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/raudio/CMakeLists.txt D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_image/CMakeLists.txt D$:/Active$ Projects/LunarEngineCmake/LunaEngine/thirdparty/stb_truetype/CMakeLists.txt D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/BasicConfigVersion-SameMajorVersion.cmake.in D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDependentOption.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckFlagCommonConfig.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake: phony
+build CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/Active$ Projects/LunarEngine/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake D$:/Active$ Projects/LunarEngine/CMakeLists.txt D$:/Active$ Projects/LunarEngine/thirdparty/glad/CMakeLists.txt D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/CMakeLists.txt D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/src/CMakeLists.txt D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/src/glfw3.pc.in D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/src/glfw3Config.cmake.in D$:/Active$ Projects/LunarEngine/thirdparty/glfw-3.3.2/src/glfw_config.h.in D$:/Active$ Projects/LunarEngine/thirdparty/glm/CMakeLists.txt D$:/Active$ Projects/LunarEngine/thirdparty/imgui-docking/CMakeLists.txt D$:/Active$ Projects/LunarEngine/thirdparty/raudio/CMakeLists.txt D$:/Active$ Projects/LunarEngine/thirdparty/stb_image/CMakeLists.txt D$:/Active$ Projects/LunarEngine/thirdparty/stb_truetype/CMakeLists.txt D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/BasicConfigVersion-SameMajorVersion.cmake.in D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDependentOption.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckFlagCommonConfig.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake: phony
 
 
 #############################################
