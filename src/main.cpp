@@ -1,12 +1,13 @@
-#include "RendererAPI/RendererAPI.h"
-#include "RendererAPI/GeneralAPIStuff/Window.h"
+#include "LunaEngineAPI/RendererAPI.h"
+#include "LunaEngineAPI/Window.h"
+#include "LunaEngineAPI/Renderer.h"
 #include "glad/glad.h"
-#include <GLFW/glfw3.h>
-#include "Graphics/GLDebug.h"
+#include "GLFW/glfw3.h"
+#include "OpenGLPlatform/GLDebug.h"
 int main()
 {
 	GeneralAPIs::API api = GeneralAPIs::API::OpenGL;
-	std::unique_ptr<GeneralAPIs::RendererAPI> rendererApi = GeneralAPIs::RendererAPI::create(api);
+	std::shared_ptr<GeneralAPIs::RendererAPI> rendererApi = GeneralAPIs::RendererAPI::create(api);
 	uint32_t indices[] = {
 		0, 1, 2,
 		2, 3, 0
@@ -18,32 +19,27 @@ int main()
 		1.0f, 1.0f,
 		-1.0f, 1.0f
 	};
-	std::unique_ptr<GeneralAPIs::VertexBuffer> vb(rendererApi->createVertexBuffer());
+	std::shared_ptr<Renderer::Renderer> renderer = std::make_shared<Renderer::Renderer>(rendererApi);
+	renderer->createWindow(800, 600, "Lunar Engine");
+	std::unique_ptr<GeneralAPIs::VertexBuffer> vb = rendererApi->createVertexBuffer();
 	vb->createBuffer<float>(8, vertices);
 	vb->getLayout().push<float>(2, GeneralAPIs::ShaderDataType::Vec2);
 	std::unique_ptr<GeneralAPIs::IndexBuffer> ib(rendererApi->createIndexBuffer().release());
 	ib->createBuffer(6, indices);
 	std::unique_ptr<GeneralAPIs::Shaders> shader(rendererApi->createShader());
-	shader->initializeShader("Graphics/ShaderSource/Default.shader");
+	shader->initializeShader("../resources/Graphics/ShaderSource/Default.shader");
 	rendererApi->setClearColor({ 0.1f, 0.4f, 0.2f , 1.0f });
 	std::unique_ptr<GeneralAPIs::VertexArray> vao(rendererApi->createVAO());
 	vao->bind();
 	vao->addVertexBuffer(vb); 
-	while (window->isRendering()) {
-		// Clear the screen
-		rendererApi->clear();
+	while (renderer->render()) {
 		// Use the shader program
 		shader->bind();
 		vao->bind();
 		ib->bind();
-
 		// Draw the triangle
-		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-
-		window->pollEvents();
-		window->swapBuffers();
+		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
+		renderer->updateRenderer();
 	}
 	return 0;
-
-
 }
